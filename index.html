@@ -27,9 +27,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a id="page1" href="#">Page 1</a></li>
-        <li><a id="page2" href="#">Page 2</a></li>
-        <li><a id="page3" href="#">Page 3</a></li>
+        <li><a id="page1" href="#">Overview</a></li>
+        <li><a id="page2" href="#">Numbers</a></li>
+        <li><a id="page3" href="#">Events</a></li>
+        <li><a id="page4" href="#">Speakers</a></li>
+        <li><a id="page5" href="#">Events</a></li>
+        <li><a id="page6" href="#">Events</a></li>
+        <li><a id="page7" href="#">Events</a></li>
+        <li><a id="page8" href="#">Events</a></li>
+        <li><a id="page9" href="#">Events</a></li>
+        <li><a id="page10" href="#">Events</a></li>
+        <li><a id="page11" href="#">Events</a></li>
+        <li><a id="page12" href="#">Events</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -42,16 +51,22 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="https://www.bransontracks.com/wp-content/uploads/2017/07/TR_PinkSkyWheel.jpg">
+          <img id="carouselImage" src="img/cover.png">
         </div>
 
         <div class="item">
-          <img src="https://www.technicalpark.com/file/2014/03/technical-park-ferris-wheel-225.jpg">
+          <img id="carouselImage" src="img/Numbers.png">
         </div>
 
         <div class="item">
-          <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA19319_hires.jpg">
+          <img id="carouselImage" src="img/Events.png">
         </div>
+
+        <div class="item">
+          <img id="carouselImage" src="img/Monthly-Speakers.png">
+        </div>
+
+
 
       </div>
 
@@ -78,20 +93,54 @@ $(document).ready(function(){
 
     $("#myCarousel").carousel("pause");
 
-    // Go to the first slide
     $("#page1").click(function(){
         $("#myCarousel").carousel(0);
     });
 
-    // Go to the second slide
     $("#page2").click(function(){
         $("#myCarousel").carousel(1);
     });
 
-    // Go to the third slide
     $("#page3").click(function(){
         $("#myCarousel").carousel(2);
     });
+
+    $("#page4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+
+    $("#page5").click(function(){
+        $("#myCarousel").carousel(4);
+    });
+
+    $("#page6").click(function(){
+        $("#myCarousel").carousel(5);
+    });
+
+    $("#page7").click(function(){
+        $("#myCarousel").carousel(6);
+    });
+
+    $("#page8").click(function(){
+        $("#myCarousel").carousel(7);
+    });
+
+    $("#page9").click(function(){
+        $("#myCarousel").carousel(8);
+    });
+
+    $("#page10").click(function(){
+        $("#myCarousel").carousel(9);
+    });
+
+    $("#page11").click(function(){
+        $("#myCarousel").carousel(10);
+    });
+
+    $("#page12").click(function(){
+        $("#myCarousel").carousel(11);
+    });
+
 
     // Enable Carousel Controls, Left and Right
     $(".left").click(function(){
