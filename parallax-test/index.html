@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Parallax Test</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+		
+			<!-- each background slide has a width of 100vw -->
+			<div class="carousel carousel--background">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<img style="width:25vw;height:366px" src="images/slide-1/mountains-3-left-repeat.png" />
+						<img style="width:75vw;height:366px" src="images/slide-1/mountains-3-75vw.png" />
+					</div>
+					<img class="layer" style="width:100vw;height:100vh;" src="images/slide-1/cloud-1.png" />
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:10vw;height:359px" src="images/slide-2/mountains-3-left-10vw.png" />
+						<img style="width:20vw;height:359px" src="images/slide-2/mountains-3-repeat.png" />
+						<img style="width:20vw;height:359px" src="images/slide-2/mountains-3-graph-20vw.png" />
+						<img style="width:40vw;height:359px" src="images/slide-2/mountains-3-repeat.png" />
+						<img style="width:10vw;height:359px" src="images/slide-2/mountains-3-right-10vw.png" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- each slide is 150vw -->
+			<div class="carousel carousel--midground">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<img style="width:75vw;height:299px" src="images/slide-1/mountains-2-left-repeat.png" /> <!-- TODO: repeat this, and similar ones, as a background image instead of stretching an image -->
+						<img style="width:75vw;height:299px" src="images/slide-1/mountains-2-75vw.png" />
+					</div>
+					<div class="layer">
+						<div style="width:50vw"></div>
+						<img style="width:100vw;height:100vh" src="images/slide-1/cloud-2.png" /> <!-- TODO: this will distort depending on browser dimension ratio... fix this -->
+					</div>
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:10vw;height:411px" src="images/slide-2/mountains-2-left-10vw.png" />
+						<img style="width:80vw;height:411px" src="images/slide-2/mountains-2-repeat.png" />
+						<img style="width:30vw;height:411px" src="images/slide-2/mountains-2-graph-20vw.png" />
+						<img style="width:20vw;height:411px" src="images/slide-2/mountains-2-repeat.png" />
+						<img style="width:10vw;height:411px" src="images/slide-2/mountains-2-right-10vw.png" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- each layer is 200vw -->
+			<div class="carousel carousel--foreground">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<img style="width:125vw;height:182px" src="images/slide-1/mountains-1-left-repeat.png" />
+						<img style="width:75vw;height:280px" src="images/slide-1/mountains-1-75vw.png" />
+					</div>
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:10vw;height:431px" src="images/slide-2/mountains-1-left-10vw.png" />
+						<img style="width:140vw;height:431px" src="images/slide-2/mountains-1-repeat.png" />
+						<img style="width:20vw;height:431px" src="images/slide-2/mountains-1-graph-20vw.png" />
+						<img style="width:20vw;height:431px" src="images/slide-2/mountains-1-repeat.png" />
+						<img style="width:10vw;height:431px" src="images/slide-2/mountains-1-right-10vw.png" />
+					</div>
+				</div>
+			</div>
+			<div class="text-overlay">
+				<img src="images/slide-1/cfd-logo.png" style="bottom: 0px;top:auto" />
+				<img src="images/slide-1/text.png" />
+				<a style="position:absolute;top:0px;left:0px;color:black" href="#" class="animate-button">Click to change slides</a>
+			</div>
+		</div>
+		<script src="jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".animate-button").click(function(e) {
+					e.preventDefault();
+					if (currentSlide == 1) {
+						nextSlide();
+					} else {
+						previousSlide();
+					}
+				});
+			});
+		
+			var currentSlide = 1;
+			function nextSlide() {
+				$(".carousel").removeClass("position-" + currentSlide);
+				currentSlide++;
+				$(".carousel").addClass("position-" + currentSlide);
+			}
+			function previousSlide() {
+				$(".carousel").removeClass("position-" + currentSlide);
+				currentSlide--;
+				$(".carousel").addClass("position-" + currentSlide);
+			}
+		</script>
+	</body>
+</html>

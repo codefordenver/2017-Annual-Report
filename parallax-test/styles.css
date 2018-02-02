@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#fff 0%, #bee3f6 10%, #8fd7f0 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overeflow: hidden;
+}
+.carousel {
+  transition: left 3s;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+}
+.carousel .slide {
+  float: left;
+  position: relative;
+  height: 100vh;
+}
+.carousel .slide .layer {
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  /* clear floats */
+  display: flex;
+  align-items: end;
+}
+.carousel--background {
+  width: 200vw;
+  left: 0vw;
+}
+.carousel--background .slide,
+.carousel--background .layer {
+  width: 100vw;
+}
+.carousel--background.position-2 {
+  left: -100vw;
+}
+.carousel--midground {
+  width: 300vw;
+  left: -50vw;
+}
+.carousel--midground .slide,
+.carousel--midground .layer {
+  width: 150vw;
+}
+.carousel--midground.position-2 {
+  left: -200vw;
+}
+.carousel--foreground {
+  width: 400vw;
+  left: -100vw;
+}
+.carousel--foreground .slide,
+.carousel--foreground .layer {
+  width: 200vw;
+}
+.carousel--foreground.position-2 {
+  left: -300vw;
+}
+.text-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}
+.text-overlay img {
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
