@@ -15,10 +15,12 @@
 			<div class="carousel carousel--background">
 				<div class="slide-1 slide">
 					<div class="layer">
-						<img style="width:25vw;height:366px" src="images/slide-1/mountains-3-left-repeat.png" />
-						<img style="width:75vw;height:366px" src="images/slide-1/mountains-3-75vw.png" />
+						<div class="repeated-background width-minus-755px" style="background-image:url(images/slide-1/mountains-3-left-repeat.png)"></div>
+						<img style="width:755px" src="images/slide-1/mountains-3-main.png" />
 					</div>
-					<img class="layer" style="width:100vw;height:100vh;" src="images/slide-1/cloud-1.png" />
+					<div class="layer">
+						<img style="position:absolute;right:38px;top:130px" src="images/slide-1/cloud-1.png" />
+					</div>
 				</div>
 				<div class="slide-2 slide">
 					<div class="layer">
@@ -35,12 +37,11 @@
 			<div class="carousel carousel--midground">
 				<div class="slide-1 slide">
 					<div class="layer">
-						<img style="width:75vw;height:299px" src="images/slide-1/mountains-2-left-repeat.png" /> <!-- TODO: repeat this, and similar ones, as a background image instead of stretching an image -->
-						<img style="width:75vw;height:299px" src="images/slide-1/mountains-2-75vw.png" />
+						<div class="repeated-background width-minus-756px" style="background-image:url(images/slide-1/mountains-2-left-repeat.png)"></div>
+						<img src="images/slide-1/mountains-2-main.png" />
 					</div>
 					<div class="layer">
-						<div style="width:50vw"></div>
-						<img style="width:100vw;height:100vh" src="images/slide-1/cloud-2.png" /> <!-- TODO: this will distort depending on browser dimension ratio... fix this -->
+						<img style="position:absolute;top:130px;right:80px;" src="images/slide-1/cloud-2.png" />
 					</div>
 				</div>
 				<div class="slide-2 slide">
@@ -58,8 +59,8 @@
 			<div class="carousel carousel--foreground">
 				<div class="slide-1 slide">
 					<div class="layer">
-						<img style="width:125vw;height:182px" src="images/slide-1/mountains-1-left-repeat.png" />
-						<img style="width:75vw;height:280px" src="images/slide-1/mountains-1-75vw.png" />
+						<div class="repeated-background width-minus-756px" style="background-image:url(images/slide-1/mountains-1-left-repeat.png)"></div>
+						<img src="images/slide-1/mountains-1-main.png" />
 					</div>
 				</div>
 				<div class="slide-2 slide">

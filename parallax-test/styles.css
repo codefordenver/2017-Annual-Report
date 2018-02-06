@@ -34,7 +34,7 @@ body {
   overflow: hidden;
   /* clear floats */
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 .carousel--background {
   width: 200vw;
@@ -43,6 +43,9 @@ body {
 .carousel--background .slide,
 .carousel--background .layer {
   width: 100vw;
+}
+.carousel--background .width-minus-755px {
+  width: calc(100vw - 755px);
 }
 .carousel--background.position-2 {
   left: -100vw;
@@ -55,8 +58,14 @@ body {
 .carousel--midground .layer {
   width: 150vw;
 }
+.carousel--midground .width-minus-756px {
+  width: calc(150vw - 756px);
+}
 .carousel--midground.position-2 {
   left: -200vw;
+}
+.carousel--midground.position-3 {
+  left: -350vw;
 }
 .carousel--foreground {
   width: 400vw;
@@ -66,8 +75,16 @@ body {
 .carousel--foreground .layer {
   width: 200vw;
 }
+.carousel--foreground .width-minus-756px {
+  width: calc(200vw - 756px);
+}
 .carousel--foreground.position-2 {
   left: -300vw;
+}
+.repeated-background {
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  height: 100vh;
 }
 .text-overlay {
   position: absolute;
