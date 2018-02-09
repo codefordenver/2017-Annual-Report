@@ -49,9 +49,17 @@ body {
 			width: @width;
 		}
 		
+		/* generic styles that can be used for elements within a layer */
+		
+		.width-minus-100px {
+			width: calc(~"@{width} - 100px");
+		}
+		
 		.width-minus-755px {
 			width: calc(~"@{width} - 755px");
 		}
+		
+		/* Positioning for each slide -- add new slides to this section */
 		
 		&.position-2 {
 			left: @width * -1;
@@ -67,9 +75,17 @@ body {
 			width: @width;
 		}
 		
+		/* generic styles that can be used for elements within a layer */
+		
+		.width-minus-100px {
+			width: calc(~"@{width} - 100px");
+		}
+		
 		.width-minus-756px {
 			width: calc(~"@{width} - 756px");
 		}
+		
+		/* Positioning for each slide -- add new slides to this section */
 		
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
@@ -89,9 +105,17 @@ body {
 			width: @width;
 		}
 		
+		/* generic styles that can be used for elements within a layer */
+		
+		.width-minus-100px {
+			width: calc(~"@{width} - 100px");
+		}
+		
 		.width-minus-756px {
 			width: calc(~"@{width} - 756px");
 		}
+		
+		/* Positioning for each slide -- add new slides to this section */
 		
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);

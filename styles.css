@@ -16,7 +16,7 @@ body {
   overeflow: hidden;
 }
 .carousel {
-  transition: left 25s;
+  transition: left 3s;
   position: absolute;
   top: 0px;
   height: 100vh;
@@ -39,10 +39,15 @@ body {
 .carousel--background {
   width: 200vw;
   left: 0vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--background .slide,
 .carousel--background .layer {
   width: 100vw;
+}
+.carousel--background .width-minus-100px {
+  width: calc(100vw - 100px);
 }
 .carousel--background .width-minus-755px {
   width: calc(100vw - 755px);
@@ -53,10 +58,15 @@ body {
 .carousel--midground {
   width: 300vw;
   left: -50vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--midground .slide,
 .carousel--midground .layer {
   width: 150vw;
+}
+.carousel--midground .width-minus-100px {
+  width: calc(150vw - 100px);
 }
 .carousel--midground .width-minus-756px {
   width: calc(150vw - 756px);
@@ -70,10 +80,15 @@ body {
 .carousel--foreground {
   width: 400vw;
   left: -100vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--foreground .slide,
 .carousel--foreground .layer {
   width: 200vw;
+}
+.carousel--foreground .width-minus-100px {
+  width: calc(200vw - 100px);
 }
 .carousel--foreground .width-minus-756px {
   width: calc(200vw - 756px);
