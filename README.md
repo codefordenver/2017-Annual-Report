@@ -19,6 +19,7 @@ lessc styles.less styles.css
 }
 ```
 Where [POSITION] is the slide number (the first slide is #1, not #0). [POSITION-1] should be the slide number -1.
+
 3. Compile the CSS with LESS.
 4. In the HTML, create a new slide under the div with a class of carousel--background. Copy and paste one of the divs with a class of slide to use as a template for a new slide. The new slide should go at the end, and should have a class of slide-[POSITION] as well as slide.
 5. Repeat step 4 for both the divs with a class of carousel--midground and carousel--foreground.
