@@ -16,7 +16,7 @@ body {
   overeflow: hidden;
 }
 .carousel {
-  transition: left 3s;
+  transition: left 25s;
   position: absolute;
   top: 0px;
   height: 100vh;
