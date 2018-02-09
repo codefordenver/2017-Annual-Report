@@ -16,7 +16,7 @@ body {
 	overeflow: hidden;
 }
 
-@numberOfSlides: 2;
+@numberOfSlides: 12;
 
 .carousel {
 	transition: left 3s;
@@ -62,7 +62,37 @@ body {
 		/* Positioning for each slide -- add new slides to this section */
 		
 		&.position-2 {
-			left: @width * -1;
+			left: @width * -1 + (100vw - @width);
+		}
+		&.position-3 {
+			left: @width * -2 + (100vw - @width);
+		}
+		&.position-4 {
+			left: @width * -3 + (100vw - @width);
+		}
+		&.position-5 {
+			left: @width * -4 + (100vw - @width);
+		}
+		&.position-6 {
+			left: @width * -5 + (100vw - @width);
+		}
+		&.position-7 {
+			left: @width * -6 + (100vw - @width);
+		}
+		&.position-8 {
+			left: @width * -7 + (100vw - @width);
+		}
+		&.position-9 {
+			left: @width * -8 + (100vw - @width);
+		}
+		&.position-10 {
+			left: @width * -9 + (100vw - @width);
+		}
+		&.position-11 {
+			left: @width * -10 + (100vw - @width);
+		}
+		&.position-12 {
+			left: @width * -11 + (100vw - @width);
 		}
 	}
 	
@@ -90,9 +120,35 @@ body {
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
 		}
-		
 		&.position-3 {
 			left: @width * -2 + (100vw - @width);
+		}
+		&.position-4 {
+			left: @width * -3 + (100vw - @width);
+		}
+		&.position-5 {
+			left: @width * -4 + (100vw - @width);
+		}
+		&.position-6 {
+			left: @width * -5 + (100vw - @width);
+		}
+		&.position-7 {
+			left: @width * -6 + (100vw - @width);
+		}
+		&.position-8 {
+			left: @width * -7 + (100vw - @width);
+		}
+		&.position-9 {
+			left: @width * -8 + (100vw - @width);
+		}
+		&.position-10 {
+			left: @width * -9 + (100vw - @width);
+		}
+		&.position-11 {
+			left: @width * -10 + (100vw - @width);
+		}
+		&.position-12 {
+			left: @width * -11 + (100vw - @width);
 		}
 	}
 	
@@ -120,6 +176,36 @@ body {
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
 		}
+		&.position-3 {
+			left: @width * -2 + (100vw - @width);
+		}
+		&.position-4 {
+			left: @width * -3 + (100vw - @width);
+		}
+		&.position-5 {
+			left: @width * -4 + (100vw - @width);
+		}
+		&.position-6 {
+			left: @width * -5 + (100vw - @width);
+		}
+		&.position-7 {
+			left: @width * -6 + (100vw - @width);
+		}
+		&.position-8 {
+			left: @width * -7 + (100vw - @width);
+		}
+		&.position-9 {
+			left: @width * -8 + (100vw - @width);
+		}
+		&.position-10 {
+			left: @width * -9 + (100vw - @width);
+		}
+		&.position-11 {
+			left: @width * -10 + (100vw - @width);
+		}
+		&.position-12 {
+			left: @width * -11 + (100vw - @width);
+		}
 	}
 }
 .repeated-background {
@@ -134,10 +220,33 @@ body {
 	top: 0px;
 	left: 0px;
 	
-	img {
-		width: 100vw;
+	.text-slide {
+		display: none;
 		position: absolute;
+		width: 100vw;
+		height: 100vh;
 		top: 0px;
 		left: 0px;
+	}
+	
+	.text-slide-1 {
+		&__cfd-logo {
+			position: absolute;
+			right: 40px;
+			bottom: 40px;
+			transition: 300ms 500ms;
+		}
+		&__intro-text {
+			position:absolute;
+			top: 20px;
+			left: 20px;
+		}
+	}
+	
+	.text-slide-2 {
+		h2 {
+			margin-top: 200px;
+			margin-left: 100px;
+		}
 	}
 }

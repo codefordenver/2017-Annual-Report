@@ -37,7 +37,7 @@ body {
   align-items: flex-end;
 }
 .carousel--background {
-  width: 200vw;
+  width: 1200vw;
   left: 0vw;
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -55,8 +55,38 @@ body {
 .carousel--background.position-2 {
   left: -100vw;
 }
+.carousel--background.position-3 {
+  left: -200vw;
+}
+.carousel--background.position-4 {
+  left: -300vw;
+}
+.carousel--background.position-5 {
+  left: -400vw;
+}
+.carousel--background.position-6 {
+  left: -500vw;
+}
+.carousel--background.position-7 {
+  left: -600vw;
+}
+.carousel--background.position-8 {
+  left: -700vw;
+}
+.carousel--background.position-9 {
+  left: -800vw;
+}
+.carousel--background.position-10 {
+  left: -900vw;
+}
+.carousel--background.position-11 {
+  left: -1000vw;
+}
+.carousel--background.position-12 {
+  left: -1100vw;
+}
 .carousel--midground {
-  width: 300vw;
+  width: 1800vw;
   left: -50vw;
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -77,8 +107,35 @@ body {
 .carousel--midground.position-3 {
   left: -350vw;
 }
+.carousel--midground.position-4 {
+  left: -500vw;
+}
+.carousel--midground.position-5 {
+  left: -650vw;
+}
+.carousel--midground.position-6 {
+  left: -800vw;
+}
+.carousel--midground.position-7 {
+  left: -950vw;
+}
+.carousel--midground.position-8 {
+  left: -1100vw;
+}
+.carousel--midground.position-9 {
+  left: -1250vw;
+}
+.carousel--midground.position-10 {
+  left: -1400vw;
+}
+.carousel--midground.position-11 {
+  left: -1550vw;
+}
+.carousel--midground.position-12 {
+  left: -1700vw;
+}
 .carousel--foreground {
-  width: 400vw;
+  width: 2400vw;
   left: -100vw;
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -96,6 +153,36 @@ body {
 .carousel--foreground.position-2 {
   left: -300vw;
 }
+.carousel--foreground.position-3 {
+  left: -500vw;
+}
+.carousel--foreground.position-4 {
+  left: -700vw;
+}
+.carousel--foreground.position-5 {
+  left: -900vw;
+}
+.carousel--foreground.position-6 {
+  left: -1100vw;
+}
+.carousel--foreground.position-7 {
+  left: -1300vw;
+}
+.carousel--foreground.position-8 {
+  left: -1500vw;
+}
+.carousel--foreground.position-9 {
+  left: -1700vw;
+}
+.carousel--foreground.position-10 {
+  left: -1900vw;
+}
+.carousel--foreground.position-11 {
+  left: -2100vw;
+}
+.carousel--foreground.position-12 {
+  left: -2300vw;
+}
 .repeated-background {
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -108,9 +195,26 @@ body {
   top: 0px;
   left: 0px;
 }
-.text-overlay img {
-  width: 100vw;
+.text-overlay .text-slide {
+  display: none;
   position: absolute;
+  width: 100vw;
+  height: 100vh;
   top: 0px;
   left: 0px;
+}
+.text-overlay .text-slide-1__cfd-logo {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  transition: 300ms 500ms;
+}
+.text-overlay .text-slide-1__intro-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.text-overlay .text-slide-2 h2 {
+  margin-top: 200px;
+  margin-left: 100px;
 }
