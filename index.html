@@ -1,72 +1,339 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-  <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval=false data-wrap=false>
-  <ol class="carousel-indicators">
-    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="media/images/cover(1).png" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/numbers(2).png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/events(3).png" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/speakers(4).png" alt="Fourth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/newprojects(5).png" alt="Fifth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/projectupdates(6).png" alt="Sixth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/sustainability(7).png" alt="Seventh slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/externaltalks(8).png" alt="Eighth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/updates(9).png" alt="Ninth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/memberthanks(10).png" alt="Tenth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/sponsorthanks(11).png" alt="Eleventh slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/images/getinvolved(12).png" alt="Twelfth slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+		<title>Parallax Test</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+		
+			<!-- each background slide has a width of 100vw -->
+			<div class="carousel carousel--background">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<div class="repeated-background width-minus-755px" style="background-image:url(media/images/slide-1/mountains-3-left-repeat.png)"></div>
+						<img style="width:755px" src="media/images/slide-1/mountains-3-main.png" />
+					</div>
+					<div class="layer">
+						<img style="position:absolute;right:38px;top:130px" src="media/images/slide-1/cloud-1.png" />
+					</div>
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:100px" src="media/images/slide-2/mountains-3-left.png" />
+						<div class="repeated-background width-minus-100px" style="background-image:url(media/images/slide-2/mountains-3-repeat.png?v=3)"></div>
+						<img style="width:100px" src="media/images/slide-2/mountains-3-right.png" />
+					</div>
+					<div class="layer">
+						<img style="position:absolute;bottom:0;right:calc(20vw + 200px);width:200px;" src="media/images/slide-2/mountains-3-graph-bars.png" />
+					</div>
+				</div>
+				<div class="slide-3 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 3 background</div>
+					</div>
+				</div>
+				<div class="slide-4 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 4 background</div>
+					</div>
+				</div>
+				<div class="slide-5 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 5 background</div>
+					</div>
+				</div>
+				<div class="slide-6 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 6 background</div>
+					</div>
+				</div>
+				<div class="slide-7 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 7 background</div>
+					</div>
+				</div>
+				<div class="slide-8 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 8 background</div>
+					</div>
+				</div>
+				<div class="slide-9 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 9 background</div>
+					</div>
+				</div>
+				<div class="slide-10 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 10 background</div>
+					</div>
+				</div>
+				<div class="slide-11 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 11 background</div>
+					</div>
+				</div>
+				<div class="slide-12 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:center">slide 12 background</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- each slide is 150vw -->
+			<div class="carousel carousel--midground">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<div class="repeated-background width-minus-756px" style="background-image:url(media/images/slide-1/mountains-2-left-repeat.png)"></div>
+						<img src="media/images/slide-1/mountains-2-main.png" />
+					</div>
+					<div class="layer">
+						<img style="position:absolute;top:130px;right:80px;" src="media/images/slide-1/cloud-2.png" />
+					</div>
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:100px" src="media/images/slide-2/mountains-2-left.png" />
+						<div class="repeated-background width-minus-100px" style="background-image:url(media/images/slide-2/mountains-2-repeat.png)"></div>
+						<img style="width:100px" src="media/images/slide-2/mountains-2-right.png" />
+					</div>
+					<div class="layer">
+						<img style="position:absolute;bottom:0;right:20vw;width:300px" src="media/images/slide-2/mountains-2-graph-bars.png" />
+					</div>
+				</div>
+				<div class="slide-3 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 3 midground</div>
+					</div>
+				</div>
+				<div class="slide-4 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 4 midground</div>
+					</div>
+				</div>
+				<div class="slide-5 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 5 midground</div>
+					</div>
+				</div>
+				<div class="slide-6 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 6 midground</div>
+					</div>
+				</div>
+				<div class="slide-7 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 7 midground</div>
+					</div>
+				</div>
+				<div class="slide-8 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 8 midground</div>
+					</div>
+				</div>
+				<div class="slide-9 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 9 midground</div>
+					</div>
+				</div>
+				<div class="slide-10 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 10 midground</div>
+					</div>
+				</div>
+				<div class="slide-11 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 11 midground</div>
+					</div>
+				</div>
+				<div class="slide-12 slide">
+					<div class="layer">
+						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 12 midground</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- each layer is 200vw -->
+			<div class="carousel carousel--foreground">
+				<div class="slide-1 slide">
+					<div class="layer">
+						<div class="repeated-background width-minus-756px" style="background-image:url(media/images/slide-1/mountains-1-left-repeat.png)"></div>
+						<img src="media/images/slide-1/mountains-1-main.png" />
+					</div>
+				</div>
+				<div class="slide-2 slide">
+					<div class="layer">
+						<img style="width:100px" src="media/images/slide-2/mountains-1-left.png" />
+						<div class="repeated-background width-minus-100px" style="background-image:url(media/images/slide-2/mountains-1-repeat.png)"></div>
+						<img style="width:100px" src="media/images/slide-2/mountains-1-right.png" />
+					</div>
+					<div class="layer">
+						<img style="position:absolute;bottom:0;right:20vw;width:200px" src="media/images/slide-2/mountains-1-graph-bars.png" />
+					</div>
+				</div>
+				<div class="slide-3 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 3 foreground</div>
+					</div>
+				</div>
+				<div class="slide-4 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 4 foreground</div>
+					</div>
+				</div>
+				<div class="slide-5 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 5 foreground</div>
+					</div>
+				</div>
+				<div class="slide-6 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 6 foreground</div>
+					</div>
+				</div>
+				<div class="slide-7 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 7 foreground</div>
+					</div>
+				</div>
+				<div class="slide-8 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 8 foreground</div>
+					</div>
+				</div>
+				<div class="slide-9 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 9 foreground</div>
+					</div>
+				</div>
+				<div class="slide-10 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 10 foreground</div>
+					</div>
+				</div>
+				<div class="slide-11 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 11 foreground</div>
+					</div>
+				</div>
+				<div class="slide-12 slide">
+					<div class="layer">
+						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 12 foreground</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-overlay">
+				<div class="text-slide-1 text-slide">
+					<img class="text-slide-1__cfd-logo" src="media/images/slide-1/cfd-logo.png" />
+					<img class="text-slide-1__intro-text" src="media/images/slide-1/text.png" />
+				</div>
+				<div class="text-slide-2 text-slide">
+					<h2>Year in Numbers</h2>
+				</div>
+				<div class="text-slide-3 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-4 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-5 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-6 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-7 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-8 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-9 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-10 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-11 text-slide">
+					<!-- TODO -->
+				</div>
+				<div class="text-slide-12 text-slide">
+					<!-- TODO -->
+				</div>
+			</div>
+			<div style="position:absolute;top:0px;width:100vw;height:100vh;">
+				<a style="position:absolute;top:0px;left:0px;color:black" href="#" class="animate-button--previous">Previous</a>
+				<a style="position:absolute;top:0px;right:0px;color:black" href="#" class="animate-button--next">Next</a>
+			</div>
+		</div>
+		<script src="jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".animate-button--next").click(function(e) {
+					e.preventDefault();
+					nextSlide();
+				});
+				$(".animate-button--previous").click(function(e) {
+					e.preventDefault();
+					previousSlide();
+				});
+				// initial animation
+				$(".text-slide-1").fadeIn(2000);
+				//set start states for other animations
+				$(".text-slide-2 h2").slideUp(0);
+			});
+		
+			var currentSlide = 1;
+			var slideTransitionTime = 3000; //in ms
+			function nextSlide() {
+				$(".carousel").removeClass("position-" + currentSlide);
+				animateTextOut(currentSlide);
+				currentSlide++;
+				$(".carousel").addClass("position-" + currentSlide);
+				setTimeout(function() {
+					animateTextIn(currentSlide);
+				}, slideTransitionTime - 500);
+			}
+			function previousSlide() {
+				$(".carousel").removeClass("position-" + currentSlide);
+				animateTextOut(currentSlide);
+				currentSlide--;
+				$(".carousel").addClass("position-" + currentSlide);
+				setTimeout(function() {
+					animateTextIn(currentSlide);
+				}, slideTransitionTime - 500);
+			}
+			function animateTextIn(slide) {
+				switch (slide) {
+					case 1:
+						$(".text-slide-1__cfd-logo").css("bottom", "");
+						$(".text-slide-1__intro-text").fadeIn();
+						break;
+					case 2:
+						$(".text-slide-2").show();
+						$(".text-slide-2 h2").slideDown();
+						break;
+				}
+			}
+			function animateTextOut(slide) {
+				switch (slide) {
+					case 1:
+						$(".text-slide-1__cfd-logo").css("bottom", "-100px");
+						$(".text-slide-1__intro-text").fadeOut();
+						break;
+					case 2:
+						var animationTime = 800;
+						$(".text-slide-2 h2").slideUp(animationTime);
+						setTimeout(function() {
+							$(".text-slide-2").hide();
+						}, animationTime);
+						break;
+				}
+			}
+		</script>
+	</body>
 </html>

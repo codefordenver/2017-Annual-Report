@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#fff 0%, #bee3f6 10%, #8fd7f0 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overeflow: hidden;
+}
+.carousel {
+  transition: left 3s;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+}
+.carousel .slide {
+  float: left;
+  position: relative;
+  height: 100vh;
+}
+.carousel .slide .layer {
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  /* clear floats */
+  display: flex;
+  align-items: flex-end;
+}
+.carousel--background {
+  width: 1200vw;
+  left: 0vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--background .slide,
+.carousel--background .layer {
+  width: 100vw;
+}
+.carousel--background .width-minus-100px {
+  width: calc(100vw - 100px);
+}
+.carousel--background .width-minus-755px {
+  width: calc(100vw - 755px);
+}
+.carousel--background.position-2 {
+  left: -100vw;
+}
+.carousel--background.position-3 {
+  left: -200vw;
+}
+.carousel--background.position-4 {
+  left: -300vw;
+}
+.carousel--background.position-5 {
+  left: -400vw;
+}
+.carousel--background.position-6 {
+  left: -500vw;
+}
+.carousel--background.position-7 {
+  left: -600vw;
+}
+.carousel--background.position-8 {
+  left: -700vw;
+}
+.carousel--background.position-9 {
+  left: -800vw;
+}
+.carousel--background.position-10 {
+  left: -900vw;
+}
+.carousel--background.position-11 {
+  left: -1000vw;
+}
+.carousel--background.position-12 {
+  left: -1100vw;
+}
+.carousel--midground {
+  width: 1800vw;
+  left: -50vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--midground .slide,
+.carousel--midground .layer {
+  width: 150vw;
+}
+.carousel--midground .width-minus-100px {
+  width: calc(150vw - 100px);
+}
+.carousel--midground .width-minus-756px {
+  width: calc(150vw - 756px);
+}
+.carousel--midground.position-2 {
+  left: -200vw;
+}
+.carousel--midground.position-3 {
+  left: -350vw;
+}
+.carousel--midground.position-4 {
+  left: -500vw;
+}
+.carousel--midground.position-5 {
+  left: -650vw;
+}
+.carousel--midground.position-6 {
+  left: -800vw;
+}
+.carousel--midground.position-7 {
+  left: -950vw;
+}
+.carousel--midground.position-8 {
+  left: -1100vw;
+}
+.carousel--midground.position-9 {
+  left: -1250vw;
+}
+.carousel--midground.position-10 {
+  left: -1400vw;
+}
+.carousel--midground.position-11 {
+  left: -1550vw;
+}
+.carousel--midground.position-12 {
+  left: -1700vw;
+}
+.carousel--foreground {
+  width: 2400vw;
+  left: -100vw;
+  /* generic styles that can be used for elements within a layer */
+  /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--foreground .slide,
+.carousel--foreground .layer {
+  width: 200vw;
+}
+.carousel--foreground .width-minus-100px {
+  width: calc(200vw - 100px);
+}
+.carousel--foreground .width-minus-756px {
+  width: calc(200vw - 756px);
+}
+.carousel--foreground.position-2 {
+  left: -300vw;
+}
+.carousel--foreground.position-3 {
+  left: -500vw;
+}
+.carousel--foreground.position-4 {
+  left: -700vw;
+}
+.carousel--foreground.position-5 {
+  left: -900vw;
+}
+.carousel--foreground.position-6 {
+  left: -1100vw;
+}
+.carousel--foreground.position-7 {
+  left: -1300vw;
+}
+.carousel--foreground.position-8 {
+  left: -1500vw;
+}
+.carousel--foreground.position-9 {
+  left: -1700vw;
+}
+.carousel--foreground.position-10 {
+  left: -1900vw;
+}
+.carousel--foreground.position-11 {
+  left: -2100vw;
+}
+.carousel--foreground.position-12 {
+  left: -2300vw;
+}
+.repeated-background {
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  height: 100vh;
+}
+.text-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}
+.text-overlay .text-slide {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}
+.text-overlay .text-slide-1__cfd-logo {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  transition: 300ms 500ms;
+}
+.text-overlay .text-slide-1__intro-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.text-overlay .text-slide-2 h2 {
+  margin-top: 200px;
+  margin-left: 100px;
+}
