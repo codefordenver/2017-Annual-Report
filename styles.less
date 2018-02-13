@@ -60,7 +60,9 @@ body {
 
 			.mountain-background {
 				position: absolute;
+				// height: 50vh;
 				bottom: 16vh;
+				right: -200px;
 			}
 		}
 
@@ -112,12 +114,22 @@ body {
 	}
 
 	&--midground {
-		@width: 150vw;
+		@width: 101vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 
 		.slide,.layer {
 			width: @width;
+		}
+
+		.slide-1 {
+
+			.mountain-midground {
+				right: -220px;
+				position: absolute;
+				bottom: 11vh;
+			}
+
 		}
 
 		/* generic styles that can be used for elements within a layer */
@@ -168,12 +180,21 @@ body {
 	}
 
 	&--foreground {
-		@width: 200vw;
+		@width: 100.5vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 
 		.slide,.layer {
 			width: @width;
+		}
+
+		.slide-1 {
+
+			.mountain-foreground {
+				position: absolute;
+				bottom: 5vh;
+				right: -180px;
+			}
 		}
 
 		/* generic styles that can be used for elements within a layer */
