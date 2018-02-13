@@ -10,17 +10,17 @@
 	</head>
 	<body>
 		<div class="container">
-		
+
 			<!-- each background slide has a width of 100vw -->
 			<div class="carousel carousel--background">
 				<div class="slide-1 slide">
-					<div class="layer">
-						<div class="repeated-background width-minus-755px" style="background-image:url(media/images/slide-1/mountains-3-left-repeat.png)"></div>
-						<img style="width:755px" src="media/images/slide-1/mountains-3-main.png" />
+					<img class="mountain-background width-minus-755px" src="media/images/slide-1/dark-mountain.svg"></img>
+					<!-- <div class="layer">
+						<img style="width:755px" src="media/images/slide-1/dark-mountain.svg" />
 					</div>
 					<div class="layer">
 						<img style="position:absolute;right:38px;top:130px" src="media/images/slide-1/cloud-1.png" />
-					</div>
+					</div> -->
 				</div>
 				<div class="slide-2 slide">
 					<div class="layer">
@@ -83,9 +83,9 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- each slide is 150vw -->
-			<div class="carousel carousel--midground">
+			<div style="display:none" class="carousel carousel--midground">
 				<div class="slide-1 slide">
 					<div class="layer">
 						<div class="repeated-background width-minus-756px" style="background-image:url(media/images/slide-1/mountains-2-left-repeat.png)"></div>
@@ -156,9 +156,9 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- each layer is 200vw -->
-			<div class="carousel carousel--foreground">
+			<div style="display:none" class="carousel carousel--foreground">
 				<div class="slide-1 slide">
 					<div class="layer">
 						<div class="repeated-background width-minus-756px" style="background-image:url(media/images/slide-1/mountains-1-left-repeat.png)"></div>
@@ -226,6 +226,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="text-overlay">
 				<div class="text-slide-1 text-slide">
 					<img class="text-slide-1__cfd-logo" src="media/images/slide-1/cfd-logo.png" />
@@ -265,6 +266,7 @@
 					<!-- TODO -->
 				</div>
 			</div>
+
 			<div style="position:absolute;top:0px;width:100vw;height:100vh;">
 				<a style="position:absolute;top:0px;left:0px;color:black" href="#" class="animate-button--previous">Previous</a>
 				<a style="position:absolute;top:0px;right:0px;color:black" href="#" class="animate-button--next">Next</a>
@@ -286,7 +288,7 @@
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
 			});
-		
+
 			var currentSlide = 1;
 			var slideTransitionTime = 3000; //in ms
 			function nextSlide() {

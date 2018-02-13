@@ -1,9 +1,15 @@
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: linear-gradient(#fff 0%, #bee3f6 10%, #8fd7f0 100%);
+	background-color: #90D5EF;
+	background-image: url("./media/images/general/Bottom-three-layers.png"), url("./media/images/general/top-gradient.PNG");
 	background-attachment: fixed;
 	overflow: hidden;
+	background-size: 200vw 20vh, auto 80vh;
+	background-repeat: no-repeat, repeat-x;
+	background-position-y: bottom, top;
+	background-position-x: center;
+
 }
 .container {
 	position: absolute;
@@ -23,12 +29,12 @@ body {
 	position: absolute;
 	top: 0px;
 	height: 100vh;
-	
+
 	.slide {
 		float: left;
 		position: relative;
 		height: 100vh;
-		
+
 		.layer {
 			height: 100vh;
 			position: absolute;
@@ -39,28 +45,37 @@ body {
 			align-items: flex-end;
 		}
 	}
-	
+
+
 	&--background {
 		@width: 100vw;
 		width: @width * @numberOfSlides;
 		left: 0vw;
-		
+
 		.slide,.layer {
 			width: @width;
 		}
-		
+
+		.slide-1 {
+
+			.mountain-background {
+				position: absolute;
+				bottom: 16vh;
+			}
+		}
+
 		/* generic styles that can be used for elements within a layer */
-		
+
 		.width-minus-100px {
 			width: calc(~"@{width} - 100px");
 		}
-		
+
 		.width-minus-755px {
 			width: calc(~"@{width} - 755px");
 		}
-		
+
 		/* Positioning for each slide -- add new slides to this section */
-		
+
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
 		}
@@ -95,28 +110,28 @@ body {
 			left: @width * -11 + (100vw - @width);
 		}
 	}
-	
+
 	&--midground {
 		@width: 150vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
-		
+
 		.slide,.layer {
 			width: @width;
 		}
-		
+
 		/* generic styles that can be used for elements within a layer */
-		
+
 		.width-minus-100px {
 			width: calc(~"@{width} - 100px");
 		}
-		
+
 		.width-minus-756px {
 			width: calc(~"@{width} - 756px");
 		}
-		
+
 		/* Positioning for each slide -- add new slides to this section */
-		
+
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
 		}
@@ -151,28 +166,28 @@ body {
 			left: @width * -11 + (100vw - @width);
 		}
 	}
-	
+
 	&--foreground {
 		@width: 200vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
-		
+
 		.slide,.layer {
 			width: @width;
 		}
-		
+
 		/* generic styles that can be used for elements within a layer */
-		
+
 		.width-minus-100px {
 			width: calc(~"@{width} - 100px");
 		}
-		
+
 		.width-minus-756px {
 			width: calc(~"@{width} - 756px");
 		}
-		
+
 		/* Positioning for each slide -- add new slides to this section */
-		
+
 		&.position-2 {
 			left: @width * -1 + (100vw - @width);
 		}
@@ -212,14 +227,14 @@ body {
 	background-repeat: repeat-x;
 	background-position: center bottom;
 	height: 100vh;
-}	
+}
 .text-overlay {
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
 	top: 0px;
 	left: 0px;
-	
+
 	.text-slide {
 		display: none;
 		position: absolute;
@@ -228,7 +243,7 @@ body {
 		top: 0px;
 		left: 0px;
 	}
-	
+
 	.text-slide-1 {
 		&__cfd-logo {
 			position: absolute;
@@ -242,7 +257,7 @@ body {
 			left: 20px;
 		}
 	}
-	
+
 	.text-slide-2 {
 		h2 {
 			margin-top: 200px;
