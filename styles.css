@@ -55,7 +55,14 @@ body {
   position: absolute;
   width: 81vw;
   bottom: 16vh;
-  right: -200px;
+  right: -160px;
+}
+.carousel--background .slide-2 .background-bar-graph {
+  position: absolute;
+  bottom: 16vh;
+  right: 35vw;
+  width: 200px;
+  height: 40vh;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -107,10 +114,17 @@ body {
   width: 150vw;
 }
 .carousel--midground .slide-1 .mountain-midground {
-  right: -220px;
+  right: -170px;
   position: absolute;
   bottom: 11vh;
-  width: 79vw;
+  width: 80vw;
+}
+.carousel--midground .slide-2 .midground-bar-graph {
+  position: absolute;
+  bottom: 11vh;
+  width: 300px;
+  right: 21vw;
+  height: 50vh;
 }
 .carousel--midground .width-minus-100px {
   width: calc(150vw - 100px);
@@ -163,9 +177,16 @@ body {
 }
 .carousel--foreground .slide-1 .mountain-foreground {
   position: absolute;
-  bottom: 5vh;
-  right: -180px;
-  width: 77vw;
+  bottom: 6vh;
+  right: -130px;
+  width: 78vw;
+}
+.carousel--foreground .slide-2 .foreground-bar-graph {
+  position: absolute;
+  bottom: 6vh;
+  width: 200px;
+  height: 60vh;
+  right: 15vw;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
