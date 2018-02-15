@@ -53,6 +53,7 @@ body {
 }
 .carousel--background .slide-1 .mountain-background {
   position: absolute;
+  width: 81vw;
   bottom: 16vh;
   right: -200px;
 }
@@ -96,112 +97,114 @@ body {
   left: -1100vw;
 }
 .carousel--midground {
-  width: 1212vw;
-  left: -1vw;
+  width: 1800vw;
+  left: -50vw;
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--midground .slide,
 .carousel--midground .layer {
-  width: 101vw;
+  width: 150vw;
 }
 .carousel--midground .slide-1 .mountain-midground {
   right: -220px;
   position: absolute;
   bottom: 11vh;
+  width: 79vw;
 }
 .carousel--midground .width-minus-100px {
-  width: calc(101vw - 100px);
+  width: calc(150vw - 100px);
 }
 .carousel--midground .width-minus-756px {
-  width: calc(101vw - 756px);
+  width: calc(150vw - 756px);
 }
 .carousel--midground.position-2 {
-  left: -102vw;
+  left: -200vw;
 }
 .carousel--midground.position-3 {
-  left: -203vw;
+  left: -350vw;
 }
 .carousel--midground.position-4 {
-  left: -304vw;
+  left: -500vw;
 }
 .carousel--midground.position-5 {
-  left: -405vw;
+  left: -650vw;
 }
 .carousel--midground.position-6 {
-  left: -506vw;
+  left: -800vw;
 }
 .carousel--midground.position-7 {
-  left: -607vw;
+  left: -950vw;
 }
 .carousel--midground.position-8 {
-  left: -708vw;
+  left: -1100vw;
 }
 .carousel--midground.position-9 {
-  left: -809vw;
+  left: -1250vw;
 }
 .carousel--midground.position-10 {
-  left: -910vw;
+  left: -1400vw;
 }
 .carousel--midground.position-11 {
-  left: -1011vw;
+  left: -1550vw;
 }
 .carousel--midground.position-12 {
-  left: -1112vw;
+  left: -1700vw;
 }
 .carousel--foreground {
-  width: 1206vw;
-  left: -0.5vw;
+  width: 2400vw;
+  left: -100vw;
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--foreground .slide,
 .carousel--foreground .layer {
-  width: 100.5vw;
+  width: 200vw;
 }
 .carousel--foreground .slide-1 .mountain-foreground {
   position: absolute;
   bottom: 5vh;
   right: -180px;
+  width: 77vw;
 }
 .carousel--foreground .width-minus-100px {
-  width: calc(100.5vw - 100px);
+  width: calc(200vw - 100px);
 }
 .carousel--foreground .width-minus-756px {
-  width: calc(100.5vw - 756px);
+  width: calc(200vw - 756px);
 }
 .carousel--foreground.position-2 {
-  left: -101vw;
+  left: -300vw;
 }
 .carousel--foreground.position-3 {
-  left: -201.5vw;
+  left: -500vw;
 }
 .carousel--foreground.position-4 {
-  left: -302vw;
+  left: -700vw;
 }
 .carousel--foreground.position-5 {
-  left: -402.5vw;
+  left: -900vw;
 }
 .carousel--foreground.position-6 {
-  left: -503vw;
+  left: -1100vw;
 }
 .carousel--foreground.position-7 {
-  left: -603.5vw;
+  left: -1300vw;
 }
 .carousel--foreground.position-8 {
-  left: -704vw;
+  left: -1500vw;
 }
 .carousel--foreground.position-9 {
-  left: -804.5vw;
+  left: -1700vw;
 }
 .carousel--foreground.position-10 {
-  left: -905vw;
+  left: -1900vw;
 }
 .carousel--foreground.position-11 {
-  left: -1005.5vw;
+  left: -2100vw;
 }
 .carousel--foreground.position-12 {
-  left: -1106vw;
+  left: -2300vw;
 }
 .repeated-background {
   background-repeat: repeat-x;
