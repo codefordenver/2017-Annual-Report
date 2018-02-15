@@ -64,6 +64,12 @@ body {
   width: 200px;
   height: 40vh;
 }
+.carousel--background .slide-3 .background-event-back {
+  width: 130vw;
+  position: absolute;
+  bottom: 14vh;
+  left: -215px;
+}
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
 }
@@ -126,6 +132,13 @@ body {
   right: 21vw;
   height: 50vh;
 }
+.carousel--midground .slide-3 .midground-event-back {
+  position: absolute;
+  bottom: 10vh;
+  width: 250vw;
+  left: -27vw;
+  height: 55vh;
+}
 .carousel--midground .width-minus-100px {
   width: calc(150vw - 100px);
 }
@@ -187,6 +200,12 @@ body {
   width: 200px;
   height: 60vh;
   right: 15vw;
+}
+.carousel--foreground .slide-3 .foreground-event-back {
+  position: absolute;
+  bottom: 4vh;
+  left: 95vw;
+  height: 35vh;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
