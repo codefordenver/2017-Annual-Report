@@ -70,6 +70,12 @@ body {
   bottom: 14vh;
   left: -215px;
 }
+.carousel--background .slide-5 .background-new-project {
+  position: absolute;
+  bottom: 14vh;
+  width: 32vw;
+  left: 6vw;
+}
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
 }
@@ -139,6 +145,12 @@ body {
   left: -27vw;
   height: 55vh;
 }
+.carousel--midground .slide-5 .midground-new-project {
+  position: absolute;
+  bottom: 11vh;
+  left: 86vw;
+  height: 71vh;
+}
 .carousel--midground .width-minus-100px {
   width: calc(150vw - 100px);
 }
@@ -206,6 +218,12 @@ body {
   bottom: 4vh;
   left: 95vw;
   height: 35vh;
+}
+.carousel--foreground .slide-5 .foreground-new-project {
+  position: absolute;
+  bottom: 7.5vh;
+  height: 66vh;
+  left: 164.5vw;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
