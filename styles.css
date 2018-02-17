@@ -76,6 +76,18 @@ body {
   width: 32vw;
   left: 6vw;
 }
+.carousel--background .slide-6 .background-update-bar-left {
+  position: absolute;
+  bottom: 16vh;
+  height: 70vh;
+  left: 5vw;
+}
+.carousel--background .slide-6 .background-update-bar-right {
+  position: absolute;
+  bottom: 16vh;
+  height: 70vh;
+  left: 71vw;
+}
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
 }
@@ -151,6 +163,12 @@ body {
   left: 86vw;
   height: 71vh;
 }
+.carousel--midground .slide-6 .midground-update-bar {
+  position: absolute;
+  bottom: 11vh;
+  height: 65vh;
+  left: 75vw;
+}
 .carousel--midground .width-minus-100px {
   width: calc(150vw - 100px);
 }
@@ -224,6 +242,13 @@ body {
   bottom: 7.5vh;
   height: 66vh;
   left: 164.5vw;
+}
+.carousel--foreground .slide-6 .foreground-update-bar {
+  position: absolute;
+  bottom: 7vh;
+  height: 60vh;
+  left: 130vw;
+  width: 60vw;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
