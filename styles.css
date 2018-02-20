@@ -90,6 +90,13 @@ body {
   left: 71vw;
   width: 28vw;
 }
+.carousel--background .slide-8 .cityscape {
+  position: absolute;
+  bottom: 15.8vh;
+  left: -10.5vw;
+  width: 70vw;
+  height: 80vh;
+}
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
 }
