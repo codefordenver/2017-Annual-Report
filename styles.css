@@ -80,13 +80,29 @@ body {
   position: absolute;
   bottom: 16vh;
   height: 70vh;
-  left: 5vw;
+  left: 2vw;
+  width: 28vw;
 }
 .carousel--background .slide-6 .background-update-bar-right {
   position: absolute;
   bottom: 16vh;
   height: 70vh;
   left: 71vw;
+  width: 28vw;
+}
+.carousel--background .slide-8 .cityscape {
+  position: absolute;
+  bottom: 15.8vh;
+  left: -10.5vw;
+  width: 70vw;
+  height: 80vh;
+}
+.carousel--background .slide-10 .image-background {
+  position: absolute;
+  bottom: 16vh;
+  height: 70vh;
+  width: 95vw;
+  left: 5vw;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -168,6 +184,7 @@ body {
   bottom: 11vh;
   height: 65vh;
   left: 75vw;
+  width: 28vw;
 }
 .carousel--midground .width-minus-100px {
   width: calc(150vw - 100px);
@@ -247,8 +264,8 @@ body {
   position: absolute;
   bottom: 7vh;
   height: 60vh;
-  left: 130vw;
-  width: 60vw;
+  left: 148vw;
+  width: 28vw;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
