@@ -97,6 +97,13 @@ body {
   width: 70vw;
   height: 80vh;
 }
+.carousel--background .slide-10 .image-background {
+  position: absolute;
+  bottom: 16vh;
+  height: 70vh;
+  width: 95vw;
+  left: 5vw;
+}
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
 }
