@@ -1,3 +1,10 @@
+/* mixins */
+.drop-shadow {
+  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+}
+/* styles */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -44,8 +51,21 @@ body {
 .carousel--background {
   width: 1200vw;
   left: 0vw;
+  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--background::before {
+  background-color: #7D2830;
+  width: 1200vw;
+  height: 16vh;
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 .carousel--background .slide,
 .carousel--background .layer {
@@ -146,8 +166,21 @@ body {
 .carousel--midground {
   width: 1800vw;
   left: -50vw;
+  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--midground::before {
+  background-color: #B23C43;
+  width: 1800vw;
+  height: 12vh;
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 .carousel--midground .slide,
 .carousel--midground .layer {
@@ -228,8 +261,21 @@ body {
 .carousel--foreground {
   width: 2400vw;
   left: -100vw;
+  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
+}
+.carousel--foreground::before {
+  background-color: #E34C54;
+  width: 2400vw;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 .carousel--foreground .slide,
 .carousel--foreground .layer {
