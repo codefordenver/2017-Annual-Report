@@ -396,7 +396,7 @@ body {
   margin-left: 100px;
 }
 .portrait-warning {
-  margin-top: 30%;
+  margin-top: 30vh;
   text-align: center;
 }
 @media only screen and (orientation:portrait){
