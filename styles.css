@@ -388,8 +388,8 @@ body {
 }
 .text-overlay .text-slide-1__intro-text {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 20vh;
+  left: 20vw;
 }
 .text-overlay .text-slide-2 h2 {
   margin-top: 200px;
