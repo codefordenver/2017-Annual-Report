@@ -395,22 +395,24 @@ body {
   margin-top: 200px;
   margin-left: 100px;
 }
+.portrait-warning {
+  margin-top: 30%;
+  text-align: center;
+}
 @media only screen and (orientation:portrait){
-  .container {
-    width: 100vh;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+  .carousel {
+    display: none;
+  }
+  .text-overlay {
+    display: none;
+  }
+  .carousel-controls {
+    display: none;
   }
 }
 @media only screen and (orientation:landscape){
-  .container {
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
+  .portrait-warning {
+    display: none;
+    width: 100%;
   }
 }
