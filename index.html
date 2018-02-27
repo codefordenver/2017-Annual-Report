@@ -177,7 +177,7 @@
 					<!-- TODO -->
 				</div>
 				<div class="text-slide-4 text-slide">
-					<!-- TODO -->
+					<h2>Monthly Speaker Series</h2>
 				</div>
 				<div class="text-slide-5 text-slide">
 					<!-- TODO -->
@@ -257,6 +257,10 @@
 						$(".text-slide-2").show();
 						$(".text-slide-2 h2").slideDown();
 						break;
+					case 4:
+					$(".text-slide-4").show();
+					$(".text-slide-4 h2").slideDown();
+					break;
 				}
 			}
 			function animateTextOut(slide) {
@@ -272,6 +276,9 @@
 							$(".text-slide-2").hide();
 						}, animationTime);
 						break;
+					case 4:
+					$(".text-slide-4").fadeOut();
+					break;
 				}
 			}
 		</script>
