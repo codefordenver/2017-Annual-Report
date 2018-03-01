@@ -62,18 +62,18 @@ body {
 		width: @width * @numberOfSlides;
 		left: 0vw;
 		.drop-shadow;
-		
+
 		/* base background */
 		&::before {
 			background-color: #7D2830;
-			width: @width * @numberOfSlides;
+			width: @width * (@numberOfSlides - 1);
 			height: 16vh;
 			content: " ";
 			position: absolute;
 			left: 0px;
 			bottom: 0px;
 		}
-		
+
 		.slide,.layer {
 			width: @width;
 		}
@@ -92,7 +92,7 @@ body {
 
 			.background-bar-graph {
 				position: absolute;
-				bottom: 16vh;
+				bottom: 15vh;
 				right: 35vw;
 				width: 200px;
 				height: 40vh;
@@ -104,7 +104,7 @@ body {
 			.background-event-back {
 				width: 130vw;
 				position: absolute;
-				bottom: 14vh;
+				bottom: 11.5vh;
 				left: -215px;
 
 			}
@@ -114,7 +114,7 @@ body {
 
 			.background-new-project {
 				position: absolute;
-				bottom: 14vh;
+				bottom: 13.5vh;
 				width: 32vw;
 				left: 6vw;
 				// height: 85vh;
@@ -143,7 +143,7 @@ body {
 
 			.cityscape {
 				position: absolute;
-				bottom: 15.8vh;
+				bottom: 14vh;
 				left: -10.5vw;
 				width: 70vw;
 				height: 80vh;
@@ -163,12 +163,14 @@ body {
 		}
 
 		.slide-12 {
-			background-image: url("./media/images/general/top-gradient.PNG");
+			// background-image: url("./media/images/general/top-gradient.PNG");
 
 			.get-involved-wave {
 				position: absolute;
 				height: 110vh;
 				left: -49vw;
+				bottom: -10vh;
+				z-index: 2;
 			}
 		}
 
@@ -224,11 +226,11 @@ body {
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 		.drop-shadow();
-		
+
 		/* base background */
 		&::before {
 			background-color: #B23C43;
-			width: @width * @numberOfSlides;
+			width: @width * (@numberOfSlides - 1);
 			height: 12vh;
 			content: " ";
 			position: absolute;
@@ -266,7 +268,7 @@ body {
 
 			.midground-event-back {
 				position: absolute;
-				bottom: 10vh;
+				bottom: 9vh;
 				width: 250vw;
 				left: -27vw;
 				height: 55vh;
@@ -277,8 +279,7 @@ body {
 
 			.midground-new-project {
 				position: absolute;
-				bottom: 11vh;
-				// width: 50vw;
+				bottom: 10.5vh;
 				left: 86vw;
 				height: 71vh;
 			}
@@ -347,11 +348,11 @@ body {
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 		.drop-shadow();
-		
+
 		/* base background */
 		&::before {
 			background-color: #E34C54;
-			width: @width * @numberOfSlides;
+			width: @width * (@numberOfSlides - 1);
 			height: 8vh;
 			content: " ";
 			position: absolute;
@@ -398,7 +399,7 @@ body {
 
 			.foreground-new-project {
 				position: absolute;
-				bottom: 7.5vh;
+				bottom: 7vh;
 				height: 66vh;
 				left: 164.5vw
 			}
@@ -414,6 +415,18 @@ body {
 				width: 28vw;
 			}
 		}
+		//
+		// .slide-12 {
+		// 	// background-image: url("./media/images/general/top-gradient.PNG");
+		// 	background: none;
+		//
+		// 	.get-involved-wave {
+		// 		position: absolute;
+		// 		height: 110vh;
+		// 		left: -49vw;
+		// 		// width: 150vw;
+		// 	}
+		// }
 
 		/* generic styles that can be used for elements within a layer */
 
