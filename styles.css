@@ -400,7 +400,7 @@ body {
   margin-left: 100px;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   color: #813e46;
-  font-weight: bolder;
+  font-weight: 700;
 }
 .text-overlay .speakersBoxWrapper {
   display: flex;
