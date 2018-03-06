@@ -394,3 +394,24 @@ body {
   margin-top: 200px;
   margin-left: 100px;
 }
+.portrait-warning {
+  margin-top: 30vh;
+  text-align: center;
+}
+@media only screen and (orientation:portrait){
+  .carousel {
+    display: none;
+  }
+  .text-overlay {
+    display: none;
+  }
+  .carousel-controls {
+    display: none;
+  }
+}
+@media only screen and (orientation:landscape){
+  .portrait-warning {
+    display: none;
+    width: 100%;
+  }
+}
