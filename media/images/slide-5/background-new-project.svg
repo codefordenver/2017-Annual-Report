@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 326.4 413.68">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294.88 34.76" preserveAspectRatio="none">
   <defs>
     <style>
       .cls-1 {
@@ -22,7 +22,13 @@
   <g class="cls-1">
     <g id="Layer_2" data-name="Layer 2">
       <g id="Layer_1-2" data-name="Layer 1">
-        <polygon class="cls-3" points="303.51 401.47 8.63 401.47 8.63 23.04 303.51 57.8 303.51 401.47"/><polygon class="cls-4" points="303.51 401.47 8.63 401.47 8.63 23.04 303.51 57.8 303.51 401.47"/><rect class="cls-5" x="8.72" y="400.16" width="294.96" height="13.01"/></g>
+        <polygon class="cls-3" points="
+		  
+		  0 34.76
+		  0 0 
+		  294.88 34.76
+		  "/>
+		</g>
     </g>
   </g>
 </svg>
