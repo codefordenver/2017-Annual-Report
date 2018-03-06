@@ -3,7 +3,7 @@
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 
 	<title>Code For Denver 2017 Annual Report</title>
 	<link href="styles.css" rel="stylesheet" />
@@ -11,6 +11,9 @@
 
 </head>
 <body>
+	<div class="portrait-warning">
+		<p>Please view this report in landscape orientation. If necessary, resize your browser window or rotate your device.</p>
+	</div>
 	<div class="container">
 
 		<!-- each background slide has a width of 100vw -->
@@ -27,6 +30,12 @@
 			<div class="slide-4 slide">
 				<div class="layer">
 					<div style="width:100%;text-align:center">slide 4 background</div>
+
+					<div class="speakerClouds">
+						<img src="media/images/general/cloud-dark-right.svg" alt="Dark Cloud" width="200%">
+<!-- 						<img src="media/images/general/cloud-light-left.svg" alt="Light Cloud">
+ -->					</div>
+
 				</div>
 			</div>
 			<div class="slide-5 slide">
@@ -287,11 +296,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="speakerClouds">
-					<img src="media/images/general/cloud-dark-right.svg" alt="Dark Cloud">
-					<img src="media/images/general/cloud-light-left.svg" alt="Light Cloud">
-				</div>
 			</div>
 
 			<div class="text-slide-5 text-slide">
@@ -320,7 +324,7 @@
 			</div>
 		</div>
 
-		<div style="position:absolute;top:0px;width:100vw;height:100vh;">
+		<div style="position:absolute;top:0px;width:100vw;height:100vh;" class="carousel-controls">
 			<a style="position:absolute;top:0px;left:0px;color:black" href="#" class="animate-button--previous">Previous</a>
 			<a style="position:absolute;top:0px;right:0px;color:black" href="#" class="animate-button--next">Next</a>
 		</div>

@@ -1,3 +1,7 @@
+/* TODO: Sean fix this */
+.portrait-warning {
+  display: none;
+}
 /* mixins */
 .drop-shadow {
   -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
@@ -60,7 +64,7 @@ body {
 }
 .carousel--background::before {
   background-color: #7D2830;
-  width: 1200vw;
+  width: 1100vw;
   height: 16vh;
   content: " ";
   position: absolute;
@@ -79,7 +83,7 @@ body {
 }
 .carousel--background .slide-2 .background-bar-graph {
   position: absolute;
-  bottom: 16vh;
+  bottom: 15vh;
   right: 35vw;
   width: 200px;
   height: 40vh;
@@ -87,12 +91,17 @@ body {
 .carousel--background .slide-3 .background-event-back {
   width: 130vw;
   position: absolute;
-  bottom: 14vh;
+  bottom: 11.5vh;
   left: -215px;
+}
+.carousel--background .slide-4 .speakerClouds {
+  position: absolute;
+  top: 100px;
+  left: 550px;
 }
 .carousel--background .slide-5 .background-new-project {
   position: absolute;
-  bottom: 14vh;
+  bottom: 13.5vh;
   width: 32vw;
   left: 6vw;
 }
@@ -112,7 +121,7 @@ body {
 }
 .carousel--background .slide-8 .cityscape {
   position: absolute;
-  bottom: 15.8vh;
+  bottom: 14vh;
   left: -10.5vw;
   width: 70vw;
   height: 80vh;
@@ -124,13 +133,12 @@ body {
   width: 95vw;
   left: 5vw;
 }
-.carousel--background .slide-12 {
-  background-image: url("media/images/general/top-gradient.PNG");
-}
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
   height: 110vh;
   left: -49vw;
+  bottom: -10vh;
+  z-index: 2;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -183,7 +191,7 @@ body {
 }
 .carousel--midground::before {
   background-color: #B23C43;
-  width: 1800vw;
+  width: 1650vw;
   height: 12vh;
   content: " ";
   position: absolute;
@@ -209,14 +217,14 @@ body {
 }
 .carousel--midground .slide-3 .midground-event-back {
   position: absolute;
-  bottom: 10vh;
+  bottom: 9vh;
   width: 250vw;
   left: -27vw;
   height: 55vh;
 }
 .carousel--midground .slide-5 .midground-new-project {
   position: absolute;
-  bottom: 11vh;
+  bottom: 10.5vh;
   left: 86vw;
   height: 71vh;
 }
@@ -278,7 +286,7 @@ body {
 }
 .carousel--foreground::before {
   background-color: #E34C54;
-  width: 2400vw;
+  width: 2200vw;
   height: 8vh;
   content: " ";
   position: absolute;
@@ -310,7 +318,7 @@ body {
 }
 .carousel--foreground .slide-5 .foreground-new-project {
   position: absolute;
-  bottom: 7.5vh;
+  bottom: 7vh;
   height: 66vh;
   left: 164.5vw;
 }
