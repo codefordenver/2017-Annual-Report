@@ -306,7 +306,24 @@
 				<!-- TODO -->
 			</div>
 			<div class="text-slide-6 text-slide">
-				<!-- TODO -->
+				<h2>Project Updates</h2>
+
+				<div class="project1box">
+					<img src="http://via.placeholder.com/260x150"> 
+					<p>Circular Economy was rebranded to Denver Re:Imagine and developed from early concept and close to minimum viable product.</p>
+				</div>
+				<div class="project2box">
+					<img src="http://via.placeholder.com/260x150">
+					<p>EncoreLink was developed to minimum viable product and incorporated as a nonprofit.</p>
+				</div>
+				<div class="project3box">
+					<img src="http://via.placeholder.com/260x150">
+					<p>Researched the most successful projects from other CfA Brigades (25 responded!)</p>
+				</div>
+				<div class="project4box">
+					<img src="http://via.placeholder.com/260x150">
+					<p>Owlet did a major refactor from microservices to monorepo service and got a new partner organization: Girls In Stem.</p>
+				</div>
 			</div>
 			<div class="text-slide-7 text-slide">
 				<!-- TODO -->
@@ -384,6 +401,10 @@
 					$(".text-slide-4").show();
 					$(".text-slide-4 h2").slideDown();
 					break;
+					case 6:
+					$(".text-slide-6").show();
+					$(".text-slide-6 h2").slideDown();
+					break;					
 				}
 			}
 			function animateTextOut(slide) {
@@ -402,7 +423,9 @@
 					case 4:
 					$(".text-slide-4").fadeOut();
 					break;
-				}
+					case 6:
+					$(".text-slide-6").fadeOut();
+					break;				}
 			}
 		</script>
 	</body>
