@@ -396,6 +396,29 @@ body {
   margin-left: 100px;
 }
 .text-overlay .text-slide-4 h2 {
-  margin-top: 200px;
+  margin-top: 50px;
   margin-left: 100px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #813e46;
+  font-weight: bolder;
+}
+.text-overlay .speakersBoxWrapper {
+  display: flex;
+  justify-content: center;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+.text-overlay .speakersBox {
+  width: 200px;
+  height: 150px;
+  background-color: #4dbce6;
+  margin: 10px 20px 10px 20px;
+}
+.text-overlay .speakerBoxHeader {
+  background-color: #2c687e;
+  text-align: center;
+  color: #dceff7;
+  padding: 5px;
+}
+.text-overlay .speakerBoxText {
+  padding: 10px;
 }
