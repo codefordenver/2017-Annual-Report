@@ -1,9 +1,4 @@
 /* mixins */
-.drop-shadow {
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-}
 /* styles */
 body {
   margin: 0;
@@ -51,9 +46,6 @@ body {
 .carousel--background {
   width: 1200vw;
   left: 0vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -76,6 +68,14 @@ body {
   width: 81vw;
   bottom: 16vh;
   right: -160px;
+}
+.carousel--background .slide-1 .light-cloud-left {
+  height: 15vh;
+  width: 15vw;
+}
+.carousel--background .slide-1 .dark-cloud-left {
+  height: 15vh;
+  width: 15vw;
 }
 .carousel--background .slide-2 .background-bar-graph {
   position: absolute;
@@ -124,12 +124,29 @@ body {
   width: 95vw;
   left: 5vw;
 }
+.carousel--background .slide-11::before {
+  background-color: #B23C43;
+  width: 100%;
+  height: 12vh;
+  content: " ";
+  position: absolute;
+  left: -500px;
+  bottom: 0px;
+}
+.carousel--background .slide-11::after {
+  background-color: #E34C54;
+  width: 200%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: -500px;
+  bottom: 0px;
+}
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
   height: 110vh;
-  left: -49vw;
-  bottom: -10vh;
-  z-index: 2;
+  left: -52vw;
+  bottom: 0vh;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -173,16 +190,13 @@ body {
 .carousel--midground {
   width: 1800vw;
   left: -50vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--midground::before {
   background-color: #B23C43;
-  width: 1650vw;
+  width: 1500vw;
   height: 12vh;
   content: " ";
   position: absolute;
@@ -268,16 +282,13 @@ body {
 .carousel--foreground {
   width: 2400vw;
   left: -100vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--foreground::before {
   background-color: #E34C54;
-  width: 2200vw;
+  width: 2000vw;
   height: 8vh;
   content: " ";
   position: absolute;
@@ -319,6 +330,15 @@ body {
   height: 60vh;
   left: 148vw;
   width: 28vw;
+}
+.carousel--foreground .slide-10::before {
+  background-color: #E34C54;
+  width: 125%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: -1000px;
+  bottom: 0px;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
