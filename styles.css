@@ -55,9 +55,6 @@ body {
 .carousel--background {
   width: 1200vw;
   left: 0vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -93,6 +90,16 @@ body {
   position: absolute;
   bottom: 11.5vh;
   left: -215px;
+}
+.carousel--background .slide-3 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  border: solid black;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 80px;
 }
 .carousel--background .slide-4 .speakerClouds {
   position: absolute;
@@ -142,12 +149,29 @@ body {
   width: 95vw;
   left: 5vw;
 }
+.carousel--background .slide-11::before {
+  background-color: #B23C43;
+  width: 100%;
+  height: 12vh;
+  content: " ";
+  position: absolute;
+  left: -500px;
+  bottom: 0px;
+}
+.carousel--background .slide-11::after {
+  background-color: #E34C54;
+  width: 200%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
   height: 110vh;
-  left: -49vw;
-  bottom: -10vh;
-  z-index: 2;
+  left: -53.5vw;
+  bottom: 0vh;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -191,16 +215,13 @@ body {
 .carousel--midground {
   width: 1800vw;
   left: -50vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--midground::before {
   background-color: #B23C43;
-  width: 1650vw;
+  width: 1500vw;
   height: 12vh;
   content: " ";
   position: absolute;
@@ -286,16 +307,13 @@ body {
 .carousel--foreground {
   width: 2400vw;
   left: -100vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--foreground::before {
   background-color: #E34C54;
-  width: 2200vw;
+  width: 2000vw;
   height: 8vh;
   content: " ";
   position: absolute;
@@ -327,9 +345,9 @@ body {
 }
 .carousel--foreground .slide-5 .foreground-new-project {
   position: absolute;
-  bottom: 7vh;
-  height: 66vh;
-  left: 164.5vw;
+  bottom: 6vh;
+  width: 30vw;
+  left: 165vw;
 }
 .carousel--foreground .slide-6 .foreground-update-bar {
   position: absolute;
@@ -337,6 +355,15 @@ body {
   height: 60vh;
   left: 148vw;
   width: 28vw;
+}
+.carousel--foreground .slide-10::before {
+  background-color: #E34C54;
+  width: 125%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: -1000px;
+  bottom: 0px;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
@@ -453,4 +480,25 @@ body {
 }
 .text-overlay .text-slide-5 .project-1 img {
   width: 40px;
+}
+.portrait-warning {
+  margin-top: 30vh;
+  text-align: center;
+}
+@media only screen and (orientation: portrait) {
+  .carousel {
+    display: none;
+  }
+  .text-overlay {
+    display: none;
+  }
+  .carousel-controls {
+    display: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .portrait-warning {
+    display: none;
+    width: 100%;
+  }
 }
