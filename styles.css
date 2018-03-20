@@ -164,7 +164,7 @@ body {
   height: 8vh;
   content: " ";
   position: absolute;
-  right: -500px;
+  right: 0px;
   bottom: 0px;
 }
 .carousel--background .slide-12 .get-involved-wave {
