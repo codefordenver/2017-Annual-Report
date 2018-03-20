@@ -91,6 +91,16 @@ body {
   bottom: 11.5vh;
   left: -215px;
 }
+.carousel--background .slide-3 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  border: solid black;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 80px;
+}
 .carousel--background .slide-4 .speakerClouds {
   position: absolute;
   top: 100px;
