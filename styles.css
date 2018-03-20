@@ -87,6 +87,14 @@ body {
   bottom: 11.5vh;
   left: -215px;
 }
+.carousel--background .slide-3 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  border: solid black;
+  width: 100%;
+}
 .carousel--background .slide-5 .background-new-project {
   position: absolute;
   bottom: 13.5vh;
