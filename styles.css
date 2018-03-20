@@ -81,6 +81,14 @@ body {
   width: 200px;
   height: 40vh;
 }
+.carousel--background .slide-2 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
 .carousel--background .slide-3 .background-event-back {
   width: 130vw;
   position: absolute;
@@ -91,15 +99,53 @@ body {
   color: #7D2A32;
   font-size: 40px;
   font-weight: bold;
-  display: flex;
-  border: solid black;
   width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+.carousel--background .slide-3 .slide-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.carousel--background .slide-3 .text-title {
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 20vw;
+  margin-top: 12vh;
+}
+.carousel--background .slide-3 .secondary-text {
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  position: relative;
+  margin-top: 12vh;
+  margin-right: 10vw;
+  width: 30vw;
+}
+.carousel--background .slide-4 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
 }
 .carousel--background .slide-5 .background-new-project {
   position: absolute;
   bottom: 13.5vh;
   width: 32vw;
   left: 6vw;
+}
+.carousel--background .slide-5 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
 }
 .carousel--background .slide-6 .background-update-bar-left {
   position: absolute;
@@ -115,6 +161,22 @@ body {
   left: 71vw;
   width: 28vw;
 }
+.carousel--background .slide-6 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+.carousel--background .slide-7 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
 .carousel--background .slide-8 .cityscape {
   position: absolute;
   bottom: 14vh;
@@ -122,12 +184,36 @@ body {
   width: 70vw;
   height: 80vh;
 }
+.carousel--background .slide-8 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+.carousel--background .slide-9 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
 .carousel--background .slide-10 .image-background {
   position: absolute;
   bottom: 16vh;
   height: 70vh;
   width: 95vw;
   left: 5vw;
+}
+.carousel--background .slide-10 .slide-title {
+  text-align: center;
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
 }
 .carousel--background .slide-11::before {
   background-color: #B23C43;
@@ -146,6 +232,14 @@ body {
   position: absolute;
   right: -500px;
   bottom: 0px;
+}
+.carousel--background .slide-11 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
 }
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
@@ -232,9 +326,35 @@ body {
   left: -27vw;
   height: 55vh;
 }
+.carousel--midground .slide-3 .slide-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 40vh;
+  right: -50vw;
+  width: 100vw;
+}
+.carousel--midground .slide-3 .text-title {
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 20vw;
+  margin-top: 12vh;
+}
+.carousel--midground .slide-3 .secondary-text {
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  position: relative;
+  margin-top: 12vh;
+  margin-right: 10vw;
+  width: 30vw;
+}
 .carousel--midground .slide-5 .midground-new-project {
   position: absolute;
-  bottom: 9vh;
+  bottom: 10.5vh;
   left: 86vw;
   height: 71vh;
 }
@@ -323,9 +443,35 @@ body {
   left: 95vw;
   height: 35vh;
 }
+.carousel--foreground .slide-3 .slide-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 65vh;
+  right: -105vw;
+  width: 100vw;
+}
+.carousel--foreground .slide-3 .text-title {
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 20vw;
+  margin-top: 12vh;
+}
+.carousel--foreground .slide-3 .secondary-text {
+  color: white;
+  font-size: 15px;
+  z-index: 2;
+  position: relative;
+  margin-top: 12vh;
+  margin-right: 10vw;
+  width: 30vw;
+}
 .carousel--foreground .slide-5 .foreground-new-project {
   position: absolute;
-  bottom: 6vh;
+  bottom: 7vh;
   height: 66vh;
   left: 165vw;
 }
