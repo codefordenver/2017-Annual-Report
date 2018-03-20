@@ -1,4 +1,9 @@
 /* mixins */
+.drop-shadow {
+  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+}
 /* styles */
 body {
   margin: 0;
@@ -69,14 +74,6 @@ body {
   bottom: 16vh;
   right: -160px;
 }
-.carousel--background .slide-1 .light-cloud-left {
-  height: 15vh;
-  width: 15vw;
-}
-.carousel--background .slide-1 .dark-cloud-left {
-  height: 15vh;
-  width: 15vw;
-}
 .carousel--background .slide-2 .background-bar-graph {
   position: absolute;
   bottom: 15vh;
@@ -145,7 +142,7 @@ body {
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
   height: 110vh;
-  left: -52vw;
+  left: -53.5vw;
   bottom: 0vh;
 }
 .carousel--background .width-minus-100px {

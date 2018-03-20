@@ -1,10 +1,10 @@
 /* mixins */
 
-// .drop-shadow {
-// 	-webkit-filter: drop-shadow(4px -4px 4px rgba(0,0,0,0.5));
-// 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-// 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-// }
+.drop-shadow {
+	-webkit-filter: drop-shadow(4px -4px 4px rgba(0,0,0,0.5));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
+}
 
 /* styles */
 
@@ -188,7 +188,7 @@ body {
 			.get-involved-wave {
 				position: absolute;
 				height: 110vh;
-				left: -52vw;
+				left: -53.5vw;
 				bottom: 0vh;
 			}
 		}
@@ -244,8 +244,8 @@ body {
 		@width: 150vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
-		// .drop-shadow();
-
+		// .drop-shadow;
+//
 		/* base background */
 		&::before {
 			background-color: #B23C43;
