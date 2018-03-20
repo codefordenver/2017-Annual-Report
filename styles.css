@@ -445,6 +445,7 @@ body {
   text-align: center;
   color: #dceff7;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding: 10px;
 }
 .text-overlay .text-slide-6 .project2box {
   position: absolute;
@@ -472,4 +473,5 @@ body {
   text-align: center;
   color: #dceff7;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
+  padding: 10px;
 }
