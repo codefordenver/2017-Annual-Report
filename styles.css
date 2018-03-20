@@ -106,22 +106,27 @@ body {
 .carousel--background .slide-3 .slide-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 10vh;
+}
+.carousel--background .slide-3 .background-image {
+  height: 20vh;
+  width: 12vw;
+  position: relative;
+  z-index: 2;
+  margin-left: 2vw;
 }
 .carousel--background .slide-3 .text-title {
   font-size: 30px;
   position: relative;
   z-index: 2;
   color: white;
-  margin-left: 20vw;
-  margin-top: 12vh;
 }
 .carousel--background .slide-3 .secondary-text {
   color: white;
   font-size: 20px;
   z-index: 2;
   position: relative;
-  margin-top: 12vh;
   margin-right: 10vw;
   width: 30vw;
 }
