@@ -15,7 +15,7 @@
 
 body {
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
 	background-color: #90D5EF;
 	background-image: url("./media/images/general/top-gradient.PNG");
 	background-attachment: fixed;
@@ -66,7 +66,7 @@ body {
 		@width: 100vw;
 		width: @width * @numberOfSlides;
 		left: 0vw;
-		.drop-shadow;
+		// .drop-shadow;
 
 		/* base background */
 		&::before {
@@ -111,8 +111,18 @@ body {
 				position: absolute;
 				bottom: 11.5vh;
 				left: -215px;
-
 			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				display: flex;
+				border: solid black;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 80px;
+			}
+
 		}
 
 		.slide-4 {
@@ -127,10 +137,18 @@ body {
 
 			.background-new-project {
 				position: absolute;
-				bottom: 13.5vh;
+				top: 10vh;
 				width: 32vw;
 				left: 6vw;
-				// height: 85vh;
+				height: 9vh;
+			}
+			.background-box {
+				background-color: #7d2931;
+				width: 32vw;
+				left: 6vw;
+				position: absolute;
+				height: 100vh;
+				top: 19vh;
 			}
 		}
 
@@ -175,15 +193,34 @@ body {
 			}
 		}
 
+		.slide-11 {
+			&::before {
+				background-color: #B23C43;
+				width: 100%;
+				height: 12vh;
+				content: " ";
+				position: absolute;
+				left: -500px;
+				bottom: 0px;
+			}
+			&::after {
+				background-color: #E34C54;
+				width: 200%;
+				height: 8vh;
+				content: " ";
+				position: absolute;
+				right: 0px;
+				bottom: 0px;
+			}
+		}
+
 		.slide-12 {
-			// background-image: url("./media/images/general/top-gradient.PNG");
 
 			.get-involved-wave {
 				position: absolute;
 				height: 110vh;
-				left: -49vw;
-				bottom: -10vh;
-				z-index: 2;
+				left: -53.5vw;
+				bottom: 0vh;
 			}
 		}
 
@@ -238,12 +275,12 @@ body {
 		@width: 150vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
-		.drop-shadow();
-
+		// .drop-shadow;
+//
 		/* base background */
 		&::before {
 			background-color: #B23C43;
-			width: @width * (@numberOfSlides - 1);
+			width: @width * (@numberOfSlides - 2);
 			height: 12vh;
 			content: " ";
 			position: absolute;
@@ -292,9 +329,9 @@ body {
 
 			.midground-new-project {
 				position: absolute;
-				bottom: 10.5vh;
+				bottom: 8.5vh;
 				left: 86vw;
-				height: 71vh;
+				width: 32vw;
 			}
 		}
 
@@ -360,12 +397,12 @@ body {
 		@width: 200vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
-		.drop-shadow();
+		// .drop-shadow();
 
 		/* base background */
 		&::before {
 			background-color: #E34C54;
-			width: @width * (@numberOfSlides - 1);
+			width: @width * (@numberOfSlides - 2);
 			height: 8vh;
 			content: " ";
 			position: absolute;
@@ -412,9 +449,9 @@ body {
 
 			.foreground-new-project {
 				position: absolute;
-				bottom: 7vh;
-				height: 66vh;
-				left: 164.5vw
+				bottom: 6vh;
+				width: 30vw;
+				left: 165vw
 			}
 		}
 
@@ -428,18 +465,19 @@ body {
 				width: 28vw;
 			}
 		}
-		//
-		// .slide-12 {
-		// 	// background-image: url("./media/images/general/top-gradient.PNG");
-		// 	background: none;
-		//
-		// 	.get-involved-wave {
-		// 		position: absolute;
-		// 		height: 110vh;
-		// 		left: -49vw;
-		// 		// width: 150vw;
-		// 	}
-		// }
+
+		.slide-10 {
+
+			&::before {
+				background-color: #E34C54;
+				width: 125%;
+				height: 8vh;
+				content: " ";
+				position: absolute;
+				right: -1000px;
+				bottom: 0px;
+			}
+		}
 
 		/* generic styles that can be used for elements within a layer */
 
@@ -534,15 +572,12 @@ body {
 		h2 {
 			margin-top: 50px;
 			margin-left: 100px;
-			font-family: 'Encode Sans Semi Expanded', sans-serif;
 			color: #813e46;
 			font-weight: 700;
 		}
-
 		.speakersBoxWrapper {
 			display: flex;
 			justify-content: center;
-			font-family: 'Encode Sans Semi Expanded', sans-serif;
 		}
 
 		.speakersBox {
@@ -551,18 +586,42 @@ body {
 			background-color: #4dbce6;
 			margin: 10px 20px 10px 20px;
 		}
-
 		.speakerBoxHeader {
 			background-color: #2c687e;
 			text-align: center;
 			color: #dceff7;
 			padding: 5px;
 		}
-
 		.speakerBoxText {
 			padding: 10px;
 		}
 	}
+	
+	.text-slide-5 {
+		h2 {
+			margin-top: 3vh;
+			margin-left: 6vw;
+			color: #813e46;
+			font-weight: 700;
+		}
+		
+		.project-1 {
+			position: absolute;
+			top: 19vh;
+			width: 32vw;
+			left: 6vw;
+			box-sizing: border-box;
+			padding: 15px;
+			
+			img {
+				width: 40px;
+			}
+			p {
+
+			}
+		}
+	}
+
 
 	.text-slide-6 {
 		h2 {
@@ -612,5 +671,27 @@ body {
 			color: #dceff7;
 			font-family: 'Encode Sans Semi Expanded', sans-serif;
 		}
+	}
+}
+
+.portrait-warning {
+	margin-top: 30vh;
+	text-align: center;
+}
+@media only screen and (orientation:portrait){
+	.carousel {
+		display: none;
+	}
+	.text-overlay {
+		display: none;
+	}
+	.carousel-controls {
+		display: none;
+	}
+}
+@media only screen and (orientation:landscape){
+	.portrait-warning {
+		display: none;
+		width: 100%;
 	}
 }

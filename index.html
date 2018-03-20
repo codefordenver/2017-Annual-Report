@@ -44,6 +44,7 @@
 			</div>
 			<div class="slide-5 slide">
 				<img src="media/images/slide-5/background-new-project.svg" class="background-new-project"></img>
+				<div class="background-box"></div>
 			</div>
 			<div class="slide-6 slide">
 				<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-left"></img>
@@ -68,7 +69,7 @@
 			<div class="slide-11 slide">
 			</div>
 			<div class="slide-12 slide">
-				<img src="media/images/slide-11/get-involved-wave.svg" class="get-involved-wave"></img>
+				<img src="media/images/slide-11/last-page-swirl.png" class="get-involved-wave"></img>
 			</div>
 		</div>
 
@@ -120,9 +121,7 @@
 				</div>
 			</div>
 			<div class="slide-12 slide">
-				<div class="layer">
-					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 12 midground</div>
-				</div>
+				
 			</div>
 		</div>
 
@@ -303,7 +302,13 @@
 			</div>
 
 			<div class="text-slide-5 text-slide">
-				<!-- TODO -->
+				<h2>New Projects and Exploration</h2>
+				<div class="project-1">
+					<img src="media/images/slide-5/get-the-right-image-not-this-one.jpg" />
+					<p>
+						The new members project was launched to help streamline our members' engagement, reduce onboarding time and facilitate member communication.
+					</p>
+				</div>
 			</div>
 			<div class="text-slide-6 text-slide">
 				<h2>Project Updates</h2>
@@ -390,42 +395,50 @@
 			function animateTextIn(slide) {
 				switch (slide) {
 					case 1:
-					$(".text-slide-1__cfd-logo").css("bottom", "");
-					$(".text-slide-1__intro-text").fadeIn();
-					break;
+						$(".text-slide-1__cfd-logo").css("bottom", "");
+						$(".text-slide-1__intro-text").fadeIn();
+						break;
 					case 2:
-					$(".text-slide-2").show();
-					$(".text-slide-2 h2").slideDown();
-					break;
+						$(".text-slide-2").show();
+						$(".text-slide-2 h2").slideDown();
+						break;
 					case 4:
-					$(".text-slide-4").show();
-					$(".text-slide-4 h2").slideDown();
-					break;
+						$(".text-slide-4").show();
+						$(".text-slide-4 h2").slideDown();
+						break;
+					case 5:
+						$(".text-slide-5").show();
+						$(".text-slide-5 h2").slideDown();
+						break;
 					case 6:
-					$(".text-slide-6").show();
-					$(".text-slide-6 h2").slideDown();
-					break;					
+						$(".text-slide-6").show();
+						$(".text-slide-6 h2").slideDown();
+						break;					
 				}
 			}
 			function animateTextOut(slide) {
 				switch (slide) {
 					case 1:
-					$(".text-slide-1__cfd-logo").css("bottom", "-100px");
-					$(".text-slide-1__intro-text").fadeOut();
-					break;
+						$(".text-slide-1__cfd-logo").css("bottom", "-100px");
+						$(".text-slide-1__intro-text").fadeOut();
+						break;
 					case 2:
-					var animationTime = 800;
-					$(".text-slide-2 h2").slideUp(animationTime);
-					setTimeout(function() {
-						$(".text-slide-2").hide();
-					}, animationTime);
-					break;
+						var animationTime = 800;
+						$(".text-slide-2 h2").slideUp(animationTime);
+						setTimeout(function() {
+							$(".text-slide-2").hide();
+						}, animationTime);
+						break;
 					case 4:
-					$(".text-slide-4").fadeOut();
-					break;
+						$(".text-slide-4").fadeOut();
+						break;
+					case 5:
+						$(".text-slide-5").fadeOut();
+						break;
 					case 6:
-					$(".text-slide-6").fadeOut();
-					break;				}
+						$(".text-slide-6").fadeOut();
+						break;				
+				}
 			}
 		</script>
 	</body>
