@@ -11,7 +11,7 @@
 /* styles */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
   background-color: #90D5EF;
   background-image: url("media/images/general/top-gradient.PNG");
   background-attachment: fixed;
@@ -55,9 +55,6 @@ body {
 .carousel--background {
   width: 1200vw;
   left: 0vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
@@ -94,6 +91,16 @@ body {
   bottom: 11.5vh;
   left: -215px;
 }
+.carousel--background .slide-3 .slide-title {
+  color: #7D2A32;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  border: solid black;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 80px;
+}
 .carousel--background .slide-4 .speakerClouds {
   position: absolute;
   top: 100px;
@@ -101,9 +108,18 @@ body {
 }
 .carousel--background .slide-5 .background-new-project {
   position: absolute;
-  bottom: 13.5vh;
+  top: 10vh;
   width: 32vw;
   left: 6vw;
+  height: 9vh;
+}
+.carousel--background .slide-5 .background-box {
+  background-color: #7d2931;
+  width: 32vw;
+  left: 6vw;
+  position: absolute;
+  height: 100vh;
+  top: 19vh;
 }
 .carousel--background .slide-6 .background-update-bar-left {
   position: absolute;
@@ -133,12 +149,29 @@ body {
   width: 95vw;
   left: 5vw;
 }
+.carousel--background .slide-11::before {
+  background-color: #B23C43;
+  width: 100%;
+  height: 12vh;
+  content: " ";
+  position: absolute;
+  left: -500px;
+  bottom: 0px;
+}
+.carousel--background .slide-11::after {
+  background-color: #E34C54;
+  width: 200%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
 .carousel--background .slide-12 .get-involved-wave {
   position: absolute;
   height: 110vh;
-  left: -49vw;
-  bottom: -10vh;
-  z-index: 2;
+  left: -53.5vw;
+  bottom: 0vh;
 }
 .carousel--background .width-minus-100px {
   width: calc(100vw - 100px);
@@ -182,16 +215,13 @@ body {
 .carousel--midground {
   width: 1800vw;
   left: -50vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--midground::before {
   background-color: #B23C43;
-  width: 1650vw;
+  width: 1500vw;
   height: 12vh;
   content: " ";
   position: absolute;
@@ -224,9 +254,9 @@ body {
 }
 .carousel--midground .slide-5 .midground-new-project {
   position: absolute;
-  bottom: 10.5vh;
+  bottom: 8.5vh;
   left: 86vw;
-  height: 71vh;
+  width: 32vw;
 }
 .carousel--midground .slide-6 .midground-update-bar {
   position: absolute;
@@ -277,16 +307,13 @@ body {
 .carousel--foreground {
   width: 2400vw;
   left: -100vw;
-  -webkit-filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
   /* base background */
   /* generic styles that can be used for elements within a layer */
   /* Positioning for each slide -- add new slides to this section */
 }
 .carousel--foreground::before {
   background-color: #E34C54;
-  width: 2200vw;
+  width: 2000vw;
   height: 8vh;
   content: " ";
   position: absolute;
@@ -318,9 +345,9 @@ body {
 }
 .carousel--foreground .slide-5 .foreground-new-project {
   position: absolute;
-  bottom: 7vh;
-  height: 66vh;
-  left: 164.5vw;
+  bottom: 6vh;
+  width: 30vw;
+  left: 165vw;
 }
 .carousel--foreground .slide-6 .foreground-update-bar {
   position: absolute;
@@ -328,6 +355,15 @@ body {
   height: 60vh;
   left: 148vw;
   width: 28vw;
+}
+.carousel--foreground .slide-10::before {
+  background-color: #E34C54;
+  width: 125%;
+  height: 8vh;
+  content: " ";
+  position: absolute;
+  right: -1000px;
+  bottom: 0px;
 }
 .carousel--foreground .width-minus-100px {
   width: calc(200vw - 100px);
@@ -396,8 +432,8 @@ body {
 }
 .text-overlay .text-slide-1__intro-text {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 20vh;
+  left: 20vw;
 }
 .text-overlay .text-slide-2 h2 {
   margin-top: 200px;
@@ -406,14 +442,12 @@ body {
 .text-overlay .text-slide-4 h2 {
   margin-top: 50px;
   margin-left: 100px;
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
   color: #813e46;
   font-weight: 700;
 }
 .text-overlay .text-slide-4 .speakersBoxWrapper {
   display: flex;
   justify-content: center;
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 .text-overlay .text-slide-4 .speakersBox {
   width: 200px;
@@ -429,6 +463,23 @@ body {
 }
 .text-overlay .text-slide-4 .speakerBoxText {
   padding: 10px;
+}
+.text-overlay .text-slide-5 h2 {
+  margin-top: 3vh;
+  margin-left: 6vw;
+  color: #813e46;
+  font-weight: 700;
+}
+.text-overlay .text-slide-5 .project-1 {
+  position: absolute;
+  top: 19vh;
+  width: 32vw;
+  left: 6vw;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.text-overlay .text-slide-5 .project-1 img {
+  width: 40px;
 }
 .text-overlay .text-slide-6 h2 {
   margin-top: 50px;
@@ -474,4 +525,25 @@ body {
   color: #dceff7;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   padding: 10px;
+}
+.portrait-warning {
+  margin-top: 30vh;
+  text-align: center;
+}
+@media only screen and (orientation: portrait) {
+  .carousel {
+    display: none;
+  }
+  .text-overlay {
+    display: none;
+  }
+  .carousel-controls {
+    display: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .portrait-warning {
+    display: none;
+    width: 100%;
+  }
 }
