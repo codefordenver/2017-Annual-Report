@@ -164,6 +164,54 @@ body {
 				margin-top: 5vh;
 				margin-left: 10vw;
 			}
+			.background-cloud-small {
+				height: 40vh;
+				width: 60vw;
+				float: right;
+			}
+			.background-cloud-large {
+				height: 70vh;
+				width: 90vw;
+				margin-left: 10vw;
+				position: relative;
+				top: -40vh;
+			}
+
+			.monthly-speaker-grid-container {
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin-left: 15vw;
+				margin-right: 10vw;
+
+				.monthly-speaker-piece {
+					background-color: #4DBCE6;
+					height: 20vh;
+					width: 15vw;
+					margin: 20px;
+				}
+
+				.monthly-speaker-header {
+					background-color: #2C687E;
+					height: 20px;
+					color: white;
+					padding: 5px 20px;
+				}
+
+				.monthly-speaker-name {
+					padding: 10px 0 8px 20px;
+
+				}
+
+				.monthly-speaker-text {
+					color: #7D2D35;
+					padding: 8px 0 0px 20px;
+					// margin-top: 5px;
+					font-size: 25px;
+					font-weight: 400;
+				}
+			}
 		}
 
 		.slide-5 {
@@ -414,11 +462,20 @@ body {
 			.slide-text-container {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-around;
+				justify-content: space-between;
+				align-items: flex-start;
 				position: relative;
 				top: 40vh;
 				right: -50vw;
 				width: 100vw;
+			}
+			.background-image {
+				height: 20vh;
+				width: 12vw;
+				position: relative;
+				z-index: 2;
+				margin-left: 5vw;
+				margin-top: 4vh;
 			}
 
 			.text-title {
@@ -426,7 +483,6 @@ body {
 				position: relative;
 				z-index: 2;
 				color: white;
-				margin-left: 20vw;
 				margin-top: 12vh;
 			}
 
@@ -563,10 +619,19 @@ body {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around;
+				align-items: flex-start;
 				position: relative;
 				top: 65vh;
 				right: -105vw;
 				width: 100vw;
+			}
+			.background-image {
+				height: 20vh;
+				width: 12vw;
+				position: relative;
+				z-index: 2;
+				margin-left: 5vw;
+				margin-top: 4vh;
 			}
 
 			.text-title {
@@ -574,8 +639,8 @@ body {
 				position: relative;
 				z-index: 2;
 				color: white;
-				margin-left: 20vw;
-				margin-top: 12vh;
+				margin-left: 8vw;
+				margin-top: 10vh;
 			}
 
 			.secondary-text {
@@ -583,7 +648,7 @@ body {
 				font-size: 15px;
 				z-index: 2;
 				position: relative;
-				margin-top: 12vh;
+				margin-top: 10vh;
 				margin-right: 10vw;
 				width: 30vw;
 			}
