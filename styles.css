@@ -147,11 +147,10 @@ body {
   height: 70vh;
   width: 90vw;
   margin-left: 10vw;
-  position: relative;
-  top: -40vh;
+  position: absolute;
 }
 .carousel--background .slide-4 .monthly-speaker-grid-container {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -192,6 +191,27 @@ body {
   width: 100%;
   margin-top: 5vh;
   margin-left: 10vw;
+}
+.carousel--background .slide-5 .new-project-container {
+  position: relative;
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 20vw;
+  padding: 20px;
+  left: 10vw;
+  top: 15vh;
+}
+.carousel--background .slide-5 .new-project-image {
+  border: solid black;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carousel--background .slide-5 .new-project-text {
+  color: white;
 }
 .carousel--background .slide-6 .background-update-bar-left {
   position: absolute;
@@ -412,6 +432,27 @@ body {
   left: 86vw;
   height: 71vh;
 }
+.carousel--midground .slide-5 .new-project-container {
+  position: relative;
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 20vw;
+  padding: 20px;
+  left: 86vw;
+  top: 15vh;
+}
+.carousel--midground .slide-5 .new-project-image {
+  border: solid black;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carousel--midground .slide-5 .new-project-text {
+  color: white;
+}
 .carousel--midground .slide-6 .midground-update-bar {
   position: absolute;
   bottom: 11vh;
@@ -537,6 +578,27 @@ body {
   bottom: 7vh;
   height: 66vh;
   left: 165vw;
+}
+.carousel--foreground .slide-5 .new-project-container {
+  position: absolute;
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 20vw;
+  padding: 20px;
+  left: 170vw;
+  top: 15vh;
+}
+.carousel--foreground .slide-5 .new-project-image {
+  border: solid black;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carousel--foreground .slide-5 .new-project-text {
+  color: white;
 }
 .carousel--foreground .slide-6 .foreground-update-bar {
   position: absolute;
