@@ -7,7 +7,7 @@
 	<title>Code For Denver 2017 Annual Report</title>
 	<link rel="stylesheet/less" type="text/css" href="styles.less" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,900" rel="stylesheet">
 
 </head>
 <body>
@@ -22,7 +22,11 @@
 				<img class="mountain-background" src="media/images/general/mountain-different-sizes-test/background-no-shadow-copy-2.png"></img>
 			</div>
 			<div class="slide-2 slide">
-				<img class="background-bar-graph" src="media/images/slide-2/background-bar-graph.svg" />
+				<div class="background-bar-graph"></div>
+				<div class="data-label">
+					~3,000
+					<label>2015</label>
+				</div>
 			</div>
 			<div class="slide-3 slide">
 				<img src="media/images/slide-3/background-event-back.svg" class="background-event-back"></img>
@@ -79,7 +83,11 @@
 				<img class="mountain-midground" src="media/images/general/mountain-different-sizes-test/midground-no-shadow-copy.png"></img>
 			</div>
 			<div class="slide-2 slide">
-				<img class="midground-bar-graph" src="media/images/slide-2/midground-bar-graph.svg" />
+				<div class="midground-bar-graph"></div>
+				<div class="data-label">
+					3,431
+					<label>2016</label>
+				</div>
 			</div>
 			<div class="slide-3 slide">
 				<img src="media/images/slide-3/midground-event-back.svg" class="midground-event-back"></img>
@@ -131,7 +139,11 @@
 				<img class="mountain-foreground" src="media/images/general/mountain-different-sizes-test/foreground-no-shadow.png"></img>
 			</div>
 			<div class="slide-2 slide">
-				<img class="foreground-bar-graph" src="media/images/slide-2/foreground-bar-graph.svg" />
+				<div class="foreground-bar-graph"></div>
+				<div class="data-label">
+					4,311
+					<label>2017</label>
+				</div>
 			</div>
 			<div class="slide-3 slide">
 				<img src="media/images/slide-3/foreground-event-back.svg" class="foreground-event-back"></img>
@@ -186,6 +198,61 @@
 			</div>
 			<div class="text-slide-2 text-slide">
 				<h2>Year in Numbers</h2>
+				<div class="text-slide-2__container">
+					<div class="text-slide-2__left-column">
+						<div>
+							<p>
+								For the first time in our Total Hours of Giving
+								history, our members gave
+								over 100 hours per day of
+								service.
+							</p>
+							<p>
+								That is more than 4.###
+								hours. However, what that
+								really means is more is
+								recycled every year, better
+								life for senior citizens and
+								musicians, and computer
+								literacy for young kids.
+							</p>
+							<p>
+								It means our team is
+								awesome.
+							</p>
+						</div>
+					</div>
+					<div class="text-slide-2__center-column">
+						<h3>Total Hours of Giving</h3>
+					</div>
+					
+					<div class="text-slide-2__right-column">
+						<div>
+							<h4>750+</h4>
+							Members
+						</div>
+						<div>
+							<h4>340k</h4>
+							Lines of Code
+						</div>
+						<div class="text-slide-2__right-column__projects">
+							<h4>7</h4>
+							<span>Awesome Projects Delivered</span>
+						</div>
+						<div>
+							<h4>130+</h4>
+							Project Nights
+						</div>
+						<div class="text-slide-2__right-column__pizzas">
+							<h4>500</h4>
+							<h5>Pizzas</h5>
+							Destroyed
+						</div>
+						<div class="text-slide-2__right-column__possibilities">
+							<b>∞</b> Possibilities
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="text-slide-3 text-slide">
 				<!-- TODO -->
@@ -365,6 +432,20 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide == 2) {
+					$(".slide-2 .background-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--background .slide-2 .data-label").addClass('in');
+					}, 2500);
+					$(".slide-2 .midground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--midground .slide-2 .data-label").addClass('in');
+					}, 3000);
+					$(".slide-2 .foreground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--foreground .slide-2 .data-label").addClass('in');
+					}, 3500);
+				}
 			}
 			function previousSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -407,6 +488,7 @@
 						setTimeout(function() {
 							$(".text-slide-2").hide();
 						}, animationTime);
+						$(".slide-2 .in").removeClass("in");
 						break;
 					case 4:
 						$(".text-slide-4").fadeOut();
