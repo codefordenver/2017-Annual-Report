@@ -432,6 +432,20 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide == 2) {
+					$(".slide-2 .background-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--background .slide-2 .data-label").addClass('in');
+					}, 2500);
+					$(".slide-2 .midground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--midground .slide-2 .data-label").addClass('in');
+					}, 3000);
+					$(".slide-2 .foreground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--foreground .slide-2 .data-label").addClass('in');
+					}, 3500);
+				}
 			}
 			function previousSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -474,6 +488,7 @@
 						setTimeout(function() {
 							$(".text-slide-2").hide();
 						}, animationTime);
+						$(".slide-2 .in").removeClass("in");
 						break;
 					case 4:
 						$(".text-slide-4").fadeOut();

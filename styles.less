@@ -10,6 +10,11 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
 }
+.slide-2-bar-graph-transitions {
+	transition-delay: 0.5s;
+	transition-timing-function: cubic-bezier(.08,.93,.81,1.49);
+	z-index: 1;
+}
 
 /* styles */
 
@@ -91,6 +96,7 @@ body {
 				width: 81vw;
 				bottom: 16vh;
 				right: -160px;
+				z-index: 1;
 			}
 		}
 
@@ -103,8 +109,14 @@ body {
 			.background-bar-graph {
 				bottom: @baseBackgroundHeight;
 				width: 12vw;
-				height: @barHeight;
+				height: 0px;
 				background: #7D2830;
+				transition: 2s;
+				.slide-2-bar-graph-transitions();
+				
+				&.in {
+					height: @barHeight;
+				}
 			}
 			.data-label {
 				bottom: @baseBackgroundHeight + @barHeight;
@@ -307,6 +319,7 @@ body {
 				position: absolute;
 				bottom: 11vh;
 				width: 127vw;
+				z-index: 1;
 			}
 
 		}
@@ -321,8 +334,14 @@ body {
 			.midground-bar-graph {
 				bottom: @baseBackgroundHeight;
 				width: 12vw;
-				height: @barHeight;
+				height: 0px;
 				background-color: #B23C43;
+				transition: 2.5s;
+				.slide-2-bar-graph-transitions();
+				
+				&.in {
+					height: @barHeight;
+				}
 			}
 			.data-label {
 				bottom: @baseBackgroundHeight + @barHeight;
@@ -439,6 +458,7 @@ body {
 				bottom: 6vh;
 				right: -110vw;
 				width: 178vw;
+				z-index: 1;
 			}
 		}
 
@@ -452,9 +472,15 @@ body {
 			.foreground-bar-graph {
 				position: absolute;
 				bottom: @baseBackgroundHeight;
-				height: @foregroundBarHeight;
+				height: 0vh;
 				width: 12vw;
 				background-color: #E34C54;
+				transition: 3s;
+				.slide-2-bar-graph-transitions();
+				
+				&.in {
+					height: @foregroundBarHeight;
+				}
 			}
 			
 			.data-label {
@@ -760,6 +786,12 @@ body {
 	padding-bottom: 0.5rem;
 	text-align: center;
 	font-weight: 600;
+	opacity: 0;
+	transition: opacity 300ms;
+	
+	&.in {
+		opacity: 1;
+	}
 	
 	label {
 		display: block;
