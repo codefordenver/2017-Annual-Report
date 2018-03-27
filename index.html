@@ -7,7 +7,7 @@
 	<title>Code For Denver 2017 Annual Report</title>
 	<link rel="stylesheet/less" type="text/css" href="styles.less" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800" rel="stylesheet">
 
 </head>
 <body>
@@ -181,8 +181,14 @@
 
 		<div class="text-overlay">
 			<div class="text-slide-1 text-slide">
+                <img class="intro-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
+                <img class="intro-light-cloud" src="media/images/general/cloud-light-left.svg">
 				<img class="text-slide-1__cfd-logo" src="media/images/slide-1/cfd-logo.png" />
-				<img class="text-slide-1__intro-text" src="media/images/slide-1/text.png" />
+                <div class="intro-text">
+                    <div class="intro-year">2017</div>
+                    <div class="intro-subtitle">Year in Review</div>
+                    <div class="intro-slogan">Improving Denver <br />with Technology.</div>
+                </div>
 			</div>
 			<div class="text-slide-2 text-slide">
 				<h2>Year in Numbers</h2>
@@ -379,7 +385,9 @@
 				switch (slide) {
 					case 1:
 						$(".text-slide-1__cfd-logo").css("bottom", "");
-						$(".text-slide-1__intro-text").fadeIn();
+                        $(".intro-text").fadeIn();
+                        $(".intro-dark-cloud").fadeIn();
+                        $(".intro-light-cloud").fadeIn ();
 						break;
 					case 2:
 						$(".text-slide-2").show();
@@ -399,7 +407,9 @@
 				switch (slide) {
 					case 1:
 						$(".text-slide-1__cfd-logo").css("bottom", "-100px");
-						$(".text-slide-1__intro-text").fadeOut();
+						$(".intro-text").fadeOut();
+                        $(".intro-dark-cloud").fadeOut();
+                        $(".intro-light-cloud").fadeOut();
 						break;
 					case 2:
 						var animationTime = 800;
