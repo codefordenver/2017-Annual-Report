@@ -63,6 +63,7 @@ body {
 
 
 	&--background {
+		@baseBackgroundHeight: 16vh;
 		@width: 100vw;
 		width: @width * @numberOfSlides;
 		left: 0vw;
@@ -72,7 +73,7 @@ body {
 		&::before {
 			background-color: #7D2830;
 			width: @width * (@numberOfSlides - 1);
-			height: 16vh;
+			height: @baseBackgroundHeight;
 			content: " ";
 			position: absolute;
 			left: 0px;
@@ -94,13 +95,20 @@ body {
 		}
 
 		.slide-2 {
-
-			.background-bar-graph {
+			@barHeight: 40vh;
+			.background-bar-graph, .data-label {
+				left: 24vw;
 				position: absolute;
-				bottom: 15vh;
-				right: 35vw;
-				width: 200px;
-				height: 40vh;
+			}
+			.background-bar-graph {
+				bottom: @baseBackgroundHeight;
+				width: 12vw;
+				height: @barHeight;
+				background: #7D2830;
+			}
+			.data-label {
+				bottom: @baseBackgroundHeight + @barHeight;
+				color: #7D2830;
 			}
 		}
 
@@ -272,6 +280,7 @@ body {
 	}
 
 	&--midground {
+		@baseBackgroundHeight: 12vh;
 		@width: 150vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
@@ -280,7 +289,7 @@ body {
 		&::before {
 			background-color: #B23C43;
 			width: @width * (@numberOfSlides - 2);
-			height: 12vh;
+			height: @baseBackgroundHeight;
 			content: " ";
 			position: absolute;
 			left: 0px;
@@ -303,13 +312,21 @@ body {
 		}
 
 		.slide-2 {
+			@barHeight: 50vh;
 
-			.midground-bar-graph {
+			.midground-bar-graph, .data-label {
 				position: absolute;
-				bottom: 11vh;
-				width: 300px;
-				right: 21vw;
-				height: 50vh;
+				left: calc(50vw + 38vw);
+			}
+			.midground-bar-graph {
+				bottom: @baseBackgroundHeight;
+				width: 12vw;
+				height: @barHeight;
+				background-color: #B23C43;
+			}
+			.data-label {
+				bottom: @baseBackgroundHeight + @barHeight;
+				color: #B23C43;
 			}
 		}
 
@@ -393,16 +410,18 @@ body {
 	}
 
 	&--foreground {
+		@baseBackgroundHeight: 8vh;
 		@width: 200vw;
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 		// .drop-shadow();
+		
 
 		/* base background */
 		&::before {
 			background-color: #E34C54;
 			width: @width * (@numberOfSlides - 2);
-			height: 8vh;
+			height: @baseBackgroundHeight;
 			content: " ";
 			position: absolute;
 			left: 0px;
@@ -424,13 +443,24 @@ body {
 		}
 
 		.slide-2 {
+		
+			@foregroundBarHeight: 60vh;
 
+			.foreground-bar-graph, .data-label {
+				left: calc(100vw + 52vw);
+			}
 			.foreground-bar-graph {
 				position: absolute;
-				bottom: 6vh;
-				width: 200px;
-				height: 60vh;
-				right: 14vw;
+				bottom: @baseBackgroundHeight;
+				height: @foregroundBarHeight;
+				width: 12vw;
+				background-color: #E34C54;
+			}
+			
+			.data-label {
+				position: absolute;
+				bottom: @baseBackgroundHeight + @foregroundBarHeight;
+				color: #E34C54;
 			}
 		}
 
@@ -561,9 +591,102 @@ body {
 	}
 
 	.text-slide-2 {
+		padding: 5vh 5vw;
+		box-sizing: border-box;
+		
+		* { box-sizing: border-box; }
+		
 		h2 {
-			margin-top: 200px;
-			margin-left: 100px;
+			color: #7c2730;
+			font-size: 3em;
+			margin: 0em 0em 0.5em;
+		}
+		&__container {
+			display: flex;
+		}
+		&__left-column {
+			width: 20%;
+			flex-basis: 20%;
+			padding-right: 2em;
+			color: white;
+		}
+		&__center-column {
+			width: 50%;
+			flex-basis: 50%;
+			
+			h3 {
+				color: #28677f;
+				text-align: center;
+				font-size: 2rem;
+				font-weight: 400;
+				margin-top: 0;
+			}
+		}
+		&__right-column {
+			width: 30%;
+			flex-basis: 30%;
+			color: #28677f;
+			display: flex;
+			flex-wrap: wrap;
+			
+			> div {
+				width: 50%;
+				flex-basis: 50%;
+				flex-grow: 1;
+				padding: 0.5rem 1rem;
+				font-size: 1.2rem;
+			}
+			
+			h4 {
+				font-size: 2.5rem;
+				margin: 0;
+				font-weight: 900;
+			}
+			h5 {
+				font-size: 1.2em;
+				margin: 0;
+			}
+			&__projects {
+				overflow: hidden;
+				h4, span { float: left; }
+				h4 { 
+					width: 3rem;
+					line-height: 4.4rem;
+					font-size: 4rem;
+				}
+				span {
+					width: calc(100% - 3rem);
+				}
+			}
+			&__pizzas {
+				font-size: 1.5rem !important;
+				margin-top: 1rem;
+				h4 {
+					font-size: 4rem;
+					line-height: 4rem;
+				}
+				h5 {
+					font-size: 2.5rem;
+				}
+			}
+			&__possibilities {
+				font-size: 1.5rem !important;
+				margin-top: 1rem;
+				color: #e34b54;
+				position: relative;
+				padding-top: 5.5rem !important;
+				text-align: center;
+				
+				b {
+					font-weight: 900;
+					font-size: 13rem;
+					position: absolute;
+					top: -6.7rem;
+					left: 0px;
+					right: 0px;
+				}
+				
+			}
 		}
 	}
 
@@ -629,6 +752,21 @@ body {
 	}
 
 	
+}
+
+.slide-2 .data-label {
+	font-size: 2rem;
+	width: 12vw;
+	padding-bottom: 0.5rem;
+	text-align: center;
+	font-weight: 600;
+	
+	label {
+		display: block;
+		color: black;
+		font-size: 1rem;
+		font-weight: 400;
+	}
 }
 
 .portrait-warning {
