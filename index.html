@@ -110,17 +110,10 @@
 				<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-right"></img>
 			</div>
 			<div class="slide-7 slide">
-					<div class="slide-title">Denver Sustainability Project</div>
 					<img class="slide-7-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
 					<img class="slide-7-light-cloud" src="media/images/general/cloud-light-left.svg">
-					<img class="sustainability-screenshot" src="media/images/slide-8/sustainability-screen-shot.png">
-					<div class="text-title">Energize Denver: Energy Efficiency in Commercial and Multifamily Buildings</div>
-					<div class="secondary-text">Improving building energy efficiency will help protect Denver’s quality of life and strengthen the economy. Investing an estimated $340 million in improving building energy efficiency could result in 4,000 local jobs and $1.3 billion in energy savings over 10 years. The energy used in large commercial and multifamily buildings results in 57 percent of Denver’s harmful greenhouse gas emissions.</div>
-					<div class="secondary-text">Building energy efficiency is a key component of the City's efforts to achieve <a href="https://www.denvergov.org/content/denvergov/en/office-of-sustainability/2020-sustainability-goals.html">Denver's 2020 Sustainability</a> and <a href="https://www.denvergov.org/content/denvergov/en/environmental-health/environmental-quality/climate.html">Climate Action Plan</a> goals of reducing greenhouse gas emissions below 1990 levels by 2020 and by 80 percent by 2050. Energize Denver works to reduce the energy consumption of commercial and multifamily buildings by 10 percent by the end of 2020 and double that in the following decade.</div>
-					<div class="secondary-text">Denver’s benchmarking ordinance requires owners of buildings over 25,000 square feet to annually benchmark the energy use. The City’s programs also engage tenants to improve energy efficiency of their spaces and provide resources to improve the efficiency of buildings.</div>
 			</div>
 			<div class="slide-8 slide">
-				<div class="slide-title">External Talks</div>
 				<img src="media/images/slide-8/cityscape.svg" class="cityscape"></img>
 			</div>
 			<div class="slide-9 slide">
@@ -367,9 +360,15 @@
 				</div>
 			</div>
 			<div class="text-slide-7 text-slide">
-				<!-- TODO -->
+				<div class="slide-title">Denver Sustainability Project</div>
+				<img class="sustainability-screenshot" src="media/images/slide-8/sustainability-screen-shot.png">
+				<div class="text-title">Energize Denver: Energy Efficiency in Commercial and Multifamily Buildings</div>
+				<div class="secondary-text">Improving building energy efficiency will help protect Denver’s quality of life and strengthen the economy. Investing an estimated $340 million in improving building energy efficiency could result in 4,000 local jobs and $1.3 billion in energy savings over 10 years. The energy used in large commercial and multifamily buildings results in 57 percent of Denver’s harmful greenhouse gas emissions.</div>
+				<div class="secondary-text">Building energy efficiency is a key component of the City's efforts to achieve <a href="https://www.denvergov.org/content/denvergov/en/office-of-sustainability/2020-sustainability-goals.html">Denver's 2020 Sustainability</a> and <a href="https://www.denvergov.org/content/denvergov/en/environmental-health/environmental-quality/climate.html">Climate Action Plan</a> goals of reducing greenhouse gas emissions below 1990 levels by 2020 and by 80 percent by 2050. Energize Denver works to reduce the energy consumption of commercial and multifamily buildings by 10 percent by the end of 2020 and double that in the following decade.</div>
+				<div class="secondary-text">Denver’s benchmarking ordinance requires owners of buildings over 25,000 square feet to annually benchmark the energy use. The City’s programs also engage tenants to improve energy efficiency of their spaces and provide resources to improve the efficiency of buildings.</div>
 			</div>
 			<div class="text-slide-8 text-slide">
+				<div class="slide-title">External Talks</div>
 				<!-- TODO -->
 			</div>
 			<div class="text-slide-9 text-slide">
@@ -466,6 +465,12 @@
 						$(".text-slide-6").show();
 						$(".text-slide-6 h2").slideDown();
 						break;
+					case 7:
+						$(".text-slide-7").fadeIn();
+						break;
+					case 8:
+						$(".text-slide-8").fadeIn();
+						break;
 				}
 			}
 			function animateTextOut(slide) {
@@ -492,6 +497,12 @@
 						break;
 					case 6:
 						$(".text-slide-6").fadeOut();
+						break;
+					case 7:
+						$(".text-slide-7").fadeOut();
+						break;
+					case 8:
+						$(".text-slide-8").fadeIn();
 						break;
 				}
 			}
