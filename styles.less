@@ -122,6 +122,14 @@ body {
 				bottom: @baseBackgroundHeight + @barHeight;
 				color: #7D2830;
 			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
 		}
 
 		.slide-3 {
@@ -136,13 +144,98 @@ body {
 				color: #7D2A32;
 				font-size: 40px;
 				font-weight: bold;
-				display: flex;
-				border: solid black;
 				width: 100%;
 				margin-top: 5vh;
-				margin-left: 80px;
+				margin-left: 10vw;
+			}
+			.slide-text-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding-top: 10vh;
+			}
+			.background-image {
+				height: 20vh;
+				width: 12vw;
+				position: relative;
+				z-index: 2;
+				margin-left: 2vw;
 			}
 
+			.text-title {
+				font-size: 30px;
+				position: relative;
+				z-index: 2;
+				color: white;
+			}
+
+			.secondary-text {
+				color: white;
+				font-size: 20px;
+				z-index: 2;
+				position: relative;
+				margin-right: 10vw;
+				width: 30vw;
+			}
+
+		}
+
+		.slide-4 {
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
+			.background-cloud-small {
+				height: 40vh;
+				width: 60vw;
+				float: right;
+			}
+			.background-cloud-large {
+				height: 70vh;
+				width: 90vw;
+				margin-left: 10vw;
+				position: absolute;
+			}
+
+			.monthly-speaker-grid-container {
+				position: absolute;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin-left: 15vw;
+				margin-right: 10vw;
+
+				.monthly-speaker-piece {
+					background-color: #4DBCE6;
+					height: 20vh;
+					width: 15vw;
+					margin: 20px;
+				}
+
+				.monthly-speaker-header {
+					background-color: #2C687E;
+					height: 20px;
+					color: white;
+					padding: 5px 20px;
+				}
+
+				.monthly-speaker-name {
+					padding: 10px 0 8px 20px;
+
+				}
+
+				.monthly-speaker-text {
+					color: #7D2D35;
+					padding: 8px 0 0px 20px;
+					// margin-top: 5px;
+					font-size: 25px;
+					font-weight: 400;
+				}
+			}
 		}
 
 		.slide-4 {
@@ -166,6 +259,36 @@ body {
 				background-color: #7d2931;
 				width: 32vw;
 				left: 6vw;
+			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
+			.new-project-container {
+				position: relative;
+				border: solid blue;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 40vh;
+				width: 20vw;
+				padding: 20px;
+				left: 10vw;
+				top: 15vh;
+			}
+
+			.new-project-image {
+				border: solid black;
+				height: 10vh;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.new-project-text {
+				color: white;
 				position: absolute;
 				height: 100vh;
 				top: 19vh;
@@ -188,6 +311,25 @@ body {
 				left: 71vw;
 				width: 28vw;
 			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
+		}
+
+		.slide-7 {
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
 		}
 
 		.slide-8 {
@@ -199,6 +341,25 @@ body {
 				width: 70vw;
 				height: 80vh;
 			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
+		}
+
+		.slide-9 {
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
+			}
 		}
 
 		.slide-10 {
@@ -209,6 +370,15 @@ body {
 				height: 70vh;
 				width: 95vw;
 				left: 5vw;
+
+			}
+			.slide-title {
+				text-align: center;
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
 
 			}
 		}
@@ -231,6 +401,14 @@ body {
 				position: absolute;
 				right: 0px;
 				bottom: 0px;
+			}
+			.slide-title {
+				color: #7D2A32;
+				font-size: 40px;
+				font-weight: bold;
+				width: 100%;
+				margin-top: 5vh;
+				margin-left: 10vw;
 			}
 		}
 
@@ -358,15 +536,73 @@ body {
 				left: -27vw;
 				height: 55vh;
 			}
+			.slide-text-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+				position: relative;
+				top: 40vh;
+				right: -50vw;
+				width: 100vw;
+			}
+			.background-image {
+				height: 20vh;
+				width: 12vw;
+				position: relative;
+				z-index: 2;
+				margin-left: 5vw;
+				margin-top: 4vh;
+			}
+
+			.text-title {
+				font-size: 30px;
+				position: relative;
+				z-index: 2;
+				color: white;
+				margin-top: 12vh;
+			}
+
+			.secondary-text {
+				color: white;
+				font-size: 20px;
+				z-index: 2;
+				position: relative;
+				margin-top: 12vh;
+				margin-right: 10vw;
+				width: 30vw;
+			}
 		}
 
 		.slide-5 {
 
 			.midground-new-project {
 				position: absolute;
-				bottom: 8.5vh;
+				bottom: 10.5vh;
 				left: 86vw;
 				width: 32vw;
+			}
+			.new-project-container {
+				position: relative;
+				border: solid blue;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 40vh;
+				width: 20vw;
+				padding: 20px;
+				left: 86vw;
+				top: 15vh;
+			}
+
+			.new-project-image {
+				border: solid black;
+				height: 10vh;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.new-project-text {
+				color: white;
 			}
 		}
 
@@ -498,15 +734,74 @@ body {
 				left: 95vw;
 				height: 35vh;
 			}
+			.slide-text-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: flex-start;
+				position: relative;
+				top: 65vh;
+				right: -105vw;
+				width: 100vw;
+			}
+			.background-image {
+				height: 20vh;
+				width: 12vw;
+				position: relative;
+				z-index: 2;
+				margin-left: 5vw;
+				margin-top: 4vh;
+			}
+
+			.text-title {
+				font-size: 30px;
+				position: relative;
+				z-index: 2;
+				color: white;
+				margin-left: 8vw;
+				margin-top: 10vh;
+			}
+
+			.secondary-text {
+				color: white;
+				font-size: 15px;
+				z-index: 2;
+				position: relative;
+				margin-top: 10vh;
+				margin-right: 10vw;
+				width: 30vw;
+			}
 		}
 
 		.slide-5 {
 
 			.foreground-new-project {
 				position: absolute;
-				bottom: 6vh;
-				width: 30vw;
+				bottom: 7vh;
+				height: 66vh;
 				left: 165vw
+			}
+			.new-project-container {
+				position: relative;
+				border: solid blue;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 40vh;
+				width: 20vw;
+				padding: 20px;
+				left: 170vw;
+				top: 15vh;
+			}
+
+			.new-project-image {
+				border: solid black;
+				height: 10vh;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.new-project-text {
+				color: white;
 			}
 		}
 
