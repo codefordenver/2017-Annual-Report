@@ -114,7 +114,7 @@ body {
 				background: @deepRed;
 				transition: 2s;
 				.slide-2-bar-graph-transitions();
-				
+
 				&.in {
 					height: @barHeight;
 				}
@@ -517,7 +517,7 @@ body {
 				background-color: #B23C43;
 				transition: 2.5s;
 				.slide-2-bar-graph-transitions();
-				
+
 				&.in {
 					height: @barHeight;
 				}
@@ -671,7 +671,7 @@ body {
 		width: @width * @numberOfSlides;
 		left: 100vw - @width;
 		// .drop-shadow();
-		
+
 
 		/* base background */
 		&::before {
@@ -700,7 +700,7 @@ body {
 		}
 
 		.slide-2 {
-		
+
 			@foregroundBarHeight: 60vh;
 
 			.foreground-bar-graph, .data-label {
@@ -714,12 +714,12 @@ body {
 				background-color: #E34C54;
 				transition: 3s;
 				.slide-2-bar-graph-transitions();
-				
+
 				&.in {
 					height: @foregroundBarHeight;
 				}
 			}
-			
+
 			.data-label {
 				position: absolute;
 				bottom: @baseBackgroundHeight + @foregroundBarHeight;
@@ -915,9 +915,9 @@ body {
 	.text-slide-2 {
 		padding: 5vh 5vw;
 		box-sizing: border-box;
-		
+
 		* { box-sizing: border-box; }
-		
+
 		h2 {
 			color: #7c2730;
 			font-size: 3em;
@@ -935,7 +935,7 @@ body {
 		&__center-column {
 			width: 50%;
 			flex-basis: 50%;
-			
+
 			h3 {
 				color: #28677f;
 				text-align: center;
@@ -950,7 +950,7 @@ body {
 			color: #28677f;
 			display: flex;
 			flex-wrap: wrap;
-			
+
 			> div {
 				width: 50%;
 				flex-basis: 50%;
@@ -958,7 +958,7 @@ body {
 				padding: 0.5rem 1rem;
 				font-size: 1.2rem;
 			}
-			
+
 			h4 {
 				font-size: 2.5rem;
 				margin: 0;
@@ -971,7 +971,7 @@ body {
 			&__projects {
 				overflow: hidden;
 				h4, span { float: left; }
-				h4 { 
+				h4 {
 					width: 3rem;
 					line-height: 4.4rem;
 					font-size: 4rem;
@@ -998,7 +998,7 @@ body {
 				position: relative;
 				padding-top: 5.5rem !important;
 				text-align: center;
-				
+
 				b {
 					font-weight: 900;
 					font-size: 13rem;
@@ -1007,7 +1007,7 @@ body {
 					left: 0px;
 					right: 0px;
 				}
-				
+
 			}
 		}
 	}
@@ -1151,11 +1151,11 @@ body {
 	font-weight: 600;
 	opacity: 0;
 	transition: opacity 300ms;
-	
+
 	&.in {
 		opacity: 1;
 	}
-	
+
 	label {
 		display: block;
 		color: black;
@@ -1196,7 +1196,7 @@ body {
 .intro-year {
     font-size: 10em;
     font-weight: 800;
-    color: #7D2931; 
+    color: #7D2931;
     margin: 0px;
     padding: 0px;
 }
@@ -1218,7 +1218,7 @@ body {
     width: 15%;
     height: 15%;
     position: absolute;
-    right: 10vw; 
+    right: 10vw;
     bottom: 50vw;
     transition: 300ms 500ms;
 }
@@ -1227,7 +1227,30 @@ body {
     width: 22%;
     height: 22%;
     position: absolute;
-    right: 16vw; 
+    right: 16vw;
     bottom: 47vw;
     transition: 300ms 500ms;
+}
+
+.slide-7-dark-cloud {
+    width: 15%;
+    height: 15%;
+    right: 500px;
+    bottom: 500px;
+    transition: 300ms 500ms;
+}
+
+.slide-7-light-cloud {
+    width: 22%;
+    height: 22%;
+    right: 16vw;
+    bottom: 47vw;
+    transition: 300ms 500ms;
+}
+
+.sustainability-screenshot {
+	width: 500px;
+	position: absolute;
+	right: 10vw;
+	bottom: 40vh;
 }
