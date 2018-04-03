@@ -1,311 +1,416 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+	<title>Code For Denver 2017 Annual Report</title>
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
 
-		<title>Code For Denver 2017 Annual Report</title>
-		<link href="styles.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="portrait-warning">
-			<p>Please view this report in landscape orientation. If necessary, resize your browser window or rotate your device.</p>
-		</div>
-		<div class="container">
+</head>
+<body>
+	<div class="portrait-warning">
+		<p>Please view this report in landscape orientation. If necessary, resize your browser window or rotate your device.</p>
+	</div>
+	<div class="container">
 
+		<!-- each background slide has a width of 100vw -->
+		<div class="carousel carousel--background">
+			<div class="slide-1 slide">
+				<img class="mountain-background" src="media/images/general/mountain-different-sizes-test/background-no-shadow-copy-2.png"></img>
+			</div>
+			<div class="slide-2 slide">
+				<div class="background-bar-graph"></div>
+				<div class="data-label">
+					~3,000
+					<label>2015</label>
+				</div>
+			</div>
+			<div class="slide-3 slide">
+				<div class="slide-title">Events</div>
+				<div class="slide-text-container">
+					<img class="background-image" src="media/images/slide-3/event-denver-startup-week.png"></img>
+					<div class="text-title">
+						<div>Denver Startup Week Event:</div>
+						<div>Applying Your Skills for Good</div>
+					</div>
+					<div class="secondary-text">Code For Denver presents: "Applying Your Skills for Good with Code for Denver." This event showcased our projects and helped recruit members.</div>
+				</div>
+				<img src="media/images/slide-3/background-event-back.svg" class="background-event-back"></img>
+			</div>
+			<div class="slide-4 slide">
+				<div class="slide-title">Monthly Speaker Series</div>
 
-			<!-- each background slide has a width of 100vw -->
-			<div class="carousel carousel--background">
-				<div class="slide-1 slide">
-					<img class="mountain-background" src="media/images/general/mountain-different-sizes-test/background-no-shadow-copy-2.png"></img>
+				<div class="speakerClouds">
+					<img src="media/images/general/cloud-dark-right.svg" alt="Dark Cloud" width="200%">
+					<img src="media/images/general/cloud-light-left.svg" alt="Light Cloud" style="
+					position: absolute;
+					height: 150%;
+					top: -10px;
+					left: -350px;">
 				</div>
-				<div class="slide-2 slide">
-					<div class="slide-title">Year in Numbers</div>
-					<img class="background-bar-graph" src="media/images/slide-2/background-bar-graph.svg" />
-				</div>
-				<div class="slide-3 slide">
-					<div class="slide-title">Events</div>
-					<div class="slide-text-container">
-						<img class="background-image" src="media/images/slide-3/event-denver-startup-week.png"></img>
-						<div class="text-title">
-							<div>Denver Startup Week Event:</div>
-							<div>Applying Your Skills for Good</div>
-						</div>
-						<div class="secondary-text">Code For Denver presents: "Applying Your Skills for Good with Code for Denver." This event showcased our projects and helped recruit members.</div>
+
+				<div class="monthly-speaker-grid-container">
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">January 16</div>
+						<div class="monthly-speaker-name">Jasmin Barco</div>
+						<div class="monthly-speaker-text">Life of a Can</div>
 					</div>
-					<img src="media/images/slide-3/background-event-back.svg" class="background-event-back"></img>
-				</div>
-				<div class="slide-4 slide">
-					<div class="slide-title">Monthly Speaker Series</div>
-					<img class="background-cloud-small" src="media/images/general/cloud-dark-right.svg"></img>
-					<img class="background-cloud-large" src="media/images/general/cloud-light-left.svg"></img>
-					<div class="monthly-speaker-grid-container">
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">January 16</div>
-							<div class="monthly-speaker-name">Jasmin Barco</div>
-							<div class="monthly-speaker-text">Life of a Can</div>
-						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">February 27</div>
-							<div class="monthly-speaker-name">CFD Organizational Team</div>
-							<div class="monthly-speaker-text">Talking It Up</div>
-						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">March 20</div>
-							<div class="monthly-speaker-name">Michelle and Tyler</div>
-							<div class="monthly-speaker-text">Introduction to Clojurescript</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">April 24</div>
-							<div class="monthly-speaker-name">Bret Evans</div>
-							<div class="monthly-speaker-text">Data Driven Clojure</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">May 22</div>
-							<div class="monthly-speaker-name">Fred Wehle</div>
-							<div class="monthly-speaker-text">Interacting with Hardware</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">June 19</div>
-							<div class="monthly-speaker-name">Kate Catlin</div>
-							<div class="monthly-speaker-text">Diversity in Tech</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">July 17</div>
-							<div class="monthly-speaker-name">Willy Douglas</div>
-							<div class="monthly-speaker-text">Intro to Effective Altruism</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">August 28</div>
-							<div class="monthly-speaker-name">Vincent Buscarello</div>
-							<div class="monthly-speaker-text">The Data Dork</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">September 18</div>
-							<div class="monthly-speaker-name">Sam Placette</div>
-							<div class="monthly-speaker-text">Regular Expressions</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">December 4</div>
-							<div class="monthly-speaker-name">Willy Douglas</div>
-							<div class="monthly-speaker-text">How to Donate Effectively</div>						</div>
-						<div class="monthly-speaker-piece">
-							<div class="monthly-speaker-header">December 11</div>
-							<div class="monthly-speaker-name">Moses McCall</div>
-							<div class="monthly-speaker-text">Alexa for Everyone</div>						</div>
+
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">February 27</div>
+						<div class="monthly-speaker-name">CFD Organizational Team</div>
+						<div class="monthly-speaker-text">Talking It Up</div>
 					</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">March 20</div>
+						<div class="monthly-speaker-name">Michelle and Tyler</div>
+						<div class="monthly-speaker-text">Introduction to Clojurescript</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">April 24</div>
+						<div class="monthly-speaker-name">Bret Evans</div>
+						<div class="monthly-speaker-text">Data Driven Clojure</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">May 22</div>
+						<div class="monthly-speaker-name">Fred Wehle</div>
+						<div class="monthly-speaker-text">Interacting with Hardware</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">June 19</div>
+						<div class="monthly-speaker-name">Kate Catlin</div>
+						<div class="monthly-speaker-text">Diversity in Tech</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">July 17</div>
+						<div class="monthly-speaker-name">Willy Douglas</div>
+						<div class="monthly-speaker-text">Intro to Effective Altruism</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">August 28</div>
+						<div class="monthly-speaker-name">Vincent Buscarello</div>
+						<div class="monthly-speaker-text">The Data Dork</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">September 18</div>
+						<div class="monthly-speaker-name">Sam Placette</div>
+						<div class="monthly-speaker-text">Regular Expressions</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">December 4</div>
+						<div class="monthly-speaker-name">Willy Douglas</div>
+						<div class="monthly-speaker-text">How to Donate Effectively</div>						</div>
+					<div class="monthly-speaker-piece">
+						<div class="monthly-speaker-header">December 11</div>
+						<div class="monthly-speaker-name">Moses McCall</div>
+						<div class="monthly-speaker-text">Alexa for Everyone</div>						</div>
 				</div>
-				<div class="slide-5 slide">
-					<div class="slide-title">New Projects and Explorations</div>
-					<img src="media/images/slide-5/background-new-project.svg" class="background-new-project"></img>
-					<div class="new-project-container">
-						<div class="new-project-image"></div>
-							<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
-					</div>
+			</div>
+			<div class="slide-5 slide">
+				<div class="slide-title">New Projects and Explorations</div>
+				<img src="media/images/slide-5/background-new-project.svg" class="background-new-project"></img>
+
+				<div class="new-project-container">
+					<div class="new-project-image"></div>
+						<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
 				</div>
-				<div class="slide-6 slide">
-					<div class="slide-title">Project Updates</div>
-					<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-left"></img>
-					<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-right"></img>
-				</div>
-				<div class="slide-7 slide">
+			</div>
+			<div class="slide-6 slide">
+				<div class="slide-title">Project Updates</div>
+				<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-left"></img>
+				<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-right"></img>
+			</div>
+			<div class="slide-7 slide">
+				<div class="layer">
 					<div class="slide-title">Denver Sustainability Project</div>
-
-				</div>
-				<div class="slide-8 slide">
-					<div class="slide-title">External Talks</div>
-					<img src="media/images/slide-8/cityscape.svg" class="cityscape"></img>
-				</div>
-				<div class="slide-9 slide">
-					<div class="slide-title">Organizational Updates</div>
-				</div>
-				<div class="slide-10 slide">
-					<div class="slide-title">Thank You to Our Awesome Members</div>
-					<img src="media/images/slide-6/background-update-bar.svg" class="image-background"></img>
-				</div>
-				<div class="slide-11 slide">
-					<div class="slide-title">Thank You to Our Amazing Sponsors</div>
-
-				</div>
-				<div class="slide-12 slide">
-					<img src="media/images/slide-11/last-page-swirl.png" class="get-involved-wave"></img>
 				</div>
 			</div>
-
-			<!-- each slide is 150vw -->
-			<div class="carousel carousel--midground">
-				<div class="slide-1 slide">
-					<img class="mountain-midground" src="media/images/general/mountain-different-sizes-test/midground-no-shadow-copy.png"></img>
-				</div>
-				<div class="slide-2 slide">
-					<img class="midground-bar-graph" src="media/images/slide-2/midground-bar-graph.svg" />
-				</div>
-				<div class="slide-3 slide">
-					<div class="slide-text-container">
-						<img class="background-image" src="media/images/slide-3/event-denver-startup-week.png"></img>
-						<div class="text-title">48 Project Night Meetups</div>
-						<div class="secondary-text">Our brigade is one of the most active brigades in the Code For America network.</div>
-					</div>
-					<img src="media/images/slide-3/midground-event-back.svg" class="midground-event-back"></img>
-				</div>
-				<div class="slide-4 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 4 midground</div>
-					</div>
-				</div>
-				<div class="slide-5 slide">
-					<img src="media/images/slide-5/midground-new-project.svg" class="midground-new-project"></img>
-					<div class="new-project-container">
-						<div class="new-project-image"></div>
-							<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
-					</div>
-				</div>
-				<div class="slide-6 slide">
-					<img src="media/images/slide-6/midground-update-bar.svg" class="midground-update-bar"></img>
-				</div>
-				<div class="slide-7 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 7 midground</div>
-					</div>
-				</div>
-				<div class="slide-8 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 8 midground</div>
-					</div>
-				</div>
-				<div class="slide-9 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 9 midground</div>
-					</div>
-				</div>
-				<div class="slide-10 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 10 midground</div>
-					</div>
-				</div>
-				<div class="slide-11 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 11 midground</div>
-					</div>
-				</div>
-				<div class="slide-12 slide">
-					<div class="layer">
-						<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 12 midground</div>
-					</div>
-				</div>
+			<div class="slide-8 slide">
+				<div class="slide-title">External Talks</div>
+				<img src="media/images/slide-8/cityscape.svg" class="cityscape"></img>
 			</div>
-
-			<!-- each layer is 200vw -->
-			<div class="carousel carousel--foreground">
-				<div class="slide-1 slide">
-					<img class="mountain-foreground" src="media/images/general/mountain-different-sizes-test/foreground-no-shadow.png"></img>
-				</div>
-				<div class="slide-2 slide">
-					<img class="foreground-bar-graph" src="media/images/slide-2/foreground-bar-graph.svg" />
-				</div>
-				<div class="slide-3 slide">
-					<div class="slide-text-container">
-						<img class="background-image" src="media/images/slide-3/event-america-recycles-day.png"></img>
-						<div class="text-title">
-							<div>America Recycles Day </div>
-							<div>Re:Imagine Showcase and Feedback Night</div>
-						</div>
-						<div class="secondary-text">EcoCycle hosted a Denver Re:Imagine showcase to debut our recycling application and solicit feedback from attendees. The event marked the completion of version 1 functionality, and gave us more guidance for the next version. Our presentation led the City of Denver to ask us to present the app at the Sustainability Summit. The Solid Waste Association of North America also asked us to present at their Road to Zero Waste Conference.</div>
-					</div>
-					<img src="media/images/slide-3/foreground-event-back.svg" class="foreground-event-back"></img>
-				</div>
-				<div class="slide-4 slide">
-				</div>
-				<div class="slide-5 slide">
-					<img src="media/images/slide-5/foreground-new-project.svg" class="foreground-new-project"></img>
-					<div class="new-project-container">
-						<div class="new-project-image"></div>
-							<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
-					</div>
-				</div>
-				<div class="slide-6 slide">
-					<img src="media/images/slide-6/foreground-update-bar.svg" class="foreground-update-bar"></img>
-				</div>
-				<div class="slide-7 slide">
-					<div class="layer">
-						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 7 foreground</div>
-					</div>
-				</div>
-				<div class="slide-8 slide">
-					<div class="layer">
-						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 8 foreground</div>
-					</div>
-				</div>
-				<div class="slide-9 slide">
-					<div class="layer">
-						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 9 foreground</div>
-					</div>
-				</div>
-				<div class="slide-10 slide">
-					<div class="layer">
-						<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 10 foreground</div>
-					</div>
-				</div>
-				<div class="slide-11 slide">
-				</div>
-				<div class="slide-12 slide">
-				</div>
+			<div class="slide-9 slide">
+				<div class="slide-title">Organizational Updates</div>
 			</div>
-
-			<div class="text-overlay">
-				<div class="text-slide-1 text-slide">
-					<img class="text-slide-1__cfd-logo" src="media/images/slide-1/cfd-logo.png" />
-					<img class="text-slide-1__intro-text" src="media/images/slide-1/text.png" />
-				</div>
-				<div class="text-slide-2 text-slide">
-				</div>
-				<div class="text-slide-3 text-slide">
-				</div>
-				<div class="text-slide-4 text-slide">
-				</div>
-				<div class="text-slide-5 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-6 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-7 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-8 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-9 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-10 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-11 text-slide">
-					<!-- TODO -->
-				</div>
-				<div class="text-slide-12 text-slide">
-					<!-- TODO -->
-				</div>
+			<div class="slide-10 slide">
+				<div class="slide-title">Thank You to Our Awesome Members</div>
+				<img src="media/images/slide-6/background-update-bar.svg" class="image-background"></img>
 			</div>
-
-			<div style="position:absolute;top:0px;width:100vw;height:100vh;" class="carousel-controls">
-				<a style="position:absolute;top:0px;left:0px;color:black" href="#" class="animate-button--previous">Previous</a>
-				<a style="position:absolute;top:0px;right:0px;color:black" href="#" class="animate-button--next">Next</a>
+			<div class="slide-11 slide">
+				<div class="slide-title">Thank You to Our Amazing Sponsors</div>
+			</div>
+			<div class="slide-12 slide">
+				<img src="media/images/slide-11/last-page-swirl.png" class="get-involved-wave"></img>
 			</div>
 		</div>
-		<script src="jquery.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$(".animate-button--next").click(function(e) {
-					e.preventDefault();
-					nextSlide();
-				});
-				$(".animate-button--previous").click(function(e) {
-					e.preventDefault();
-					previousSlide();
-				});
+
+		<!-- each slide is 150vw -->
+		<div class="carousel carousel--midground">
+			<div class="slide-1 slide">
+				<img class="mountain-midground" src="media/images/general/mountain-different-sizes-test/midground-no-shadow-copy.png"></img>
+			</div>
+			<div class="slide-2 slide">
+				<div class="midground-bar-graph"></div>
+				<div class="data-label">
+					3,431
+					<label>2016</label>
+				</div>
+			</div>
+			<div class="slide-3 slide">
+				<div class="slide-text-container">
+					<img class="background-image" src="media/images/slide-3/event-denver-startup-week.png"></img>
+					<div class="text-title">48 Project Night Meetups</div>
+					<div class="secondary-text">Our brigade is one of the most active brigades in the Code For America network.</div>
+				</div>
+			</div>
+			<div class="slide-4 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 4 midground</div>
+				</div>
+			</div>
+			<div class="slide-5 slide">
+				<img src="media/images/slide-5/midground-new-project.svg" class="midground-new-project"></img>
+			</div>
+			<div class="slide-6 slide">
+				<img src="media/images/slide-6/midground-update-bar.svg" class="midground-update-bar"></img>
+			</div>
+			<div class="slide-7 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 7 midground</div>
+				</div>
+			</div>
+			<div class="slide-8 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 8 midground</div>
+				</div>
+			</div>
+			<div class="slide-9 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 9 midground</div>
+				</div>
+			</div>
+			<div class="slide-10 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 10 midground</div>
+				</div>
+			</div>
+			<div class="slide-11 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 11 midground</div>
+				</div>
+			</div>
+			<div class="slide-12 slide">
+				<div class="layer">
+					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 12 midground</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- each layer is 200vw -->
+		<div class="carousel carousel--foreground">
+			<div class="slide-1 slide">
+				<img class="mountain-foreground" src="media/images/general/mountain-different-sizes-test/foreground-no-shadow.png"></img>
+			</div>
+			<div class="slide-2 slide">
+				<div class="foreground-bar-graph"></div>
+				<div class="data-label">
+					4,311
+					<label>2017</label>
+				</div>
+			</div>
+			<div class="slide-3 slide">
+				<div class="slide-text-container">
+					<img class="background-image" src="media/images/slide-3/event-america-recycles-day.png"></img>
+					<div class="text-title">
+						<div>America Recycles Day </div>
+						<div>Re:Imagine Showcase and Feedback Night</div>
+					</div>
+					<div class="secondary-text">EcoCycle hosted a Denver Re:Imagine showcase to debut our recycling application and solicit feedback from attendees. The event marked the completion of version 1 functionality, and gave us more guidance for the next version. Our presentation led the City of Denver to ask us to present the app at the Sustainability Summit. The Solid Waste Association of North America also asked us to present at their Road to Zero Waste Conference.</div>
+				</div>
+				<img src="media/images/slide-3/foreground-event-back.svg" class="foreground-event-back"></img>
+			</div>
+			<div class="slide-4 slide">
+			</div>
+			<div class="slide-5 slide">
+				<img src="media/images/slide-5/foreground-new-project.svg" class="foreground-new-project"></img>
+				<div class="new-project-container">
+					<div class="new-project-image"></div>
+						<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
+				</div>
+			</div>
+			<div class="slide-6 slide">
+				<img src="media/images/slide-6/foreground-update-bar.svg" class="foreground-update-bar"></img>
+			</div>
+			<div class="slide-7 slide">
+				<div class="layer">
+					<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 7 foreground</div>
+				</div>
+			</div>
+			<div class="slide-8 slide">
+				<div class="layer">
+					<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 8 foreground</div>
+				</div>
+			</div>
+			<div class="slide-9 slide">
+				<div class="layer">
+					<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 9 foreground</div>
+				</div>
+			</div>
+			<div class="slide-10 slide">
+				<div class="layer">
+					<div style="width:100%;text-align:right;margin-bottom:150px"><br /><br /><br /><br />slide 10 foreground</div>
+				</div>
+			</div>
+			<div class="slide-11 slide">
+			</div>
+			<div class="slide-12 slide">
+			</div>
+		</div>
+
+		<div class="text-overlay">
+			<div class="text-slide-1 text-slide">
+                <img class="intro-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
+                <img class="intro-light-cloud" src="media/images/general/cloud-light-left.svg">
+				<img class="text-slide-1__cfd-logo" src="media/images/slide-1/cfd-logo.png" />
+                <div class="intro-text">
+                    <div class="intro-year">2017</div>
+                    <div class="intro-subtitle">Year in Review</div>
+                    <div class="intro-slogan">Improving Denver <br />with Technology.</div>
+                </div>
+			</div>
+			<div class="text-slide-2 text-slide">
+				<h2>Year in Numbers</h2>
+				<div class="text-slide-2__container">
+					<div class="text-slide-2__left-column">
+						<div>
+							<p>
+								For the first time in our Total Hours of Giving
+								history, our members gave
+								over 100 hours per day of
+								service.
+							</p>
+							<p>
+								That is more than 4.###
+								hours. However, what that
+								really means is more is
+								recycled every year, better
+								life for senior citizens and
+								musicians, and computer
+								literacy for young kids.
+							</p>
+							<p>
+								It means our team is
+								awesome.
+							</p>
+						</div>
+					</div>
+					<div class="text-slide-2__center-column">
+						<h3>Total Hours of Giving</h3>
+					</div>
+					
+					<div class="text-slide-2__right-column">
+						<div>
+							<h4>750+</h4>
+							Members
+						</div>
+						<div>
+							<h4>340k</h4>
+							Lines of Code
+						</div>
+						<div class="text-slide-2__right-column__projects">
+							<h4>7</h4>
+							<span>Awesome Projects Delivered</span>
+						</div>
+						<div>
+							<h4>130+</h4>
+							Project Nights
+						</div>
+						<div class="text-slide-2__right-column__pizzas">
+							<h4>500</h4>
+							<h5>Pizzas</h5>
+							Destroyed
+						</div>
+						<div class="text-slide-2__right-column__possibilities">
+							<b>∞</b> Possibilities
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-slide-3 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-4 text-slide">
+				
+			</div>
+
+			<div class="text-slide-5 text-slide">
+				<h2>New Projects and Exploration</h2>
+				<div class="project-1">
+					<img src="media/images/slide-5/get-the-right-image-not-this-one.jpg" />
+					<p>
+						The new members project was launched to help streamline our members' engagement, reduce onboarding time and facilitate member communication.
+					</p>
+				</div>
+			</div>
+			<div class="text-slide-6 text-slide">
+				<h2>Project Updates</h2>
+
+				<div class="project1box">
+					<img src="media/images/slide-6/update-re-imagine.png" width="260px" height="150px"> 
+					<p>Circular Economy was rebranded to Denver Re:Imagine and developed from early concept and close to minimum viable product.</p>
+				</div>
+				<div class="project2box">
+					<img src="media/images/slide-6/update-encorelink.png" width="260px" height="150px">
+					<p>EncoreLink was developed to minimum viable product and incorporated as a nonprofit.</p>
+				</div>
+				<div class="project3box">
+					<img src="media/images/slide-6/update-brigade-research.png" width="260px" height="150px">
+					<p>Researched the most successful projects from other CfA Brigades (25 responded!)</p>
+				</div>
+				<div class="project4box">
+					<img src="media/images/slide-6/update-owlet.png" width="260px" height="150px">
+					<p>Owlet did a major refactor from microservices to monorepo service and got a new partner organization: Girls In Stem.</p>
+				</div>
+			</div>
+			<div class="text-slide-7 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-8 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-9 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-10 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-11 text-slide">
+				<!-- TODO -->
+			</div>
+			<div class="text-slide-12 text-slide">
+				<!-- TODO -->
+			</div>
+		</div>
+
+		<div style="position:absolute;top:0px;width:100vw;height:100vh;" class="carousel-controls">
+			<a style="position:absolute;top:45%;left:2%;color:black" href="#" class="animate-button--previous"><img src="media/images/general/left-arrow.svg" class="slide-change"></a>
+			<a style="position:absolute;top:45%;right:2%;color:black" href="#" class="animate-button--next"><img src="media/images/general/right-arrow.svg" class="slide-change"></a>
+		</div>
+	</div>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".animate-button--next").click(function(e) {
+				e.preventDefault();
+				nextSlide();
+			});
+			$(".animate-button--previous").click(function(e) {
+				e.preventDefault();
+				previousSlide();
+			});
 				// initial animation
 				$(".text-slide-1").fadeIn(2000);
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
 			});
 
-			var currentSlide = 1;
+		var currentSlide = 1;
 			var slideTransitionTime = 3000; //in ms
 			function nextSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -315,6 +420,20 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide == 2) {
+					$(".slide-2 .background-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--background .slide-2 .data-label").addClass('in');
+					}, 2500);
+					$(".slide-2 .midground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--midground .slide-2 .data-label").addClass('in');
+					}, 3000);
+					$(".slide-2 .foreground-bar-graph").addClass("in");
+					setTimeout(function() {
+						$(".carousel--foreground .slide-2 .data-label").addClass('in');
+					}, 3500);
+				}
 			}
 			function previousSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -329,19 +448,35 @@
 				switch (slide) {
 					case 1:
 						$(".text-slide-1__cfd-logo").css("bottom", "");
-						$(".text-slide-1__intro-text").fadeIn();
+                        $(".intro-text").fadeIn();
+                        $(".intro-dark-cloud").fadeIn();
+                        $(".intro-light-cloud").fadeIn ();
 						break;
 					case 2:
 						$(".text-slide-2").show();
 						$(".text-slide-2 h2").slideDown();
 						break;
+					case 4:
+						$(".text-slide-4").show();
+						$(".text-slide-4 h2").slideDown();
+						break;
+					case 5:
+						$(".text-slide-5").show();
+						$(".text-slide-5 h2").slideDown();
+						break;
+					case 6:
+						$(".text-slide-6").show();
+						$(".text-slide-6 h2").slideDown();
+						break;					
 				}
 			}
 			function animateTextOut(slide) {
 				switch (slide) {
 					case 1:
 						$(".text-slide-1__cfd-logo").css("bottom", "-100px");
-						$(".text-slide-1__intro-text").fadeOut();
+						$(".intro-text").fadeOut();
+                        $(".intro-dark-cloud").fadeOut();
+                        $(".intro-light-cloud").fadeOut();
 						break;
 					case 2:
 						var animationTime = 800;
@@ -349,9 +484,19 @@
 						setTimeout(function() {
 							$(".text-slide-2").hide();
 						}, animationTime);
+						$(".slide-2 .in").removeClass("in");
 						break;
+					case 4:
+						$(".text-slide-4").fadeOut();
+						break;
+					case 5:
+						$(".text-slide-5").fadeOut();
+						break;
+					case 6:
+						$(".text-slide-6").fadeOut();
+						break;				
 				}
 			}
 		</script>
 	</body>
-</html>
+	</html>
