@@ -110,11 +110,13 @@
 				<img src="media/images/slide-6/background-update-bar.svg" class="background-update-bar-right"></img>
 			</div>
 			<div class="slide-7 slide">
-					<img class="slide-7-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
-					<img class="slide-7-light-cloud" src="media/images/general/cloud-light-left.svg">
+				<img class="slide-7-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
+				<img class="slide-7-light-cloud" src="media/images/general/cloud-light-left.svg">
 			</div>
 			<div class="slide-8 slide">
 				<img src="media/images/slide-8/cityscape.svg" class="cityscape"></img>
+				<img class="slide-8-dark-cloud" src="media/images/general/cloud-dark-right.svg" ></img>
+				<img class="slide-8-light-cloud" src="media/images/general/cloud-light-left.svg"></img>
 			</div>
 			<div class="slide-9 slide">
 				<div class="slide-title">Organizational Updates</div>
@@ -324,7 +326,42 @@
 				</div>
 			</div>
 			<div class="text-slide-3 text-slide">
-				<!-- TODO -->
+				<h2>Events</h2>
+					<div class="row-1">
+						<div class="col-1">
+							<img class="row-image" src="media/images/slide-3/event-denver-startup-week.png">
+						</div>
+						<div class="col-2 medium-header">
+							Denver Startup Week Event: Applying Your Skills for Good
+						</div>
+						<div class="col-3 row-body-text">
+							Code for Denver Presents: "Applying Your Skills for Good with Code for Denver." This event showcased our projects and helped recruit members."
+						</div>
+					</div>
+
+					<div class="row-2">
+						<div class="col-1">
+							<img class="row-image" src="media/images/slide-3/event-project-night.png">
+						</div>
+						<div class="col-2 medium-header">
+							48 Project Night Meetups: Serving Our Community
+						</div>
+						<div class="col-3 row-body-text">
+							Our brigade is one of the most active brigades in the Code for America network.
+						</div>
+					</div>
+
+					<div class="row-3">
+						<div class="col-1">
+							<img class="row-image" src="media/images/slide-3/event-america-recycles-day.png">
+						</div>
+						<div class="col-2 medium-header">
+							America Recycles Day Re:Imagine Showcase and Feedback Night
+						</div>
+						<div class="col-3 row-body-text">
+							EcoCycle hosted a Denver Re:Imagine showcase to debut our recycling application and solicit feedback from attendees. The event marked the completion of version 1 functionality, and gave us more guidance for the next version. Out presentation led the City of Denver to ask us to present the app at the Sustainability Summit. The Solid Waste Association of North America also asked us to present at their Road to Zero Waste Conference.
+						</div>
+					</div>
 			</div>
 			<div class="text-slide-4 text-slide">
 
@@ -369,7 +406,16 @@
 			</div>
 			<div class="text-slide-8 text-slide">
 				<div class="slide-title">External Talks</div>
-				<!-- TODO -->
+				<div class="slide-8-container">
+						<div class="slide-8-title">Mile High Data day</div>
+						<div class="slide-8-bullet">- Intro to KoboTools<br />
+					  - Building a Data-Driven Impact Community in Denver</div>
+					  <div class="slide-8-title">Colorado Nonprofit Association’s 25th Annual Fall Conference: Nonprofits of Influence</div>
+						<div class="slide-8-bullet">- Free Tech Tools for Nonprofits: What You Need To Know<br />
+							- Intro to Agile for Nonprofits</div>
+						<div class="slide-8-title">Code for Boulder</div>
+						<div class="slide-8-bullet">- Introduction to Effective Altruism</div>
+				</div>
 			</div>
 			<div class="text-slide-9 text-slide">
 				<!-- TODO -->
@@ -453,6 +499,10 @@
 						$(".text-slide-2").show();
 						$(".text-slide-2 h2").slideDown();
 						break;
+					case 3:
+						$(".text-slide-3").show();
+						$(".text-slide-3 h2").slideDown();
+						break;
 					case 4:
 						$(".text-slide-4").show();
 						$(".text-slide-4 h2").slideDown();
@@ -470,6 +520,18 @@
 						break;
 					case 8:
 						$(".text-slide-8").fadeIn();
+						break;
+					case 9:
+						$(".text-slide-9").fadeIn();
+						break;
+					case 10:
+						$(".text-slide-10").fadeIn();
+						break;
+					case 11:
+						$(".text-slide-11").fadeIn();
+						break;
+					case 12:
+						$(".text-slide-12").fadeIn();
 						break;
 				}
 			}
@@ -489,6 +551,13 @@
 						}, animationTime);
 						$(".slide-2 .in").removeClass("in");
 						break;
+					case 3:
+						var animationTime = 800;
+						$(".text-slide-3 h2").slideUp(animationTime);
+						setTimeout(function() {
+							$(".text-slide-3").hide();
+						}, animationTime);
+						break;
 					case 4:
 						$(".text-slide-4").fadeOut();
 						break;
@@ -502,7 +571,19 @@
 						$(".text-slide-7").fadeOut();
 						break;
 					case 8:
-						$(".text-slide-8").fadeIn();
+						$(".text-slide-8").fadeOut();
+						break;
+					case 9:
+						$(".text-slide-9").fadeOut();
+						break;
+					case 10:
+						$(".text-slide-10").fadeOut();
+						break;
+					case 11:
+						$(".text-slide-11").fadeOut();
+						break;
+					case 12:
+						$(".text-slide-12").fadeOut();
 						break;
 				}
 			}
