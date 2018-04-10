@@ -215,6 +215,18 @@ body {
 					height: 20vh;
 					width: 15vw;
 					margin: 20px;
+					opacity: 0;
+					transform: scale(0);
+					transition: opacity 1250ms, transform 1s cubic-bezier(.47,1.47,.77,1.05);
+					
+					&.in {
+						opacity: 1;
+						transform: scale(1);
+					}
+					
+					&.fade-out {
+						opacity: 0;
+					}
 				}
 
 				.monthly-speaker-header {

@@ -47,50 +47,50 @@
 				</div>
 
 				<div class="monthly-speaker-grid-container">
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-1">
 						<div class="monthly-speaker-header">January 16</div>
 						<div class="monthly-speaker-name">Jasmin Barco</div>
 						<div class="monthly-speaker-text">Life of a Can</div>
 					</div>
 
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-2">
 						<div class="monthly-speaker-header">February 27</div>
 						<div class="monthly-speaker-name">CFD Organizational Team</div>
 						<div class="monthly-speaker-text">Talking It Up</div>
 					</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-3">
 						<div class="monthly-speaker-header">March 20</div>
 						<div class="monthly-speaker-name">Michelle and Tyler</div>
 						<div class="monthly-speaker-text">Introduction to Clojurescript</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-4">
 						<div class="monthly-speaker-header">April 24</div>
 						<div class="monthly-speaker-name">Bret Evans</div>
 						<div class="monthly-speaker-text">Data Driven Clojure</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-2">
 						<div class="monthly-speaker-header">May 22</div>
 						<div class="monthly-speaker-name">Fred Wehle</div>
 						<div class="monthly-speaker-text">Interacting with Hardware</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-3">
 						<div class="monthly-speaker-header">June 19</div>
 						<div class="monthly-speaker-name">Kate Catlin</div>
 						<div class="monthly-speaker-text">Diversity in Tech</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-4">
 						<div class="monthly-speaker-header">July 17</div>
 						<div class="monthly-speaker-name">Willy Douglas</div>
 						<div class="monthly-speaker-text">Intro to Effective Altruism</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-5">
 						<div class="monthly-speaker-header">August 28</div>
 						<div class="monthly-speaker-name">Vincent Buscarello</div>
 						<div class="monthly-speaker-text">The Data Dork</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-3">
 						<div class="monthly-speaker-header">September 18</div>
 						<div class="monthly-speaker-name">Sam Placette</div>
 						<div class="monthly-speaker-text">Regular Expressions</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-4">
 						<div class="monthly-speaker-header">December 4</div>
 						<div class="monthly-speaker-name">Willy Douglas</div>
 						<div class="monthly-speaker-text">How to Donate Effectively</div>						</div>
-					<div class="monthly-speaker-piece">
+					<div class="monthly-speaker-piece monthly-speaker-piece-group-5">
 						<div class="monthly-speaker-header">December 11</div>
 						<div class="monthly-speaker-name">Moses McCall</div>
 						<div class="monthly-speaker-text">Alexa for Everyone</div>						</div>
@@ -474,18 +474,7 @@
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
 				if (currentSlide == 2) {
-					$(".slide-2 .background-bar-graph").addClass("in");
-					setTimeout(function() {
-						$(".carousel--background .slide-2 .data-label").addClass('in');
-					}, 2500);
-					$(".slide-2 .midground-bar-graph").addClass("in");
-					setTimeout(function() {
-						$(".carousel--midground .slide-2 .data-label").addClass('in');
-					}, 3000);
-					$(".slide-2 .foreground-bar-graph").addClass("in");
-					setTimeout(function() {
-						$(".carousel--foreground .slide-2 .data-label").addClass('in');
-					}, 3500);
+					animateSlide2BarsIn();
 				}
 			}
 			function previousSlide() {
@@ -496,6 +485,9 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide == 2) {
+					animateSlide2BarsIn();
+				}
 			}
 			function animateTextIn(slide) {
 				switch (slide) {
@@ -516,6 +508,19 @@
 					case 4:
 						$(".text-slide-4").show();
 						$(".text-slide-4 h2").slideDown();
+						$(".monthly-speaker-piece-group-1").addClass("in");
+						setTimeout(function() {
+							$(".monthly-speaker-piece-group-2").addClass("in");
+						}, 250);
+						setTimeout(function() {
+							$(".monthly-speaker-piece-group-3").addClass("in");
+						}, 500);
+						setTimeout(function() {
+							$(".monthly-speaker-piece-group-4").addClass("in");
+						}, 750);
+						setTimeout(function() {
+							$(".monthly-speaker-piece-group-5").addClass("in");
+						}, 1000);
 						break;
 					case 5:
 						$(".text-slide-5").show();
@@ -570,6 +575,10 @@
 						break;
 					case 4:
 						$(".text-slide-4").fadeOut();
+						$(".monthly-speaker-piece").addClass('fade-out');
+						setTimeout(function() {
+							$(".monthly-speaker-piece").removeClass("fade-out").removeClass("in");
+						}, 2000);
 						break;
 					case 5:
 						$(".text-slide-5").fadeOut();
@@ -596,6 +605,20 @@
 						$(".text-slide-12").fadeOut();
 						break;
 				}
+			}
+			function animateSlide2BarsIn() {
+				$(".slide-2 .background-bar-graph").addClass("in");
+				setTimeout(function() {
+					$(".carousel--background .slide-2 .data-label").addClass('in');
+				}, 2500);
+				$(".slide-2 .midground-bar-graph").addClass("in");
+				setTimeout(function() {
+					$(".carousel--midground .slide-2 .data-label").addClass('in');
+				}, 3000);
+				$(".slide-2 .foreground-bar-graph").addClass("in");
+				setTimeout(function() {
+					$(".carousel--foreground .slide-2 .data-label").addClass('in');
+				}, 3500);
 			}
 		</script>
 	</body>
