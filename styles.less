@@ -179,6 +179,11 @@ body {
 				width: 30vw;
 			}
 
+			&.in {
+				opacity: 1;
+				transform: scale(1);
+			}
+
 		}
 
 		.slide-4 {
@@ -215,6 +220,18 @@ body {
 					height: 20vh;
 					width: 15vw;
 					margin: 20px;
+					opacity: 0;
+					transform: scale(0);
+					transition: opacity 1250ms, transform 1s cubic-bezier(.47,1.47,.77,1.05);
+
+					&.in {
+						opacity: 1;
+						transform: scale(1);
+					}
+
+					&.fade-out {
+						opacity: 0;
+					}
 				}
 
 				.monthly-speaker-header {
@@ -1045,18 +1062,46 @@ body {
 			left: 4vw;
 			top: 23vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
 		}
 		.row-2 {
 			position: absolute;
 			left: 8vw;
 			top: 47vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
 		}
 		.row-3 {
 			position: absolute;
 			left: 12vw;
 			top: 72vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
 		}
 		.col-1 {
 			flex-grow: 1;
@@ -1077,6 +1122,9 @@ body {
 		.row-image {
 			height: 150px;
 			margin-top: -16px;
+			position: relative;
+			left: 40px;
+			transition: left 2000ms;
 		}
 
 	}

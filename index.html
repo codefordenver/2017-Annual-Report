@@ -512,6 +512,15 @@
 					case 3:
 						$(".text-slide-3").show();
 						$(".text-slide-3 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-3 .row-1").addClass('in');
+						}, 250);
+						setTimeout(function() {
+							$(".text-slide-3 .row-2").addClass('in');
+						}, 750);
+						setTimeout(function() {
+							$(".text-slide-3 .row-3").addClass('in');
+						}, 1250);
 						break;
 					case 4:
 						$(".text-slide-4").show();
