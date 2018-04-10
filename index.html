@@ -510,6 +510,9 @@
 						$(".text-slide-2 h2").slideDown();
 						break;
 					case 3:
+						$(".text-slide-3 .row-1").removeClass('in');
+						$(".text-slide-3 .row-2").removeClass('in');
+						$(".text-slide-3 .row-3").removeClass('in');
 						$(".text-slide-3").show();
 						$(".text-slide-3 h2").slideDown();
 						setTimeout(function() {
@@ -573,6 +576,9 @@
 					case 3:
 						var animationTime = 800;
 						$(".text-slide-3 h2").slideUp(animationTime);
+						$(".text-slide-3 .row-1").removeClass('in');
+						$(".text-slide-3 .row-2").removeClass('in');
+						$(".text-slide-3 .row-3").removeClass('in');
 						setTimeout(function() {
 							$(".text-slide-3").hide();
 						}, animationTime);
