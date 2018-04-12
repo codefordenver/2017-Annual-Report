@@ -8,7 +8,6 @@
 	<link rel="stylesheet/less" type="text/css" href="styles.less" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
-
 </head>
 <body>
 	<div class="portrait-warning">
@@ -233,7 +232,7 @@
 						<img src="media/images/general/cloud-dark-right.svg" class="org-cloud-one" />
 						<img src="media/images/general/cloud-light-left.svg" class="org-cloud-two"  />
 						<img src="media/images/general/cloud-dark-left.svg" class="org-cloud-three" />
-						<img src="media/images/general/cloud-light-right.svg" class="org-cloud-four" /> 
+						<img src="media/images/general/cloud-light-right.svg" class="org-cloud-four" />
 					</div>
 				</div>
 			</div>
@@ -401,7 +400,7 @@
         </div>
 			</div>
 			<div class="text-slide-8 text-slide">
-				<div class="slide-title">External Talks</div>
+				<h2 class="slide-title">External Talks</h2>
 				<div class="slide-8-container">
 						<div class="slide-8-title">Mile High Data day</div>
 						<div class="slide-8-bullet">- Intro to KoboTools<br />
@@ -423,16 +422,21 @@
 				<!-- TODO -->
 			</div>
 			<div class="text-slide-12 text-slide">
-				<div class="slide-title">Get Involved</div>
+				<h2 class="slide-title">Get Involved</h2>
 					<div class="slide-12-container">
-						<div class="slide-12-title">Donate Financially</div>
-						<div class="slide-12-bullet">http://bit.ly/2FtNC4B</div>
-						<div class="slide-12-title">Become a Sponsor</div>
-						<div class="slide-12-bullet">Email: codefordenver@gmail.com</div>
-						<div class="slide-12-title">Become a Member</div>
-						<div class="slide-12-bullet">Start by joining our Meetup.com group at www.meetup.com/CodeForDenver. This is where we list all of our
-						upcoming meetings and events.</div>
-						<div class="slide-12-bullet">Then RSVP or just drop by and say, "hello".</div>
+						<div class="slide-12-group-1">
+							<div class="slide-12-title">Donate Financially</div>
+							<div class="slide-12-bullet"><a href="http://bit.ly/2FtNC4B">http://bit.ly/2FtNC4B</a></div>
+						</div>
+						<div class="slide-12-group-2">
+							<div class="slide-12-title">Become a Sponsor</div>
+							<div class="slide-12-bullet"><a href="mailto:codefordenver@gmail.com">codefordenver@gmail.com</a></div>
+						</div>
+						<div class="slide-12-group-3">
+							<div class="slide-12-title">Become a Member</div>
+							<div class="slide-12-bullet">Start by joining our Meetup.com group at <a href="www.meetup.com/CodeForDenver">www.meetup.com/CodeForDenver</a>. This is where we list all of our upcoming meetings and events.</div>
+							<div class="slide-12-bullet">Then RSVP or just drop by and say, "hello".</div>
+						</div>
 					</div>
 			</div>
 		</div>
@@ -530,7 +534,10 @@
 						$(".text-slide-7").fadeIn();
 						break;
 					case 8:
-						$(".text-slide-8").fadeIn();
+						$(".text-slide-8 slide-title").show();
+						$(".cityscape").fadeTo(800, 1, function() {
+							$(".text-slide-8").slideDown(600);
+						});
 						break;
 					case 9:
 						$(".text-slide-9").fadeIn();
@@ -542,7 +549,12 @@
 						$(".text-slide-11").fadeIn();
 						break;
 					case 12:
-						$(".text-slide-12").fadeIn();
+						setTimeout(function() {
+							$(".text-slide-12").show();
+						}, 220);
+						setTimeout(function() {
+							$(".text-slide-12").addClass("bouncy-text");
+						}, 220);
 						break;
 				}
 			}
@@ -586,7 +598,9 @@
 						$(".text-slide-7").fadeOut();
 						break;
 					case 8:
-						$(".text-slide-8").fadeOut();
+						$(".cityscape").fadeTo("fast", 0.3, function() {
+							$(".text-slide-8").slideUp();
+						});
 						break;
 					case 9:
 						$(".text-slide-9").fadeOut();
