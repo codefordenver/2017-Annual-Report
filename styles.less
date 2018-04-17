@@ -179,6 +179,11 @@ body {
 				width: 30vw;
 			}
 
+			&.in {
+				opacity: 1;
+				transform: scale(1);
+			}
+
 		}
 
 		.slide-4 {
@@ -1074,21 +1079,70 @@ body {
 
 		.row-1 {
 			position: absolute;
-			left: 10vw;
-			top: 24vh;
+			left: 4vw;
+			top: 23vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.row-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
+
 		}
 		.row-2 {
 			position: absolute;
-			left: 10vw;
-			top: 48vh;
+			left: 8vw;
+			top: 47vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.row-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
 		}
 		.row-3 {
 			position: absolute;
-			left: 10vw;
+			left: 12vw;
 			top: 72vh;
 			display: flex;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.row-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.row-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
 		}
 		.col-1 {
 			flex-grow: 1;
@@ -1109,6 +1163,9 @@ body {
 		.row-image {
 			height: 150px;
 			margin-top: -16px;
+			position: relative;
+			left: 40px;
+			transition: left 2000ms;
 		}
 
 	}
