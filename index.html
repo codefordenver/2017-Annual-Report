@@ -8,7 +8,6 @@
 	<link rel="stylesheet/less" type="text/css" href="styles.less" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
-
 </head>
 <body>
 	<div class="portrait-warning">
@@ -93,7 +92,10 @@
 				</div>
 			</div>
 			<div class="slide-5 slide">
-				<img src="media/images/slide-5/background-new-project.svg" class="background-new-project"></img>
+				<div class="slide-title">New Projects and Exploration</div>
+				<img src="media/images/slide-5/background-new-project.svg" class="background-new-project" />
+				<div class="background-box">
+				</div>
 			</div>
 			<div class="slide-6 slide">
 				<div class="background-update-bar-left"></div>
@@ -142,8 +144,10 @@
 					<div style="width:150vw;margin-bottom:40px;text-align:right"><br /><br />slide 4 midground</div>
 				</div>
 			</div>
-			<div class="slide-5 slide">
-				<img src="media/images/slide-5/midground-new-project.svg" class="midground-new-project"></img>
+	<div class="slide-5 slide">
+				<img src="media/images/slide-5/midground-new-project.svg" class="midground-new-project" />
+				<div class="midground-box">
+				</div>
 			</div>
 			<div class="slide-6 slide">
 				<img src="media/images/slide-6/midground-update-bar.svg" class="midground-update-bar"></img>
@@ -203,12 +207,8 @@
 			</div>
 			<div class="slide-4 slide">
 			</div>
-			<div class="slide-5 slide">
-				<img src="media/images/slide-5/foreground-new-project.svg" class="foreground-new-project"></img>
-				<div class="new-project-container">
-					<div class="new-project-image"></div>
-						<div class="new-project-text">The new members project was launched to help streamline our member engagement, reduce on-boarding time and facilitate member communication</div>
-				</div>
+	    <div class="slide-5 slide">
+				<img src="media/images/slide-5/foreground-new-project.svg" class="foreground-new-project" />
 			</div>
 			<div class="slide-6 slide">
 				<img src="media/images/slide-6/foreground-update-bar.svg" class="foreground-update-bar"></img>
@@ -235,7 +235,7 @@
 						<img src="media/images/general/cloud-dark-right.svg" class="org-cloud-one" />
 						<img src="media/images/general/cloud-light-left.svg" class="org-cloud-two"  />
 						<img src="media/images/general/cloud-dark-left.svg" class="org-cloud-three" />
-						<img src="media/images/general/cloud-light-right.svg" class="org-cloud-four" /> 
+						<img src="media/images/general/cloud-light-right.svg" class="org-cloud-four" />
 					</div>
 				</div>
 			</div>
@@ -360,15 +360,21 @@
 			<div class="text-slide-4 text-slide">
 
 			</div>
-
 			<div class="text-slide-5 text-slide">
-				<h2>New Projects and Exploration</h2>
-				<div class="project-1">
-					<img src="media/images/slide-5/get-the-right-image-not-this-one.jpg" />
-					<p>
-						The new members project was launched to help streamline our members' engagement, reduce onboarding time and facilitate member communication.
-					</p>
+				<div class="project-new-members">
+					<img src="media/images/slide-5/new-new-members.png" />
+					<div class="slide-5-subtext">The new members project was launched to help streamline our members' engagement, reduce onboarding time and facilitate member communication.</div>
 				</div>
+				<div class="project-new-effective">
+					<img src="media/images/slide-5/new-effective-altruism.png" />
+					<div class="slide-5-subtext">Started an effective altruism calculator. Effective altruism is a philosophy and social movement that applies evidence and reason to determine the most effective ways to benefit others.
+					</div>
+				</div>		
+				<div class="project-new-website">
+					<img src="media/images/slide-5/new-website.png" />
+					<div class="slide-5-subtext">Updated website to wordpress and started a blog
+					</div>
+				</div>					
 			</div>
 			<div class="text-slide-6 text-slide">
 				<h2>Project Updates</h2>
@@ -403,7 +409,7 @@
         </div>
 			</div>
 			<div class="text-slide-8 text-slide">
-				<div class="slide-title">External Talks</div>
+				<h2 class="slide-title">External Talks</h2>
 				<div class="slide-8-container">
 						<div class="slide-8-title">Mile High Data day</div>
 						<div class="slide-8-bullet">- Intro to KoboTools<br />
@@ -435,16 +441,15 @@
 				<!-- TODO -->
 			</div>
 			<div class="text-slide-12 text-slide">
-				<div class="slide-title">Get Involved</div>
-					<div class="slide-12-container">
-						<div class="slide-12-title">Donate Financially</div>
-						<div class="slide-12-bullet">http://bit.ly/2FtNC4B</div>
-						<div class="slide-12-title">Become a Sponsor</div>
-						<div class="slide-12-bullet">Email: codefordenver@gmail.com</div>
-						<div class="slide-12-title">Become a Member</div>
-						<div class="slide-12-bullet">Start by joining our Meetup.com group at www.meetup.com/CodeForDenver. This is where we list all of our
-						upcoming meetings and events.</div>
-						<div class="slide-12-bullet">Then RSVP or just drop by and say, "hello".</div>
+				<h2 class="slide-title bouncy-title">Get Involved</h2>
+					<div class="slide-12-container bouncy-text">
+							<div class="slide-12-title">Donate Financially</div>
+							<div class="slide-12-bullet"><a href="http://bit.ly/2FtNC4B">http://bit.ly/2FtNC4B</a></div>
+							<div class="slide-12-title">Become a Sponsor</div>
+							<div class="slide-12-bullet"><a href="mailto:codefordenver@gmail.com">codefordenver@gmail.com</a></div>
+							<div class="slide-12-title">Become a Member</div>
+							<div class="slide-12-bullet">Start by joining our Meetup.com group at <a href="www.meetup.com/CodeForDenver">www.meetup.com/CodeForDenver</a>. This is where we list all of our upcoming meetings and events.</div>
+							<div class="slide-12-bullet">Then RSVP or just drop by and say, "hello".</div>
 					</div>
 			</div>
 		</div>
@@ -510,8 +515,20 @@
 						$(".text-slide-2 h2").slideDown();
 						break;
 					case 3:
+						$(".text-slide-3 .row-1").removeClass('in');
+						$(".text-slide-3 .row-2").removeClass('in');
+						$(".text-slide-3 .row-3").removeClass('in');
 						$(".text-slide-3").show();
 						$(".text-slide-3 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-3 .row-1").addClass('in');
+						}, 250);
+						setTimeout(function() {
+							$(".text-slide-3 .row-2").addClass('in');
+						}, 750);
+						setTimeout(function() {
+							$(".text-slide-3 .row-3").addClass('in');
+						}, 1250);
 						break;
 					case 4:
 						$(".text-slide-4").show();
@@ -542,7 +559,10 @@
 						$(".text-slide-7").fadeIn();
 						break;
 					case 8:
-						$(".text-slide-8").fadeIn();
+						$(".text-slide-8 slide-title").show();
+						$(".cityscape").fadeTo(800, 1, function() {
+							$(".text-slide-8").slideDown(600);
+						});
 						break;
 					case 9:
 						$(".text-slide-9").fadeIn();
@@ -554,7 +574,13 @@
 						$(".text-slide-11").fadeIn();
 						break;
 					case 12:
-						$(".text-slide-12").fadeIn();
+						setTimeout(function() {
+							$(".text-slide-12").show();
+						}, 220);
+						setTimeout(function() {
+							// $(".text-slide-12").addClass("bouncy-title");
+							// $(".text-slide-12").addClass("bouncy-text");
+						}, 220);
 						break;
 				}
 			}
@@ -577,6 +603,9 @@
 					case 3:
 						var animationTime = 800;
 						$(".text-slide-3 h2").slideUp(animationTime);
+						$(".text-slide-3 .row-1").removeClass('in');
+						$(".text-slide-3 .row-2").removeClass('in');
+						$(".text-slide-3 .row-3").removeClass('in');
 						setTimeout(function() {
 							$(".text-slide-3").hide();
 						}, animationTime);
@@ -598,7 +627,9 @@
 						$(".text-slide-7").fadeOut();
 						break;
 					case 8:
-						$(".text-slide-8").fadeOut();
+						$(".cityscape").fadeTo("fast", 0.3, function() {
+							$(".text-slide-8").slideUp();
+						});
 						break;
 					case 9:
 						$(".text-slide-9").fadeOut();
