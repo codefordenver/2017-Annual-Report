@@ -276,7 +276,7 @@
 								service.
 							</p>
 							<p>
-								That is more than 4.###
+								It adds up to 4,311
 								hours. However, what that
 								really means is more is
 								recycled every year, better
@@ -524,7 +524,7 @@
                         $(".intro-light-cloud").fadeIn ();
 						break;
 					case 2:
-						$(".text-slide-2").show();
+						$(".text-slide-2").fadeIn();
 						$(".text-slide-2 h2").slideDown();
 						break;
 					case 3:
@@ -610,7 +610,7 @@
 						var animationTime = 800;
 						$(".text-slide-2 h2").slideUp(animationTime);
 						setTimeout(function() {
-							$(".text-slide-2").hide();
+							$(".text-slide-2").fadeOut();
 						}, animationTime);
 						$(".slide-2 .in").removeClass("in");
 						break;
