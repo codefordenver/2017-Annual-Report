@@ -444,13 +444,13 @@
 				<div class="slide-title">Thank You to Our Amazing Sponsors</div>
 				<div class="thank-you-note">Code for Denver is generously supported by:</div>
 				<div class="slide-11-container">
-					<img src="media/images/slide-8/sponsor-ca-technologies.png" alt="CA Technologies logo" class="ca-technologies-logo" />
-					<img src="media/images/slide-8/sponsor-commons.png" alt="The Commons on Champa logo" class="commons-logo" />
-					<img src="media/images/slide-8/sponsor-galvanize.png" alt="Galvanize logo" class="galvanize-logo" />
-					<img src="media/images/slide-8/sponsor-gary-community.jpg" alt="Gary Community Investments logo" class="gary-community-logo" />
-					<img src="media/images/slide-8/sponsor-geodesystems.png" alt="Geodesystems logo" class="geodeosystems-logo" />
-					<img src="media/images/slide-8/sponsor-refactor.png" alt="Refactor U logo" class="refactor-logo" />
-					<img src="media/images/slide-8/sponsor-turing.png" alt="Turing School logo" class="turing-logo" />
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-ca-technologies.png" alt="CA Technologies logo" id="ca-technologies-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-commons.png" alt="The Commons on Champa logo" id="commons-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-galvanize.png" alt="Galvanize logo" id="galvanize-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-gary-community-purple.png" alt="Gary Community Investments logo" id="gary-community-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-geodesystems.png" alt="Geodesystems logo" id="geodeosystems-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-refactor.png" alt="Refactor U logo" id="refactor-logo" /></div>
+					<div class="appearRandom"><img src="media/images/slide-8/sponsor-turing.png" alt="Turing School logo" id="turing-logo" /></div>
 				</div>
 			</div>
 			<div class="text-slide-12 text-slide">
@@ -585,6 +585,11 @@
 						break;
 					case 11:
 						$(".text-slide-11").fadeIn();
+						setTimeout(function() {
+							$(".appearRandom").each(function() {
+								$(this).fadeIn(Math.random()*4000);
+							});
+						}, 1000);
 						break;
 					case 12:
 						setTimeout(function() {
@@ -648,6 +653,7 @@
 						break;
 					case 11:
 						$(".text-slide-11").fadeOut();
+						$(".appearRandom").fadeOut();
 						break;
 					case 12:
 						$(".text-slide-12").fadeOut();
