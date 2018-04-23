@@ -393,7 +393,7 @@
 			</div>
 			<div class="text-slide-7 text-slide">
 				<h2 class="slide-title">Denver Sustainability Project</h2>
-        <div class="text-title">Energize Denver: Energy Efficiency in Commercial and Multifamily Buildings</div>
+        		<div class="text-title">Energize Denver: Energy Efficiency in Commercial and Multifamily Buildings</div>
 				<img class="sustainability-screenshot" src="media/images/slide-8/sustainability-screen-shot.png">
 
 				<div class="secondary-text">
@@ -543,6 +543,7 @@
 						break;
 					case 7:
 						$(".text-slide-7").fadeIn();
+						$(".slide-title, .text-title, .sustainability-screenshot, .secondary-text").addClass("in");
 						break;
 					case 8:
 						$(".text-slide-8").fadeIn();
@@ -602,6 +603,7 @@
 						break;
 					case 7:
 						$(".text-slide-7").fadeOut();
+                        $(".slide-title, .text-title, .sustainability-screenshot, .secondary-text").removeClass("in");
 						break;
 					case 8:
 						$(".text-slide-8").fadeOut();

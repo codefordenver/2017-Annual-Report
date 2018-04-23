@@ -1292,19 +1292,27 @@ body {
 
 	.text-slide-7 {
 		.slide-title {
-			color: #7D2A32;
+			color: rgba(109,46,53, 0.1);
 			font-size: 40px;
 			font-weight: bold;
 			width: 100%;
 			margin-top: 10vh;
 			margin-left: 10vw;
+			transition: color 2500ms;
+			&.in{
+				color: rgba(109,46,53, 1);
+			}
 		}
 		.text-title {
 			font-size: 24px;
 			font-weight: bold;
 			width: 55vw;
-			margin-left: 10vw;
+			margin-left: 100vw;
 			margin-top: -3vh;
+			transition: margin-left 2000ms;
+			&.in{
+				margin-left: 10vw;
+			}
 		}
 		.secondary-text{
 			width: 41vw;
@@ -1319,10 +1327,18 @@ body {
 			width: 440px;
 			position: absolute;
 			right: 10vw;
-			bottom: 38vh;
+			bottom: 48vh;
 			-webkit-box-shadow: 9px 9px 7px 0px rgba(50, 50, 50, 0.75);
-			-moz-box-shadow:		9px 9px 7px 0px rgba(50, 50, 50, 0.75);
-			box-shadow:				 9px 9px 7px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow:	9px 9px 7px 0px rgba(50, 50, 50, 0.75);
+			box-shadow:			9px 9px 7px 0px rgba(50, 50, 50, 0.75);
+			opacity: 0.1;
+			transform: scale(0.8);
+			transition: all 1.5s cubic-bezier(0,.43,1,.29);
+			&.in{
+				opacity:1;
+				transform: scale(1);
+				bottom: 38vh;
+			}
 		}
 
 	}
