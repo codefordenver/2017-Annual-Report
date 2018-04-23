@@ -359,27 +359,25 @@ body {
 				position: absolute;
 				width: 15%;
 				height: 15%;
-				left: 74vw;
+				left: 90vw;
 				bottom: 78vh;
-				transition: 300ms 500ms;
-				/* Waiting to apply until cloud background is removed
-				-webkit-box-shadow: 9px 9px 7px 0px rgba(50, 50, 50, 0.75);
-				-moz-box-shadow:		9px 9px 7px 0px rgba(50, 50, 50, 0.75);
-				box-shadow:				 9px 9px 7px 0px rgba(50, 50, 50, 0.75);
-			 */
-
-
+				transition: all 2s;
+				&.in{
+					left: 74vw;
+				}
 			}
 
 			.slide-7-light-cloud {
 				position: absolute;
 				width: 22%;
 				height: 22%;
-				left: 70vw;
+				left: 58vw;
 				bottom: 68vh;
-				transition: 300ms 500ms;
+				transition: all 1.5s;
+				&.in{
+					left: 70vw;
+				}
 			}
-
 		}
 
 		.slide-8 {
