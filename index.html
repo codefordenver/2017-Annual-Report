@@ -478,7 +478,9 @@
 				previousSlide();
 			});
 				// initial animation
-				$(".text-slide-1").fadeIn(2000);
+				$(".text-slide-1").fadeIn(2000, function() {
+                    $(".text-slide-1__cfd-logo").addClass('in');
+                });
             	$(".animate-button--previous").hide();
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
@@ -499,6 +501,7 @@
 				}
 				if (currentSlide > 1){
                     $(".animate-button--previous").show();
+                    $(".text-slide-1__cfd-logo").removeClass('in');
 				}
 			}
 			function previousSlide() {
