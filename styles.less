@@ -146,13 +146,9 @@ body {
 		}
 
 		.slide-4 {
-			.slide-title {
-				color: #7D2A32;
-				font-size: 40px;
-				font-weight: bold;
-				width: 100%;
+			.slide-headline {
 				margin-top: 5vh;
-				margin-left: 10vw;
+				margin-left: 5vw;
 			}
 			.background-cloud-small {
 				height: 40vh;
@@ -256,13 +252,9 @@ body {
 				height: 90vh;
 			}
 
-			.slide-title {
-				color: #7D2A32;
-				font-size: 40px;
-				font-weight: bold;
-				width: 100%;
+			.slide-headline {
 				margin-top: 5vh;
-				margin-left: 10vw;
+				margin-left: 5vw;
 			}
 			.new-project-container {
 				position: relative;
@@ -357,14 +349,7 @@ body {
 		}
 
 		.slide-9 {
-			.slide-title {
-				color: #7D2A32;
-				font-size: 40px;
-				font-weight: bold;
-				width: 100%;
-				margin-top: 5vh;
-				margin-left: 10vw;
-			}
+			
 		}
 		
 		.slide-10 {
@@ -832,6 +817,12 @@ body {
 	background-position: center bottom;
 	height: 100vh;
 }
+.slide-headline {
+	color: @deepRed;
+	font-size: 3em;
+	margin-top: 0;
+	font-weight: bold;
+}
 .text-overlay {
 	position: absolute;
 	width: 100vw;
@@ -877,8 +868,6 @@ body {
 		* { box-sizing: border-box; }
 
 		h2 {
-			color: #7c2730;
-			font-size: 3em;
 			margin: 0em 0em 0.5em;
 		}
 		&__container {
@@ -974,10 +963,8 @@ body {
 	.text-slide-3 {
 		h2 {
 			position: absolute;
-			left: 10vw;
-			top: 3vh;
-			color: #7c2730;
-			font-size: 3em;
+			left: 5vw;
+			top: 5vh;
 		}
 
 		.medium-header {
@@ -1174,11 +1161,8 @@ body {
 	}
 	.text-slide-6 {
 		h2 {
-			margin-top: 50px;
-			margin-left: 100px;
-			font-family: 'Encode Sans Semi Expanded', sans-serif;
-			color: #813e46;
-			font-weight: 700;
+			margin-top: 5vh;
+			margin-left: 5vw;
 		}
 
 		.projectbox {
@@ -1232,11 +1216,7 @@ body {
 
 	.text-slide-7 {
 		.slide-title {
-			color: rgba(109,46,53, 0.1);
-			font-size: 40px;
-			font-weight: bold;
-			width: 100%;
-			margin-top: 10vh;
+			margin-top: 5vh;
 			margin-left: 10vw;
 			transition: color 2500ms;
 			&.in{
@@ -1284,11 +1264,7 @@ body {
 	}
 
 	.text-slide-8 {
-		.slide-title {
-			color: #7D2A32;
-			font-size: 40px;
-			font-weight: bold;
-			width: 100%;
+		.slide-headline {
 			margin-top: 5vh;
 			margin-left: 10vw;
 		}
@@ -1311,16 +1287,20 @@ body {
 			margin-bottom: 20px;
 		}
 	}
+	
+	.text-slide-9 {
+		.slide-headline {
+			margin-top: 5vh;
+			margin-left: 10vw;
+		}
+	}
 
 	.text-slide-10{
-		.slide-title {
+		.slide-headline {
 			text-align: center;
-			color: #7D2A32;
-			font-size: 40px;
-			font-weight: bold;
-			width: 100%;
 			margin-top: 5vh;
-
+			position: relative;
+			z-index: 1;
 		}
 		.members-photo{
 			position: absolute;
@@ -1352,11 +1332,8 @@ body {
 	}
 	
 	.text-slide-11 {
-		.slide-title {
-			color: #7D2A32;
+		.slide-headline {
 			font-size: 50px;
-			font-weight: bold;
-			width: 100%;
 			margin-top: 5vh;
 			margin-left: 10vw;
 		}
