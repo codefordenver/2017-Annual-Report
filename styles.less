@@ -371,7 +371,6 @@ body {
 
 
 		.slide-10 {
-
 			.image-background {
 				position: absolute;
 				bottom: 16vh;
@@ -1319,141 +1318,41 @@ body {
 		.slide-title {
 			text-align: center;
 			color: #7D2A32;
-			font-size: 46px;
-			font-weight: bold;
-			width: 100%;
-			margin-top: 4vh;
-
-		}
-		.member-container{
-			position: absolute;
-			margin-left: 10vw;
-			width: 70vw;
-			height: 60vh;
-
-			.member-photo{
-				position: relative;
-				margin-left: 0vw;
-				margin-top: 15vh;
-				width: 80vw;
-				z-index: 100;
-			}
-		}
-		.slide-10-light-cloud{
-			position: absolute;
-			width: 15vw;
-			right:12vw;
-			margin-top: 5vh;
-			z-index: 102;
-		}
-		.slide-10-dark-cloud{
-			position: absolute;
-			width: 13vw;
-			right:11vw;
-			margin-top: 3vh;
-			z-index: 101;
-		}
-		.overlay-bottom-left{
-			position: absolute;
-			margin-top: 45vh;
-			z-index: 101;
-			.back{
-				position: absolute;
-				margin-left: 6vw;
-
-			}
-			.mid{
-				position: absolute;
-				margin-left: 10vw;
-				margin-top: 4vh;
-
-			}
-			.fore{
-				position: absolute;
-				margin-left: 13vw;
-				margin-top: 7vh;
-
-			}
-		}
-	}
-  
-	.text-slide-11 {
-		.slide-title {
-			color: #7D2A32;
-			font-size: 50px;
+			font-size: 40px;
 			font-weight: bold;
 			width: 100%;
 			margin-top: 5vh;
-			margin-left: 10vw;
+
+		}
+		.members-photo{
+			position: absolute;
+			width: 78vw;
+			margin-left: 11vw;
+			bottom:19vh;
+		}
+		.slide-10-dark-cloud {
+			position: absolute;
+			width: 8%;
+			left: 79vw;
+			bottom: 82vh;
+			transition: all 2s;
+			&.in{
+				left: 74vw;
+			}
 		}
 
-		.thank-you-note {
-			font-size: 1.7rem;
-			margin-left: 10vw;
-			margin-top: 2vh;
-			width: 15%;
-		}
-
-		.slide-11-container {
-			width: 80vw;
-			position: auto;
-			@logoHeight: 15vh;
-
-			.appearRandom {
-				display: none;
-			}
-
-			#gary-community-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: -5vh;
-				margin-left: 30vw;
-			}
-
-			#geodeosystems-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 20vh;
-				margin-left: 20vw;
-			}
-
-			#galvanize-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 15vh;
-				margin-left: 35vw;
-			}
-
-			#commons-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 20vh;
-				margin-left: 60vw;
-			}
-
-			#turing-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 40vh;
-				margin-left: 15vw;
-			}
-
-			#ca-technologies-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 40vh;
-				margin-left: 50vw;
-			}
-
-			#refactor-logo {
-				position: absolute;
-				height: @logoHeight;
-				margin-top: 40vh;
-				margin-left: 65vw;
+		.slide-10-light-cloud {
+			position: absolute;
+			width: 12%;
+			left: 75vw;
+			bottom: 77vh;
+			transition: all 1.5s;
+			&.in{
+				left: 70vw;
 			}
 		}
 	}
-
+	
 	.text-slide-12 {
 		.slide-title {
 			color: #7D2A32;
