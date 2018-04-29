@@ -317,7 +317,8 @@
 							Destroyed
 						</div>
 						<div class="text-slide-2__right-column__possibilities">
-							<b>∞</b> Possibilities
+							<img src="media/images/slide-2/infinity-symbol.png" alt="Infinity symbol"/>
+							Possibilities
 						</div>
 					</div>
 				</div>
@@ -528,7 +529,7 @@
 						break;
 					case 2:
 						$(".text-slide-2").fadeIn();
-						$(".text-slide-2 h2").slideDown();
+						$(".text-slide-2 h2").fadeIn();
 						break;
 					case 3:
 						$(".text-slide-3 .row-1").removeClass('in');
@@ -613,10 +614,11 @@
 						break;
 					case 2:
 						var animationTime = 800;
-						$(".text-slide-2 h2").slideUp(animationTime);
-						setTimeout(function() {
-							$(".text-slide-2").fadeOut();
-						}, animationTime);
+						$(".text-slide-2 h2").fadeOut(animationTime);
+						// setTimeout(function() {
+						// 	$(".text-slide-2").fadeOut();
+						// }, animationTime);
+						$(".text-slide-2").fadeOut(animationTime);
 						$(".slide-2 .in").removeClass("in");
 						break;
 					case 3:
