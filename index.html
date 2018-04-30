@@ -107,8 +107,6 @@
 			</div>
 			<div class="slide-8 slide">
 				<img src="media/images/slide-8/cityscape.svg" class="cityscape"></img>
-				<img class="slide-8-dark-cloud" src="media/images/general/cloud-dark-right.svg" ></img>
-				<img class="slide-8-light-cloud" src="media/images/general/cloud-light-left.svg"></img>
 			</div>
 			<div class="slide-9 slide">
 			</div>
@@ -496,6 +494,14 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide == 8) {
+					$(".slide-7-dark-cloud, .slide-7-light-cloud").addClass("slide-8-in");
+				}
+				if (currentSlide == 7) {
+					setTimeout(function() {
+						$(".slide-7-dark-cloud, .slide-7-light-cloud").addClass("in");
+					}, slideTransitionTime - 500);
+				}
 				if (currentSlide == 2) {
 					animateSlide2BarsIn();
 				}
@@ -512,6 +518,12 @@
 				setTimeout(function() {
 					animateTextIn(currentSlide);
 				}, slideTransitionTime - 500);
+				if (currentSlide + 1 == 7) {
+					$(".slide-7-dark-cloud, .slide-7-light-cloud").removeClass("in");
+				}
+				if (currentSlide + 1 == 8) {
+					$(".slide-7-dark-cloud, .slide-7-light-cloud").removeClass("slide-8-in");
+				}
 				if (currentSlide == 2) {
 					animateSlide2BarsIn();
 				}
@@ -575,7 +587,6 @@
 					case 7:
 						$(".text-slide-7").fadeIn();
 						$(".slide-headline, .text-title, .sustainability-screenshot, .secondary-text").addClass("in");
-						$(".slide-7-dark-cloud, .slide-7-light-cloud").addClass("in");
 						break;
 					case 8:
 						$(".text-slide-8 slide-headline").show();
@@ -647,7 +658,6 @@
 					case 7:
 						$(".text-slide-7").fadeOut();
                         $(".slide-headline, .text-title, .sustainability-screenshot, .secondary-text").removeClass("in");
-                        $(".slide-7-dark-cloud, .slide-7-light-cloud").removeClass("in");
 						break;
 					case 8:
 						$(".cityscape").fadeTo("fast", 0.3, function() {
