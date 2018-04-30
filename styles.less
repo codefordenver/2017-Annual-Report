@@ -95,7 +95,7 @@ body {
 			.mountain-background {
 				position: absolute;
 				width: 81vw;
-				bottom: 16vh;
+				bottom: 15vh;
 				right: -160px;
 				z-index: 1;
 			}
@@ -855,9 +855,9 @@ body {
 			bottom: 40px;
 			// transition: 300ms 500ms;
 			z-index:4;
-			transform: scale(0.5);
+			transform: scale(0.8);
 			opacity: 0.4;
-			transition: all 700ms ;
+			transition: all 500ms ;
 			&.in{
 				transform: scale(1);
 				opacity: 1;
@@ -867,6 +867,68 @@ body {
 			position:absolute;
 			top: 10vh;
 			left: 0;
+		}
+		.intro-text {
+			position: absolute;
+			left: 10vw;
+			top: 10vh;
+			.intro-year {
+				font-size: 10em;
+				font-weight: 800;
+				color: #7D2931;
+				margin: 0px;
+				padding: 0px;
+				transform: scale(0.7);
+				transition: all 1200ms;
+				&.in{
+					transform: scale(1);
+				}
+			}
+
+			.intro-subtitle {
+				font-size: 3em;
+				font-weight: 600;
+				color: #E34C54;
+				margin-bottom: 30px;
+				margin-top: 0;
+			}
+
+			.intro-slogan {
+				color: #fff;
+				font-size: 2.7em;
+			}
+		}
+
+		.intro-dark-cloud {
+			width: 15vw;
+			height: 10vh;
+			position: absolute;
+			right: 9vw;
+			top: 9vh;
+			transform: scale(.8);
+			opacity: 0;
+			transition: all 1000ms;
+			&.in{
+				transform: scale(1);
+				right: 10vw;
+				opacity: 1;
+			}
+		}
+
+		.intro-light-cloud {
+			width: 22vw;
+			height: 17vh;
+			position: absolute;
+			right: 12vw;
+			top: 10vh;
+			opacity:0;
+			transform: scale(.8);
+			transition: all 1000ms;
+			&.in{
+				transform: scale(1);
+				right: 16vw;
+				opacity: 1;
+			}
 		}
 	}
 
@@ -1347,7 +1409,7 @@ body {
 
 		.slide-11-container {
 			width: 80vw;
-			position: auto;
+			position: absolute;
 			@logoHeight: 15vh;
 
 			.appearRandom {
@@ -1520,51 +1582,6 @@ body {
 
 .carousel-controls {
 	z-index: 100;
-}
-
-.intro-text {
-		position: absolute;
-		left: 10vw;
-		top: 10vh;
-}
-
-.intro-year {
-		font-size: 10em;
-		font-weight: 800;
-		color: #7D2931;
-		margin: 0px;
-		padding: 0px;
-}
-
-.intro-subtitle {
-		font-size: 3em;
-		font-weight: 600;
-		color: #E34C54;
-		margin-bottom: 30px;
-		margin-top: 0;
-}
-
-.intro-slogan {
-		color: #fff;
-		font-size: 2.7em;
-}
-
-.intro-dark-cloud {
-		width: 15vw;
-		height: 10vh;
-		position: absolute;
-		right: 10vw;
-		top: 9vh;
-		transition: 300ms 500ms;
-}
-
-.intro-light-cloud {
-		width: 22vw;
-		height: 17vh;
-		position: absolute;
-		right: 16vw;
-		top: 10vh;
-		transition: 300ms 500ms;
 }
 
 .org-container {

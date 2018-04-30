@@ -466,25 +466,29 @@
 	</div>
 	<script src="jquery.js"></script>
 	<script type="text/javascript">
-		$(function() {
-			$(".animate-button--next").click(function(e) {
-				e.preventDefault();
-				nextSlide();
-			});
-			$(".animate-button--previous").click(function(e) {
-				e.preventDefault();
-				previousSlide();
-			});
+			$(function() {
+				$(".animate-button--next").click(function(e) {
+					e.preventDefault();
+					nextSlide();
+				});
+				$(".animate-button--previous").click(function(e) {
+					e.preventDefault();
+					previousSlide();
+				});
 				// initial animation
-				$(".text-slide-1").fadeIn(2000, function() {
-                    $(".text-slide-1__cfd-logo").addClass('in');
-                });
-            	$(".animate-button--previous").hide();
+
+				$(".text-slide-1").fadeIn(200, function() {
+					$(".text-slide-1__cfd-logo").addClass('in');
+                    $(".intro-text .intro-year").addClass('in');
+                    $(".intro-dark-cloud").addClass('in');
+                    $(".intro-light-cloud").addClass('in');
+				});
+				$(".animate-button--previous").hide();
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
 			});
 
-		var currentSlide = 1;
+			var currentSlide = 1;
 			var slideTransitionTime = 3000; //in ms
 			function nextSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -507,7 +511,6 @@
 				}
 				if (currentSlide > 1){
                     $(".animate-button--previous").show();
-                    $(".text-slide-1__cfd-logo").removeClass('in');
 				}
 			}
 			function previousSlide() {
@@ -529,16 +532,16 @@
 				}
 				if (currentSlide == 1){
                     $(".animate-button--previous").hide();
-                    $(".text-slide-1__cfd-logo").addClass('in');
 				}
 			}
 			function animateTextIn(slide) {
 				switch (slide) {
 					case 1:
-						$(".text-slide-1__cfd-logo").css("bottom", "");
-                        $(".intro-text").fadeIn();
-                        $(".intro-dark-cloud").fadeIn();
-                        $(".intro-light-cloud").fadeIn();
+						$(".text-slide-1__cfd-logo").css("bottom", "").addClass('in');
+                        $(".intro-text .intro-year").addClass('in');
+                        $(".intro-text").fadeIn(1000);
+                        $(".intro-dark-cloud").addClass('in');
+                        $(".intro-light-cloud").addClass('in');
 						break;
 					case 2:
 						$(".text-slide-2").fadeIn();
@@ -619,10 +622,11 @@
 			function animateTextOut(slide) {
 				switch (slide) {
 					case 1:
-						$(".text-slide-1__cfd-logo").css("bottom", "-100px");
-						$(".intro-text").fadeOut();
-                        $(".intro-dark-cloud").fadeOut();
-                        $(".intro-light-cloud").fadeOut();
+						$(".text-slide-1__cfd-logo").css("bottom", "-100px").removeClass('in');
+                        $(".intro-text .intro-year").removeClass('in');
+						$(".intro-text").fadeOut(1000);
+                        $(".intro-dark-cloud").removeClass('in');
+                        $(".intro-light-cloud").removeClass('in');
 						break;
 					case 2:
 						var animationTime = 800;
