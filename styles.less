@@ -315,11 +315,16 @@ body {
 				position: absolute;
 				width: 15%;
 				height: 15%;
-				left: 90vw;
+				left: 100vw;
 				bottom: 78vh;
-				transition: all 2s;
+				transition: all 0.7s;
 				&.in{
 					left: 74vw;
+					transition: all 3s;
+				}
+				&.slide-8-in {
+					left: 106vw;
+					bottom: 73vh;
 				}
 			}
 
@@ -327,11 +332,15 @@ body {
 				position: absolute;
 				width: 22%;
 				height: 22%;
-				left: 58vw;
+				left: 110vw;
 				bottom: 68vh;
-				transition: all 1.5s;
+				transition: all 0.7s;
 				&.in{
 					left: 70vw;
+					transition: all 3s;
+				}
+				&.slide-8-in {
+					left: 116vw;
 				}
 			}
 		}
@@ -1555,21 +1564,6 @@ body {
 		position: absolute;
 		right: 16vw;
 		top: 10vh;
-		transition: 300ms 500ms;
-}
-
-.slide-8-dark-cloud {
-		width: 15%;
-		height: 15%;
-		bottom: 47vh;
-		transition: 300ms 500ms;
-}
-
-.slide-8-light-cloud {
-		width: 22%;
-		height: 22%;
-		right: 16vw;
-		bottom: 47vh;
 		transition: 300ms 500ms;
 }
 
