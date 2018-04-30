@@ -476,15 +476,16 @@
 				previousSlide();
 			});
 				// initial animation
-				$(".text-slide-1").fadeIn(2000, function() {
+				$(".text-slide-1").fadeIn(1500, function() {
                     $(".text-slide-1__cfd-logo").addClass('in');
-                });
+				});
+            	$(".text-slide-1 .intro-year").addClass('in');
             	$(".animate-button--previous").hide();
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
 			});
 
-		var currentSlide = 1;
+			var currentSlide = 1;
 			var slideTransitionTime = 3000; //in ms
 			function nextSlide() {
 				$(".carousel").removeClass("position-" + currentSlide);
@@ -508,6 +509,7 @@
 				if (currentSlide > 1){
                     $(".animate-button--previous").show();
                     $(".text-slide-1__cfd-logo").removeClass('in');
+                    $(".text-slide-1 .intro-year").removeClass('in');
 				}
 			}
 			function previousSlide() {
@@ -530,6 +532,7 @@
 				if (currentSlide == 1){
                     $(".animate-button--previous").hide();
                     $(".text-slide-1__cfd-logo").addClass('in');
+                    $(".text-slide-1 .intro-year").addClass('in');
 				}
 			}
 			function animateTextIn(slide) {

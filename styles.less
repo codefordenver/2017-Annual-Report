@@ -855,9 +855,9 @@ body {
 			bottom: 40px;
 			// transition: 300ms 500ms;
 			z-index:4;
-			transform: scale(0.5);
+			transform: scale(0.8);
 			opacity: 0.4;
-			transition: all 700ms ;
+			transition: all 500ms ;
 			&.in{
 				transform: scale(1);
 				opacity: 1;
@@ -867,6 +867,19 @@ body {
 			position:absolute;
 			top: 10vh;
 			left: 0;
+		}
+		.intro-year{
+			transform: scale(0.7);
+			transition: all 1500ms;
+			&.in{
+				transform: scale(1);
+			}
+		}
+		.intro-dark-cloud{
+
+		}
+		.intro-light-cloud{
+
 		}
 	}
 
@@ -1347,7 +1360,7 @@ body {
 
 		.slide-11-container {
 			width: 80vw;
-			position: auto;
+			position: absolute;
 			@logoHeight: 15vh;
 
 			.appearRandom {
