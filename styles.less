@@ -1347,10 +1347,12 @@ body {
 			font-weight: bold;
 			width: 55vw;
 			margin-left: 100vw;
+			opacity: 0;
 			margin-top: -3vh;
-			transition: margin-left 2000ms;
+			transition: margin-left 2000ms, opacity 1000ms 1000ms;
 			&.in{
 				margin-left: 10vw;
+				opacity: 1;
 			}
 		}
 		.secondary-text{
@@ -1372,7 +1374,7 @@ body {
 			box-shadow:			9px 9px 7px 0px rgba(50, 50, 50, 0.75);
 			opacity: 0.1;
 			transform: scale(0.8);
-			transition: all 1.5s cubic-bezier(0,.43,1,.29);
+			transition: all 1.5s cubic-bezier(.94,.38,.63,.99);
 			&.in{
 				opacity:1;
 				transform: scale(1);
