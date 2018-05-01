@@ -486,6 +486,7 @@
 				$(".animate-button--previous").hide();
 				//set start states for other animations
 				$(".text-slide-2 h2").slideUp(0);
+				$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(0);
 			});
 
 			var currentSlide = 1;
@@ -593,9 +594,9 @@
 						$(".slide-headline, .text-title, .sustainability-screenshot, .secondary-text").addClass("in");
 						break;
 					case 8:
-						$(".text-slide-8 slide-headline").show();
+						$(".text-slide-8").show();
 						$(".cityscape").fadeTo(800, 1, function() {
-							$(".text-slide-8").slideDown(600);
+							$(".text-slide-8 .slide-headline, .slide-8-container").slideDown(600);
 						});
 						break;
 					case 9:
@@ -666,7 +667,9 @@
 						break;
 					case 8:
 						$(".cityscape").fadeTo("fast", 0.3, function() {
-							$(".text-slide-8").slideUp();
+							$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(function() {
+								$(".text-slide-8").hide();
+							});
 						});
 						break;
 					case 9:
