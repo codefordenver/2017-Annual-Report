@@ -5,11 +5,32 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 	<title>Code For Denver 2017 Annual Report</title>
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
+	<!-- styles here are inline so this loads before CSS generates -->
+	<style type="text/css">
+		body {
+			overflow: hidden;
+		}
+		.splash-screen {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index: 101;
+			background-color: #90D5EF;
+		}
+		.splash-screen img {
+			position:absolute;
+			top:calc(50% - 10px);
+			left:calc(50% - 10px);
+		}
+	</style>
 </head>
 <body>
+
+	<div class="splash-screen">	
+		<img src="media/images/ajax-loader.gif" />
+	</div>
 	<div class="portrait-warning">
 		<p>Please view this report in landscape orientation. If necessary, resize your browser window or rotate your device.</p>
 	</div>
@@ -484,8 +505,22 @@
 			<a style="position:absolute;top:45%;right:2%;color:black" href="#" class="animate-button--next"><img src="media/images/general/right-arrow.svg" class="slide-change"></a>
 		</div>
 	</div>
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
 	<script src="jquery.js"></script>
 	<script type="text/javascript">
+			function initialAnimations() {
+				$(".splash-screen").fadeOut();
+				$(".text-slide-1").fadeIn(200, function() {
+					$(".text-slide-1__cfd-logo").addClass('in');
+					$(".intro-text .intro-year").addClass('in');
+					$(".intro-dark-cloud").addClass('in');
+					$(".intro-light-cloud").addClass('in');
+				});
+				$(".animate-button--previous").hide();
+				//set start states for other animations
+				$(".text-slide-2 h2").slideUp(0);
+				$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(0);
+			}
 			$(function() {
 				$(".animate-button--next").click(function(e) {
 					e.preventDefault();
@@ -495,18 +530,6 @@
 					e.preventDefault();
 					previousSlide();
 				});
-				// initial animation
-
-				$(".text-slide-1").fadeIn(200, function() {
-					$(".text-slide-1__cfd-logo").addClass('in');
-                    $(".intro-text .intro-year").addClass('in');
-                    $(".intro-dark-cloud").addClass('in');
-                    $(".intro-light-cloud").addClass('in');
-				});
-				$(".animate-button--previous").hide();
-				//set start states for other animations
-				$(".text-slide-2 h2").slideUp(0);
-				$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(0);
 			});
 
 			var currentSlide = 1;
@@ -722,5 +745,25 @@
 				}, 3500);
 			}
 		</script>
+		
+		<!-- Development -->
+		<script type="text/javascript">
+			var lessWatcher = setInterval(function() {
+				if ($(".container").height() > 0) { //the CSS has loaded
+					setTimeout(function() {
+						initialAnimations();
+					}, 100);
+					clearInterval(lessWatcher);
+				}
+			}, 100);
+		</script>
+		<link rel="stylesheet/less" type="text/css" href="styles.less" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+		
+		<!-- Production -->
+		<!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+		<!-- <script> -->
+			<!-- $(window).on('load', function() { initialAnimations(); }); -->
+		<!-- </script> -->
 	</body>
 	</html>
