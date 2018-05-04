@@ -561,7 +561,10 @@
 					animateSlide2BarsIn();
 				}
 				if (currentSlide > 1){
-                    $(".animate-button--previous").show();
+					$(".animate-button--previous").show();
+				}
+				if (currentSlide == 12) {
+					$(".animate-button--next").hide();
 				}
 			}
 			function previousSlide() {
@@ -583,6 +586,9 @@
 				}
 				if (currentSlide == 1){
                     $(".animate-button--previous").hide();
+				}
+				if (currentSlide < 12) {
+					$(".animate-button--next").show();
 				}
 			}
 			function animateTextIn(slide) {
