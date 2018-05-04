@@ -265,19 +265,14 @@
 				</div>
 			</div>
 			<div class="slide-9 slide">
-				<div class="layer">
-					<div class="org-container">
+				<div class="org-container">
 						<div class="org-inner-container">
 							<img src="media/images/slide-8/org-images.png" class="org-images" />
 						</div>
-						<img src="media/images/slide-8/org-colorado-non-profit-post-it.png" class="org-non-profit-post" />
-						<img src="media/images/slide-8/org-facebook-post-it.png" class="org-facebook-post" />
-						<img src="media/images/slide-8/org-retrospective-post-it.png" class="org-retrospective-post" />
 						<img src="media/images/general/cloud-dark-right.svg" class="org-cloud-one" />
 						<img src="media/images/general/cloud-light-left.svg" class="org-cloud-two"  />
 						<img src="media/images/general/cloud-dark-left.svg" class="org-cloud-three" />
 						<img src="media/images/general/cloud-light-right.svg" class="org-cloud-four" />
-					</div>
 				</div>
 			</div>
 			<div class="slide-10 slide">
@@ -469,6 +464,11 @@
 			</div>
 			<div class="text-slide-9 text-slide">
 				<div class="slide-headline">Organizational Updates</div>
+				<div class="org-container">
+						<img src="media/images/slide-8/org-colorado-non-profit-post-it.png" class="org-non-profit-post" />
+						<img src="media/images/slide-8/org-facebook-post-it.png" class="org-facebook-post" />
+						<img src="media/images/slide-8/org-retrospective-post-it.png" class="org-retrospective-post" />
+					</div>
 			</div>
 			<div class="text-slide-10 text-slide">
 				<h2 class="slide-headline">Thank You to Our Awesome Members</h2>
@@ -561,7 +561,10 @@
 					animateSlide2BarsIn();
 				}
 				if (currentSlide > 1){
-                    $(".animate-button--previous").show();
+					$(".animate-button--previous").show();
+				}
+				if (currentSlide == 12) {
+					$(".animate-button--next").hide();
 				}
 			}
 			function previousSlide() {
@@ -583,6 +586,9 @@
 				}
 				if (currentSlide == 1){
                     $(".animate-button--previous").hide();
+				}
+				if (currentSlide < 12) {
+					$(".animate-button--next").show();
 				}
 			}
 			function animateTextIn(slide) {
@@ -650,7 +656,15 @@
 						});
 						break;
 					case 9:
-						$(".text-slide-9").fadeIn();
+						$(".text-slide-9").fadeIn(200, function() {
+							$(".org-non-profit-post").addClass("in");
+							setTimeout(function() {
+								$(".org-facebook-post").addClass("in");
+							}, 400);
+							setTimeout(function() {
+								$(".org-retrospective-post").addClass("in");
+							}, 800);
+						});
 						break;
 					case 10:
 						$(".text-slide-10").fadeIn();
@@ -713,17 +727,18 @@
 						break;
 					case 7:
 						$(".text-slide-7").fadeOut();
-                        $(".slide-headline, .text-title, .sustainability-screenshot, .secondary-text").removeClass("in");
+						$(".slide-headline, .text-title, .sustainability-screenshot, .secondary-text").removeClass("in");
 						break;
 					case 8:
-						$(".cityscape").fadeTo("fast", 0.3, function() {
-							$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(function() {
-								$(".text-slide-8").hide();
-							});
+						$(".cityscape").fadeTo(200, 0.3);
+						$(".text-slide-8 .slide-headline, .slide-8-container").slideUp(function() {
+							$(".text-slide-8").hide();
 						});
 						break;
 					case 9:
-						$(".text-slide-9").fadeOut();
+						$(".text-slide-9").fadeOut(600, function() {
+							$(".org-non-profit-post,.org-facebook-post,.org-retrospective-post").removeClass("in");
+						});
 						break;
 					case 10:
 						$(".text-slide-10").fadeOut();
