@@ -1,8 +1,3 @@
-/* TODO: Sean fix this */
-.portrait-warning {
-	display: none;
-}
-
 /* mixins */
 
 .drop-shadow {
@@ -1670,6 +1665,7 @@ body {
 .portrait-warning {
 	margin-top: 30vh;
 	text-align: center;
+	display: none;
 }
 @media only screen and (orientation:portrait){
 	.carousel {
@@ -1680,6 +1676,9 @@ body {
 	}
 	.carousel-controls {
 		display: none;
+	}
+	.portrait-warning {
+		display: block;
 	}
 }
 @media only screen and (orientation:landscape){
