@@ -749,7 +749,7 @@
 		<!-- Development -->
 		<script type="text/javascript">
 			var lessWatcher = setInterval(function() {
-				if ($(".container").height() > 0) { //the CSS has loaded
+				if ($(".container").height() > 0 && $(".text-slide-1").is(":hidden")) { //the CSS has loaded
 					setTimeout(function() {
 						initialAnimations();
 					}, 100);
