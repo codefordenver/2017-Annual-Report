@@ -28,7 +28,7 @@
 </head>
 <body>
 
-	<div class="splash-screen">	
+	<div class="splash-screen">
 		<img src="media/images/ajax-loader.gif" />
 	</div>
 	<div class="portrait-warning">
@@ -640,8 +640,24 @@
 						$(".text-slide-5 h2").slideDown();
 						break;
 					case 6:
+						$(".text-slide-6 .project1box").removeClass('in');
+						$(".text-slide-6 .project2box").removeClass('in');
+						$(".text-slide-6 .project3box").removeClass('in');
+						$(".text-slide-6 .project4box").removeClass('in');
 						$(".text-slide-6").show();
 						$(".text-slide-6 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-6 .project1box").addClass('in');
+						}, 250);
+						setTimeout(function() {
+							$(".text-slide-6 .project2box").addClass('in');
+						}, 500);
+						setTimeout(function() {
+							$(".text-slide-6 .project3box").addClass('in');
+						}, 750);
+						setTimeout(function() {
+							$(".text-slide-6 .project4box").addClass('in');
+						}, 1000);
 						break;
 					case 7:
 						$(".text-slide-7").fadeIn();
@@ -721,7 +737,15 @@
 						$(".text-slide-5").fadeOut();
 						break;
 					case 6:
-						$(".text-slide-6").fadeOut();
+						var animationTime = 1000;
+						$(".text-slide-6").slideUp(animationTime);
+						$(".text-slide-6 .project1box").removeClass('in');
+						$(".text-slide-6 .project2box").removeClass('in');
+						$(".text-slide-6 .project3box").removeClass('in');
+						$(".text-slide-6 .project4box").removeClass('in');
+						setTimeout(function() {
+							$(".text-slide-6").hide();
+						}, animationTime);
 						break;
 					case 7:
 						$(".text-slide-7").fadeOut();
@@ -765,7 +789,7 @@
 				}, 3250);
 			}
 		</script>
-		
+
 		<!-- Development -->
 		<script type="text/javascript">
 			var lessWatcher = setInterval(function() {
@@ -779,7 +803,7 @@
 		</script>
 		<link rel="stylesheet/less" type="text/css" href="styles.less" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
-		
+
 		<!-- Production -->
 		<!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
 		<!-- <script> -->

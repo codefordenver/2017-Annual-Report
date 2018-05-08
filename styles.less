@@ -1320,30 +1320,85 @@ body {
 			top: 14vh;
 			left: 2vw;
 			width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 
 		.project2box {
       top: 24vh;
       left: 25vw;
       width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
     }
 
 		.project3box {
 			top: 33vh;
 			left: 48vw;
 			width: 26vw;
-		}
+			opacity: 0;
+			transition: opacity 2000ms;
 
-    /*        bottom: 7vh;
-        height: 60vh;
-        left: 148vw;
-        width: 28vw;*/
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
+		}
 
 		.project4box {
 			top: 14vh;
 			right: 3vw;
 			width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
 		}
+
 	}
 
 	.text-slide-7 {
@@ -1716,7 +1771,7 @@ body {
 	transition: transform 0.6s ease-out;
 	transform: translate(50vw, 80vh) rotateX(40deg) rotateY(80deg) scale(1.7);
 	.drop-shadow();
-	
+
 	&.in {
 		transform: translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1);
 	}
