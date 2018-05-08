@@ -636,8 +636,20 @@
 						}, 1000);
 						break;
 					case 5:
+						$(".text-slide-5 .project-new-members").removeClass('in');
+						$(".text-slide-5 .project-new-effective").removeClass('in');
+						$(".text-slide-5 .project-new-website").removeClass('in');
 						$(".text-slide-5").show();
 						$(".text-slide-5 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-members").addClass('in');
+						}, 300);
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-effective").addClass('in');
+						}, 600);
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-website").addClass('in');
+						}, 900);
 						break;
 					case 6:
 						$(".text-slide-6 .project1box").removeClass('in');
@@ -734,7 +746,14 @@
 						}, 2000);
 						break;
 					case 5:
-						$(".text-slide-5").fadeOut();
+						var animationTime = 1000;
+						$(".text-slide-5").slideUp(animationTime);
+						$(".text-slide-5 .project-new-members").removeClass('in');
+						$(".text-slide-5 .project-new-effective").removeClass('in');
+						$(".text-slide-5 .project-new-website").removeClass('in');
+						setTimeout(function() {
+							$(".text-slide-5").hide();
+						}, animationTime);
 						break;
 					case 6:
 						var animationTime = 1000;

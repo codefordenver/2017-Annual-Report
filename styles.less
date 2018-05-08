@@ -1251,12 +1251,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 		.project-new-effective {
 			position: absolute;
@@ -1266,12 +1277,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+			
 		}
 		.project-new-website {
 			position: absolute;
@@ -1281,12 +1303,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 
 	}
