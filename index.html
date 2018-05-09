@@ -138,7 +138,8 @@
 			<div class="slide-9 slide">
 			</div>
 			<div class="slide-10 slide">
-				<div class="background-update-bar"></div>
+       <div class="background-update-bar"></div>
+				<img class="members-photo" src="media/images/slide-10/thank-you-member-photo.jpg" alt="Our Awesome Members"/>
 			</div>
 			<div class="slide-11 slide">
 			</div>
@@ -305,23 +306,21 @@
 					<div class="text-slide-2__left-column">
 						<div>
 							<p>
-								For the first time in our Total Hours of Giving
-								history, our members gave
+								For the first time our 
+								members gave
 								over 100 hours per day of
 								service.
 							</p>
 							<p>
 								It adds up to 4,311
-								hours. However, what that
-								really means is more is
-								recycled every year, better
-								life for senior citizens and
+								hours towards better
+								life for senior citizens,
 								musicians, and computer
 								literacy for young kids.
 							</p>
 							<p>
-								It means our team is
-								awesome.
+								All possible because of our 
+								AWESOME team!
 							</p>
 						</div>
 					</div>
@@ -365,7 +364,7 @@
 							<img class="row-image" src="media/images/slide-3/event-denver-startup-week.png">
 						</div>
 						<div class="col-2 medium-header">
-							Denver Startup Week Event: Applying Your Skills for Good
+							Denver Startup Week: <br>Your Skills for Good</br>
 						</div>
 						<div class="col-3 row-body-text">
 							Code for Denver Presents: "Applying Your Skills for Good with Code for Denver." This event showcased our projects and helped recruit members."
@@ -377,10 +376,10 @@
 							<img class="row-image" src="media/images/slide-3/event-project-night.png">
 						</div>
 						<div class="col-2 medium-header">
-							48 Project Night Meetups: Serving Our Community
+							48 Project Night Meetups: <br>Serving Our Community</br>
 						</div>
 						<div class="col-3 row-body-text">
-							Our brigade is one of the most active brigades in the Code for America network.
+							Our brigade is one of the most active in the Code for America network.
 						</div>
 					</div>
 
@@ -420,7 +419,7 @@
 
 				<div class="projectbox project1box">
 					<img src="media/images/slide-6/update-re-imagine.png">
-					<p>Circular Economy was rebranded to Denver Re:Imagine and developed from early concept and close to minimum viable product.</p>
+					<p>Circular Economy was rebranded to Denver Re:Imagine and developed from early concept to minimum viable product.</p>
 				</div>
 				<div class="projectbox project2box">
 					<img src="media/images/slide-6/update-encorelink.png">
@@ -428,7 +427,7 @@
 				</div>
 				<div class="projectbox project3box">
 					<img src="media/images/slide-6/update-brigade-research.png">
-					<p>Researched the most successful projects from other CfA Brigades (25 responded!)</p>
+					<p>Researched the most successful projects out of 25 other CfA Brigades!</p>
 				</div>
 				<div class="projectbox project4box">
 					<img src="media/images/slide-6/update-owlet.png">
@@ -450,10 +449,10 @@
 			<div class="text-slide-8 text-slide">
 				<h2 class="slide-headline">External Talks</h2>
 				<div class="slide-8-container">
-						<div class="slide-8-title">Mile High Data day</div>
+						<div class="slide-8-title">Mile High Data Day</div>
 						<div class="slide-8-bullet">- Intro to KoboTools<br />
 					  - Building a Data-Driven Impact Community in Denver</div>
-					  <div class="slide-8-title">Colorado Nonprofit Association’s 25th Annual Fall Conference: Nonprofits of Influence</div>
+					  <div class="slide-8-title">Colorado Nonprofit Association’s 25th Annual Conference: Nonprofits of Influence</div>
 						<div class="slide-8-bullet">- Free Tech Tools for Nonprofits: What You Need To Know<br />
 							- Intro to Agile for Nonprofits</div>
 						<div class="slide-8-title">Code for Boulder</div>
@@ -470,7 +469,6 @@
 			</div>
 			<div class="text-slide-10 text-slide">
 				<h2 class="slide-headline">Thank You to Our Awesome Members</h2>
-				<img class="members-photo" src="media/images/slide-10/thank-you-member-photo.jpg" alt="Our Awesome Members">
 				<img class="slide-10-dark-cloud" src="media/images/general/cloud-dark-right.svg" >
 				<img class="slide-10-light-cloud" src="media/images/general/cloud-light-left.svg">
 				<img class="heart-bg" src="media/images/slide-10/heart-background.svg">
@@ -636,12 +634,40 @@
 						}, 1000);
 						break;
 					case 5:
+						$(".text-slide-5 .project-new-members").removeClass('in');
+						$(".text-slide-5 .project-new-effective").removeClass('in');
+						$(".text-slide-5 .project-new-website").removeClass('in');
 						$(".text-slide-5").show();
 						$(".text-slide-5 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-members").addClass('in');
+						}, 300);
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-effective").addClass('in');
+						}, 600);
+						setTimeout(function() {
+							$(".text-slide-5 .project-new-website").addClass('in');
+						}, 900);
 						break;
 					case 6:
+						$(".text-slide-6 .project1box").removeClass('in');
+						$(".text-slide-6 .project2box").removeClass('in');
+						$(".text-slide-6 .project3box").removeClass('in');
+						$(".text-slide-6 .project4box").removeClass('in');
 						$(".text-slide-6").show();
 						$(".text-slide-6 h2").slideDown();
+						setTimeout(function() {
+							$(".text-slide-6 .project1box").addClass('in');
+						}, 250);
+						setTimeout(function() {
+							$(".text-slide-6 .project2box").addClass('in');
+						}, 500);
+						setTimeout(function() {
+							$(".text-slide-6 .project3box").addClass('in');
+						}, 750);
+						setTimeout(function() {
+							$(".text-slide-6 .project4box").addClass('in');
+						}, 1000);
 						break;
 					case 7:
 						$(".text-slide-7").fadeIn();
@@ -665,7 +691,9 @@
 						});
 						break;
 					case 10:
-						$(".text-slide-10").fadeIn();
+						$(".text-slide-10").fadeIn(500, function(){
+                            $(".slide-10-dark-cloud, .slide-10-light-cloud").addClass('in');
+						});
 						break;
 					case 11:
 						$(".text-slide-11").fadeIn();
@@ -718,10 +746,25 @@
 						}, 2000);
 						break;
 					case 5:
-						$(".text-slide-5").fadeOut();
+						var animationTime = 1000;
+						$(".text-slide-5").slideUp(animationTime);
+						$(".text-slide-5 .project-new-members").removeClass('in');
+						$(".text-slide-5 .project-new-effective").removeClass('in');
+						$(".text-slide-5 .project-new-website").removeClass('in');
+						setTimeout(function() {
+							$(".text-slide-5").hide();
+						}, animationTime);
 						break;
 					case 6:
-						$(".text-slide-6").fadeOut();
+						var animationTime = 1000;
+						$(".text-slide-6").slideUp(animationTime);
+						$(".text-slide-6 .project1box").removeClass('in');
+						$(".text-slide-6 .project2box").removeClass('in');
+						$(".text-slide-6 .project3box").removeClass('in');
+						$(".text-slide-6 .project4box").removeClass('in');
+						setTimeout(function() {
+							$(".text-slide-6").hide();
+						}, animationTime);
 						break;
 					case 7:
 						$(".text-slide-7").fadeOut();
@@ -739,7 +782,8 @@
 						});
 						break;
 					case 10:
-						$(".text-slide-10").fadeOut();
+                        $(".slide-10-dark-cloud, .slide-10-light-cloud").removeClass('in');
+                        $(".text-slide-10").fadeOut();
 						break;
 					case 11:
 						$(".text-slide-11").fadeOut();

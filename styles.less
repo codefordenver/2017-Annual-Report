@@ -387,6 +387,12 @@ body {
 				left: 10vw;
 				background: @deepRed;
 			}
+			.members-photo{
+				position: absolute;
+				width: 78vw;
+				margin-left: 11vw;
+				bottom:19vh;
+			}
 		}
 
 		.slide-11 {
@@ -1251,12 +1257,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 		.project-new-effective {
 			position: absolute;
@@ -1266,12 +1283,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+			
 		}
 		.project-new-website {
 			position: absolute;
@@ -1281,12 +1309,23 @@ body {
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25em;
+			opacity: 0;
+			transition: opacity 2000ms;
 
 			img {
 				width: 24vw;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 
 	}
@@ -1320,30 +1359,85 @@ body {
 			top: 14vh;
 			left: 2vw;
 			width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				opacity: 1;
+			}
+
+			&.out {
+				opacity: 0;
+			}
+
 		}
 
 		.project2box {
       top: 24vh;
       left: 25vw;
       width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
     }
 
 		.project3box {
 			top: 33vh;
 			left: 48vw;
 			width: 26vw;
-		}
+			opacity: 0;
+			transition: opacity 2000ms;
 
-    /*        bottom: 7vh;
-        height: 60vh;
-        left: 148vw;
-        width: 28vw;*/
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
+		}
 
 		.project4box {
 			top: 14vh;
 			right: 3vw;
 			width: 26vw;
+			opacity: 0;
+			transition: opacity 2000ms;
+
+			&.in {
+				.slide-6-column-image {
+					left: 0px;
+				}
+				opacity: 1;
+			}
+
+			&.out {
+				.slide-6-column-image {
+					left: 40px;
+				}
+				opacity: 0;
+			}
 		}
+
 	}
 
 	.text-slide-7 {
@@ -1450,10 +1544,10 @@ body {
 			width: 8%;
 			left: 79vw;
 			bottom: 82vh;
-			filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.8));
 			transition: all 2s;
 			&.in{
 				left: 74vw;
+				filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.8));
 			}
 		}
 
@@ -1462,10 +1556,10 @@ body {
 			width: 12%;
 			left: 75vw;
 			bottom: 77vh;
-			filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.8));
 			transition: all 1.5s;
 			&.in{
 				left: 70vw;
+				filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.8));
 			}
 		}
 
