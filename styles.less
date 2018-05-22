@@ -1,7 +1,7 @@
 /* mixins */
 
 .drop-shadow {
-	-webkit-filter: drop-shadow(4px -4px 4px rgba(0,0,0,0.5));
+	-webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
 	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=-4, Color='#444')";
 }
@@ -1394,9 +1394,8 @@ body {
 		  box-sizing: border-box;
 
 			img {
-				max-width: 100%;
-				width: 260px;
-				height: 150px;
+				width: 18vw;
+				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
 
 			p {
@@ -1742,8 +1741,14 @@ body {
 		}
 
 		.slide-12-bullet {
-			font-size: 20px;
-			margin-bottom: 20px;
+			font-size: 1.25rem;
+			margin-bottom: 1vh;
+		}
+		.slide-12-bullet-view-again {
+			font-size: 1.25rem;
+			margin-top: 6vh;
+			text-align: right;
+
 		}
 	} // end of .text-slide-12
 } // end of .text-slide
@@ -1871,21 +1876,21 @@ body {
 
 .org-non-profit-post {
 	position: absolute;
-	top: 41vh;
+	top: 38vh;
 	right: 78vw;
 	width: 16vw;
 }
 
 .org-facebook-post {
 	position: absolute;
-	top: 54vh;
+	top: 53vh;
 	right: 40vw;
 	width: 16vw;
 }
 
 .org-retrospective-post {
 	position: absolute;
-	top: 49vh;
+	top: 46vh;
 	right: 6vw;
 	width: 16vw;
 }
