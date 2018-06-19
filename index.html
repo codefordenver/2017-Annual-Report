@@ -809,7 +809,7 @@
 		</script>
 
 		<!-- Development -->
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			var lessWatcher = setInterval(function() {
 				if ($(".container").height() > 0 && $(".text-slide-1").is(":hidden")) { //the CSS has loaded
 					setTimeout(function() {
@@ -820,12 +820,12 @@
 			}, 100);
 		</script>
 		<link rel="stylesheet/less" type="text/css" href="styles.less" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script> -->
 
 		<!-- Production -->
-		<!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
-		<!-- <script> -->
-			<!-- $(window).on('load', function() { initialAnimations(); }); -->
-		<!-- </script> -->
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script>
+			$(window).on('load', function() { initialAnimations(); });
+		</script>
 	</body>
 	</html>
