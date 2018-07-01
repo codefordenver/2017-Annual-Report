@@ -1820,6 +1820,7 @@ body {
   margin-top: 30vh;
   text-align: center;
   display: none;
+  padding: 12px;
 }
 @media only screen and (orientation: portrait) {
   .carousel {
