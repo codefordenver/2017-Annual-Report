@@ -542,8 +542,8 @@
 		</div>
 	</div>
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,700,800,900" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> <!-- on 2.x, jquery mobile doesn't work w/3.x -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="hammer.min.js"></script>
 	<script type="text/javascript">
 			function initialAnimations() {
 				$(".splash-screen").fadeOut();
@@ -563,16 +563,24 @@
 					e.preventDefault();
 					nextSlide();
 				});
-				$(window).on("swipeleft", function() {
-					nextSlide();
-				});
 				$(".animate-button--previous").click(function(e) {
 					e.preventDefault();
 					previousSlide();
 				});
-				$(window).on("swiperight", function() {
+			});
+			
+			var body = $("body")[0]
+
+			// create a simple instance
+			// by default, it only adds horizontal recognizers
+			var mc = new Hammer(body);
+
+			// listen to events...
+			mc.on("swipeleft", function(ev) {
+					nextSlide();
+			});
+			mc.on("swiperight", function(ev) {
 					previousSlide();
-				});
 			});
 
 			var currentSlide = 1;
