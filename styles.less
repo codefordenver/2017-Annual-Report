@@ -34,7 +34,7 @@ body {
 	bottom: 0;
 	width: 100vw;
 	height: 100vh;
-	overeflow: hidden;
+	overflow: hidden;
 }
 
 
@@ -1670,6 +1670,9 @@ body {
 				margin-left: 10vw;
 				opacity: 1;
 			}
+			@media (max-width:767px) {
+				font-size: 1.4vw;
+			}
 		}
 		.secondary-text{
 			width: 41vw;
@@ -1995,6 +1998,11 @@ body {
 	width: 51px;
 	opacity: 0.4;
 	z-index: 99;
+	
+	@media (max-width:767px) {
+		width: 25px;
+		height: 37px;
+	}
 }
 
 @media (min-width: 768px) {

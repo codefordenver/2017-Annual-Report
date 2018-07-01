@@ -30,7 +30,7 @@ body {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  overeflow: hidden;
+  overflow: hidden;
 }
 .carousel {
   transition: left 3s;
@@ -1352,8 +1352,7 @@ body {
 }
 .text-overlay .text-slide-6 .projectbox img {
   max-width: 100%;
-  width: 260px;
-  height: 150px;
+  width: 20vw;
 }
 .text-overlay .text-slide-6 .projectbox p {
   margin-top: 28px;
@@ -1457,6 +1456,11 @@ body {
 .text-overlay .text-slide-7 .text-title.in {
   margin-left: 10vw;
   opacity: 1;
+}
+@media (max-width: 767px) {
+  .text-overlay .text-slide-7 .text-title {
+    font-size: 1.4vw;
+  }
 }
 .text-overlay .text-slide-7 .secondary-text {
   width: 41vw;
@@ -1777,6 +1781,12 @@ body {
   width: 51px;
   opacity: 0.4;
   z-index: 99;
+}
+@media (max-width: 767px) {
+  .slide-change {
+    width: 25px;
+    height: 37px;
+  }
 }
 @media (min-width: 768px) {
   .slide-change:hover {
