@@ -99,6 +99,11 @@ body {
 
 		.slide-2 {
 			@barHeight: 40vh;
+			
+			@media (max-width: 767px) {
+				@barHeight: 30vh;
+			}
+			
 			.background-bar-graph, .data-label {
 				left: 24vw;
 				position: absolute;
@@ -113,11 +118,19 @@ body {
 
 				&.in {
 					height: @barHeight + 2vh;
+					
+					@media (max-width: 767px) {
+						height: @barHeight + 2vh - 10vh;
+					}
 				}
 			}
 			.data-label {
 				bottom: @baseBackgroundHeight + @barHeight;
 				color: @deepRed;
+				
+				@media (max-width: 767px) {
+					bottom: @baseBackgroundHeight + @barHeight - 10vh;
+				}
 			}
 			.slide-title {
 				color: #7D2A32;
@@ -160,10 +173,7 @@ body {
 		}
 
 		.slide-4 {
-			.slide-headline {
-				margin-top: 5vh;
-				margin-left: 5vw;
-			}
+			
 			.background-cloud-small {
 				height: 40vh;
 				width: 60vw;
@@ -175,64 +185,9 @@ body {
 				margin-left: 10vw;
 				position: absolute;
 			}
-
-			.monthly-speaker-grid-container {
-				position: absolute;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				margin-left: 15vw;
-				margin-right: 10vw;
-
-				.monthly-speaker-piece {
-					background-color: #4DBCE6;
-					height: 20vh;
-					width: 15vw;
-					margin: 20px;
-					opacity: 0;
-					transform: scale(0);
-					transition: all 1250ms, transform 1s cubic-bezier(.47,1.47,.77,1.05);
-
-					&.in {
-						opacity: 1;
-						transform: scale(1);
-						-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-						-moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-						box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
-					}
-
-					&.fade-out {
-						opacity: 0;
-					}
-				}
-
-				.monthly-speaker-header {
-					background-color: #2C687E;
-					height: 20px;
-					color: white;
-					padding: 5px 20px;
-					font-size: 1vw;
-				}
-
-				.monthly-speaker-name {
-					padding: 10px 0 8px 20px;
-					font-size: 1.1vw;
-				}
-
-				.monthly-speaker-text {
-					color: #7D2D35;
-					padding: 8px 0 0px 20px;
-					// margin-top: 5px;
-					font-size: 1.6vw;
-					font-weight: 400;
-				}
-			}
-		}
-
-		.slide-4 {
 			.speakerClouds {
 				position: absolute;
-				top: calc(5vh + 50px);
+				top: calc(~"5vh + 50px");
 				left: 15vw;
 				right: 10vw;
 				bottom: @baseBackgroundHeight + 1vh;
@@ -533,11 +488,19 @@ body {
 
 				&.in {
 					height: @barHeight;
+					
+					@media (max-width: 767px) {
+						height: @barHeight - 10vh;
+					}
 				}
 			}
 			.data-label {
 				bottom: @baseBackgroundHeight + @barHeight;
 				color: #B23C43;
+				
+				@media (max-width: 767px) {
+					bottom: @baseBackgroundHeight + @barHeight - 10vh;
+				}
 			}
 		}
 
@@ -707,7 +670,7 @@ body {
 		.slide-2 {
 
 			@foregroundBarHeight: 60vh;
-
+			
 			.foreground-bar-graph, .data-label {
 				left: calc(100vw + 52vw);
 			}
@@ -722,6 +685,10 @@ body {
 
 				&.in {
 					height: @foregroundBarHeight;
+					
+					@media (max-width: 767px) {
+						height: @foregroundBarHeight - 10vh;
+					}
 				}
 			}
 
@@ -729,6 +696,10 @@ body {
 				position: absolute;
 				bottom: @baseBackgroundHeight + @foregroundBarHeight;
 				color: #E34C54;
+				
+				@media (max-width: 767px) {
+					bottom: @baseBackgroundHeight + @foregroundBarHeight - 10vh;
+				}
 			}
 		}
 
@@ -909,6 +880,10 @@ body {
 	font-size: 3em;
 	margin-top: 0;
 	font-weight: bold;
+	
+	@media (max-width:767px) {
+		font-size: 3.3vw;
+	}
 }
 .text-overlay {
 	position: absolute;
@@ -939,6 +914,11 @@ body {
 			&.in{
 				transform: scale(1);
 				opacity: 1;
+			}
+			
+			@media (max-width:767px) {
+				max-height: 16vh;
+				bottom: 20px;
 			}
 		}
 		&__intro-text {
@@ -1040,6 +1020,10 @@ body {
 			p{
 				font-size: 1.3vw;
 			}
+			
+			@media (max-width: 767px) {
+				p { display: none; }
+			}
 		}
 		&__center-column {
 			width: 50%;
@@ -1054,6 +1038,10 @@ body {
 				font-size: 2vw;
 				font-weight: 400;
 				margin-top: -2vh;
+				
+				@media (max-width:767px) {
+					margin-top: 2vh;
+				}
 			}
 		}
 		&__right-column {
@@ -1073,12 +1061,20 @@ body {
 				font-size: 1.2rem;
 				// font-size: 1.3vw;
 				margin-top: 1.25vh;
+				
+				@media (max-width:767px) {
+					font-size: 0.8rem;
+				}
 			}
 
 			h4 {
 				font-size: 2.5em;
 				margin: 0;
 				font-weight: 800;
+				
+				@media (max-width:767px) {
+					font-size: 1em;
+				}
 			}
 			h5 {
 				font-size: 1.2em;
@@ -1099,12 +1095,27 @@ body {
 			&__pizzas {
 				font-size: 1.5rem !important;
 				margin-top: 1rem;
+				
+				@media (max-width:767px) {
+					font-size: 0.7rem !important;
+				}
+				
 				h4 {
 					font-size: 4rem;
 					line-height: 4rem;
+					
+					@media (max-width:767px) {
+						line-height: 1rem;
+						font-size: 1rem;
+					}
 				}
 				h5 {
 					font-size: 2.5rem;
+					
+					@media (max-width:767px) {
+						line-height: 0.9rem;
+						font-size: 0.9rem;
+					}
 				}
 			}
 			&__possibilities {
@@ -1117,6 +1128,10 @@ body {
 				}
                 h5 {
                     font-size: 1em;
+										
+										@media (max-width:767px) {
+											font-size: 1rem;
+										}
                 }
 			}
 		}
@@ -1251,36 +1266,144 @@ body {
 			left: 40px;
 			transition: left 2000ms;
 		}
+		
+		@media (max-width: 767px) {
+			.row-1,.row-2,.row-3 {
+				margin-left: 20vw;
+				align-items: center;
+				margin-top: -2vh;
+				
+				.col-1 img {
+					margin-top: 0px;
+				}
+				.col-2 {
+					width: 40vw;
+				}
+			}
+			.row-2 {
+				margin-top: -2.5vh;
+			}
+			.col-3 {
+				display: none;
+			}
+		}
 
 	}
 
 	.text-slide-4 {
-		h2 {
-			margin-top: 50px;
-			margin-left: 100px;
-			color: #813e46;
-			font-weight: 700;
-		}
+		.slide-headline {
+				margin-top: 5vh;
+				margin-left: 5vw;
+				
+				@media (max-width: 767px) {
+					font-size: 3.3vw;
+				}
+			}
 
-		.speakersBoxWrapper {
+		.monthly-speaker-grid-container {
+			position: absolute;
 			display: flex;
-			justify-content: center;
-		}
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-left: 15vw;
+			margin-right: 10vw;
 
-		.speakersBox {
-			width: 200px;
-			height: 150px;
-			background-color: #4dbce6;
-			margin: 10px 20px 10px 20px;
-		}
-		.speakerBoxHeader {
-			background-color: #2c687e;
-			text-align: center;
-			color: #dceff7;
-			padding: 5px;
-		}
-		.speakerBoxText {
-			padding: 10px;
+			.monthly-speaker-piece {
+				background-color: #4DBCE6;
+				height: 20vh;
+				width: 15vw;
+				margin: 20px;
+				opacity: 0;
+				transform: scale(0);
+				transition: all 1250ms, transform 1s cubic-bezier(.47,1.47,.77,1.05);
+
+				&.in {
+					opacity: 1;
+					transform: scale(1);
+					-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+					-moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+					box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+				}
+
+				&.fade-out {
+					opacity: 0;
+				}
+			}
+
+			.monthly-speaker-header {
+				background-color: #2C687E;
+				height: 20px;
+				color: white;
+				padding: 5px 20px;
+				font-size: 1vw;
+				
+				.mobile-text {
+					display: none;
+				}
+			}
+
+			.monthly-speaker-name {
+				padding: 10px 0 8px 20px;
+				font-size: 1.1vw;
+			}
+
+			.monthly-speaker-text {
+				color: #7D2D35;
+				padding: 8px 0 0px 20px;
+				// margin-top: 5px;
+				font-size: 1.6vw;
+				font-weight: 400;
+			}
+			
+			@media (max-width:767px) { 
+				display: flex;
+				
+				.monthly-speaker-piece {
+					width: calc(50% - 10px);
+					height: auto;
+					display: grid;
+					align-items: center;
+					margin: 10px;
+					box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+					grid-template-columns: 40px auto;
+					
+					.monthly-speaker-header, .monthly-speaker-name, .monthly-speaker-text {
+						padding: 0px;
+					}
+					.monthly-speaker-header {
+						grid-row: span 2;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 9px;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						
+						.desktop-text {
+							display: none;
+						}
+						.mobile-text {
+							display: inline-block;
+						}
+					}
+					.monthly-speaker-text {
+						grid-row-start: 1;
+						grid-row-end: 1;
+						grid-column-start: 2;
+						grid-column-end: 2;
+						padding-top: 4px;
+						padding-left: 8px;
+					}
+					.monthly-speaker-name {
+						grid-row-start: 2;
+						grid-row-end: 2;
+						grid-column-start: 2;
+						grid-column-end: 2;
+						padding-bottom: 4px;
+						padding-left: 8px;
+					}
+				}
+			}
 		}
 	}
 
@@ -1299,16 +1422,17 @@ body {
 		.project-new-members {
 			position: absolute;
 			top: 28vh;
-			left: 7.5vw;
+			left: 6vw;
 			box-sizing: border-box;
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25vw;
 			opacity: 0;
 			transition: opacity 2000ms;
+			width: 28vw;
 
 			img {
-				width: 24vw;
+				width: 100%;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
@@ -1321,20 +1445,29 @@ body {
 				opacity: 0;
 			}
 
+			@media (max-width:767px) {
+				font-size: 2.2vw;
+				
+				img {
+					display: none;
+				}
+			}
+			
 		}
 		.project-new-effective {
 			position: absolute;
 			top: 36vh;
-			left: 37.5vw;
+			left: 36vw;
 			box-sizing: border-box;
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25vw;
 			opacity: 0;
 			transition: opacity 2000ms;
+			width: 28vw;
 
 			img {
-				width: 24vw;
+				width: 100%;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
@@ -1345,22 +1478,31 @@ body {
 
 			&.out {
 				opacity: 0;
+			}
+			
+			@media (max-width:767px) {
+				font-size: 2.2vw;
+				
+				img {
+					display: none;
+				}
 			}
 
 		}
 		.project-new-website {
 			position: absolute;
 			top: 46vh;
-			left: 67.5vw;
+			left: 66vw;
 			box-sizing: border-box;
 			padding: 15px;
 			color: #fff;
 			font-size: 1.25vw;
 			opacity: 0;
 			transition: opacity 2000ms;
+			width: 28vw;
 
 			img {
-				width: 24vw;
+				width: 100%;
 				margin-bottom: 2vh;
 				box-shadow: 10px 9px 43px -13px rgba(0,0,0,0.75);
 			}
@@ -1371,6 +1513,14 @@ body {
 
 			&.out {
 				opacity: 0;
+			}
+			
+			@media (max-width:767px) {
+				font-size: 2.2vw;
+				
+				img {
+					display: none;
+				}
 			}
 
 		}
@@ -1403,6 +1553,13 @@ body {
 
 			p {
 				margin-top: 28px;
+			}
+			
+			@media (max-width: 767px) {
+				font-size: 2.2vw;
+				img {
+					display: none;
+				}
 			}
 		}
 
@@ -1521,6 +1678,10 @@ body {
 			p{
 				font-size:1.1vw;
 				font-weight: 500;
+				
+				@media (max-width:767px) {
+					font-size: 1.6vw;
+				}
 			}
 		}
 		.sustainability-screenshot {
@@ -1563,12 +1724,21 @@ body {
 			font-size: 1.9vw;
 			font-weight: 600;
 			color: #7d2a32;
+			
+			@media (max-width:767px) {
+				font-size: 1.8vw;
+			}
 		}
 
 		.slide-8-bullet {
 			font-size: 20px;
 			font-size: 1.3vw;
 			margin-bottom: 20px;
+			
+			@media (max-width:767px) {
+				font-size: 1.8vw;
+				margin-bottom: 10px;
+			}
 		}
 	}
 
@@ -1645,6 +1815,11 @@ body {
 			font-size: 50px;
 			margin-top: 5vh;
 			margin-left: 10vw;
+			
+			@media (max-width:767px) {
+				font-size: 3.3vw;
+				margin-bottom: 1vh;
+			}
 		}
 
 		.thank-you-note {
@@ -1652,12 +1827,24 @@ body {
 			margin-left: 10vw;
 			margin-top: 2vh;
 			width: 15%;
+			
+			@media (max-width:767px) {
+				width: 100%;
+				font-size: 1rem;
+				margin-left: 0px;
+				padding-left: 10vw;
+				margin-top: 1vh;
+			}
 		}
 
 		.slide-11-container {
 			width: 80vw;
 			position: absolute;
 			@logoHeight: 15vh;
+			
+			@media (max-width: 767px) {
+				top: 24vh;
+			}
 
 			.appearRandom {
 				display: none;
@@ -1735,6 +1922,10 @@ body {
 			width: 100%;
 			margin-top: 5vh;
 			margin-left: 52vw;
+			
+			@media (max-width:767px) {
+				font-size: 40px;
+			}
 		}
 
 		.slide-12-container {
@@ -1742,16 +1933,29 @@ body {
 			position: absolute;
 			left: 52vw;
 			top: 25vh;
+			
+			@media (max-width:767px) {
+				width: 40vw;
+			}
 		}
 
 		.slide-12-title {
 			font-size: 40px;
 			font-weight: 600;
+			
+			@media (max-width:767px) {
+				font-size: 20px;
+			}
 		}
 
 		.slide-12-bullet {
 			font-size: 20px;
 			margin-bottom: 20px;
+			
+			@media (max-width:767px) {
+				font-size: 12px;
+				margin-bottom: 14px;
+			}
 		}
 	} // end of .text-slide-12
 } // end of .text-slide
@@ -1793,8 +1997,10 @@ body {
 	z-index: 99;
 }
 
-.slide-change:hover {
-	opacity: 0.8;
+@media (min-width: 768px) {
+	.slide-change:hover {
+		opacity: 0.8;
+	}
 }
 
 .slide-2 .data-label {
